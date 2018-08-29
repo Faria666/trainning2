@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/jerseytesting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/jerseytesting_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jerseytesting.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/allclasses-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/allclasses-noframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/Answer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/RESTServer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/RESTServerTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/Request.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/class-use/Answer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/class-use/RESTServer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/class-use/RESTServerTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/class-use/Request.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/constant-values.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/deprecated-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/help-doc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/overview-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/package-list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jerseytesting.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/Answer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/RESTServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jerseytesting/webapp/RESTServerTest.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/jerseytesting$RESTServerTest_testRequestFail.ic" NAME="RESTServerTest.testRequestFail Coverage Results" MODIFIED="1533112785066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.jerseytesting.webapp.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/jerseytesting$RESTServerTest.ic" NAME="RESTServerTest Coverage Results" MODIFIED="1534427146318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.jerseytesting.webapp.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/jerseytesting$RESTTest_testQueue.ic" NAME="RESTTest.testQueue Coverage Results" MODIFIED="1534431342382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.jerseytesting.webapp.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/jerseytesting$RESTTest.ic" NAME="RESTTest Coverage Results" MODIFIED="1535461267530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.jerseytesting.webapp.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/jerseytesting$RESTServerTest_testPost.ic" NAME="RESTServerTest.testPost Coverage Results" MODIFIED="1534414460666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.jerseytesting.webapp.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/jerseytesting$RESTClientTest.ic" NAME="RESTClientTest Coverage Results" MODIFIED="1534427678717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.jerseytesting.webapp.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/jerseytesting$RESTTest_testReadFile.ic" NAME="RESTTest.testReadFile Coverage Results" MODIFIED="1534515651783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.jerseytesting.webapp.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/jerseytesting$RESTServerTest_testRequestFail2.ic" NAME="RESTServerTest.testRequestFail2 Coverage Results" MODIFIED="1533111763774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.jerseytesting.webapp.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/jerseytesting$RESTClientPost.ic" NAME="RESTClientPost Coverage Results" MODIFIED="1534768886544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.jerseytesting.webapp.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="183" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1071290763">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="11" />
+          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.11" value="3" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="4" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="3" />
+          <entry key="project.open.time.18" value="3" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.9" value="3" />
+          <entry key="project.opened" value="23" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="27" />
+          <entry key="java" value="22309" />
+          <entry key="jsp" value="30" />
+          <entry key="txt" value="50" />
+          <entry key="xml" value="906" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="22309" />
+          <entry key="JSP" value="30" />
+          <entry key="PLAIN_TEXT" value="77" />
+          <entry key="XML" value="906" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="56" />
+          <entry key="js" value="1" />
+          <entry key="jsp" value="1" />
+          <entry key="xml" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="56" />
+          <entry key="JSP" value="1" />
+          <entry key="JavaScript" value="1" />
+          <entry key="XML" value="15" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="jerseytesting" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/RESTClientPost.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="296" column="51" selection-start-line="296" selection-start-column="51" selection-end-line="296" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#readCSV#0;class#RESTClientPost#0" />
+                <element signature="method#stringToReq#0;class#RESTClientPost#0" />
+                <element signature="method#JDBCConnection#0;class#RESTClientPost#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sum</find>
+      <find>op</find>
+      <find>System.ou</find>
+      <find>statu</find>
+      <find>maven</find>
+      <find>repor</find>
+      <find>rs</find>
+      <find>maven-compiler-plugin</find>
+      <find>log4j</find>
+      <find>bcel</find>
+      <find>org.glassfish.jersey.inject</find>
+      <find>javax.ws.rs</find>
+      <find>org.glassfish.jersey.core</find>
+      <find>jersey-serve</find>
+      <find>@return</find>
+      <find>jenk</find>
+      <find>jetty</find>
+      <find>stringToReq</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/test/java/com/jerseytesting/webapp</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/HelloWorldService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/MainResource.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jerseytesting/webapp/RESTServerTestTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/Request.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/Answer.java" />
+        <option value="$PROJECT_DIR$/src/resources/logback.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/RESTClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/Queue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/newQueue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/NewQueue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/RESTClientPost2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jerseytesting/webapp/RESTClientTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jerseytesting/webapp/RESTServerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/RESTServer.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/jerseytesting/webapp/RESTClientPost.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/MyThread.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jerseytesting/webapp/RESTTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/RESTClientPost.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="jerseytesting Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="jerseytesting Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="jerseytesting Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="jerseytesting Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="25" />
+    <option name="width" value="1920" />
+    <option name="height" value="1008" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="jerseytesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jerseytesting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jerseytesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jerseytesting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jerseytesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jerseytesting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jerseytesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jerseytesting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jerseytesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jerseytesting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jerseytesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jerseytesting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jerseytesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jerseytesting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jerseytesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jerseytesting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535531270630" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Transferências/postgresql-42.2.4.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.jerseytesting.webapp" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.jerseytesting.webapp" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="$PROJECT_DIR$/" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jerseytesting.webapp" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.jerseytesting.webapp" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.RESTClientPost">
+    <configuration name="RESTClientPost" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jerseytesting.webapp.RESTClientPost" />
+      <module name="jerseytesting" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jerseytesting.webapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RESTClientPost" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jerseytesting.webapp.RESTClientPost" />
+      <module name="jerseytesting" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jerseytesting.webapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RESTTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jerseytesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jerseytesting.webapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jerseytesting.webapp" />
+      <option name="MAIN_CLASS_NAME" value="com.jerseytesting.webapp.RESTTest" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RESTTest.testProcessRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jerseytesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jerseytesting.webapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jerseytesting.webapp" />
+      <option name="MAIN_CLASS_NAME" value="com.jerseytesting.webapp.RESTTest" />
+      <option name="METHOD_NAME" value="testProcessRequest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RESTTest.testReadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jerseytesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jerseytesting.webapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jerseytesting.webapp" />
+      <option name="MAIN_CLASS_NAME" value="com.jerseytesting.webapp.RESTTest" />
+      <option name="METHOD_NAME" value="testReadFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RESTTest.testStringToReq" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jerseytesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jerseytesting.webapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jerseytesting.webapp" />
+      <option name="MAIN_CLASS_NAME" value="com.jerseytesting.webapp.RESTTest" />
+      <option name="METHOD_NAME" value="testStringToReq" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="mvn" />
+                <option value="jetty:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.RESTClientPost" />
+      <item itemvalue="JUnit.RESTTest" />
+      <item itemvalue="JUnit.RESTTest.testReadFile" />
+      <item itemvalue="JUnit.RESTTest.testStringToReq" />
+      <item itemvalue="JUnit.RESTTest.testProcessRequest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RESTClientPost" />
+        <item itemvalue="JUnit.RESTTest" />
+        <item itemvalue="JUnit.RESTTest.testProcessRequest" />
+        <item itemvalue="JUnit.RESTTest.testReadFile" />
+        <item itemvalue="JUnit.RESTTest.testStringToReq" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="" />
+      <created>1532506819647</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1532506819647</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="RESTTest - 2018.08.21 at 10h 02m 20s.xml">
+      <configuration name="RESTTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RESTTest - 2018.08.21 at 10h 02m 46s.xml">
+      <configuration name="RESTTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RESTTest - 2018.08.21 at 10h 03m 07s.xml">
+      <configuration name="RESTTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RESTTest - 2018.08.21 at 10h 04m 16s.xml">
+      <configuration name="RESTTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RESTTest - 2018.08.21 at 10h 17m 46s.xml">
+      <configuration name="RESTTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RESTTest - 2018.08.21 at 10h 18m 02s.xml">
+      <configuration name="RESTTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RESTTest - 2018.08.21 at 10h 18m 18s.xml">
+      <configuration name="RESTTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RESTTest - 2018.08.28 at 14h 00m 37s.xml">
+      <configuration name="RESTTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RESTTest - 2018.08.28 at 14h 01m 10s.xml">
+      <configuration name="RESTTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RESTTest - 2018.08.29 at 09h 25m 47s.xml">
+      <configuration name="RESTTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="25" width="1920" height="1008" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49534163" visible="true" weight="0.1638207" />
+      <window_info id="Structure" order="1" sideWeight="0.5022727" side_tool="true" weight="0.1664888" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5046584" side_tool="true" weight="0.28068304" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49893278" weight="0.32954547" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5357524" visible="true" weight="0.26818183" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49519745" weight="0.3159091" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49839914" weight="0.3272727" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" weight="0.32915717" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.46424758" side_tool="true" visible="true" weight="0.26818183" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.4188901" side_tool="true" weight="0.26818183" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.48345783" weight="0.3272727" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24945295" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.6067236" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.2353255" />
+    </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.jsp" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-util/9.4.11.v20180605/jetty-util-9.4.11.v20180605-sources.jar!/org/eclipse/jetty/util/thread/QueuedThreadPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="760" selection-start-line="760" selection-end-line="760" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jerseytesting/webapp/HelloWorldService.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jerseytesting/webapp/RESTServerTestTest.java" />
+    <entry file="file://$PROJECT_DIR$/target/jerseytesting/index.jsp" />
+    <entry file="file://$PROJECT_DIR$/target/classes/com/jerseytesting/webapp/MainResource.class" />
+    <entry file="file://$PROJECT_DIR$/javadoc/script.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml" />
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="745" column="16" selection-start-line="745" selection-start-column="16" selection-end-line="745" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/MyThread2.java" />
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="1930" selection-start-line="1930" selection-end-line="1930" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/internal/requests/FilterRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jerseytesting/webapp/RESTClientTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/Request.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/Answer.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/NewQueue.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/RESTServer.java" />
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/jerseytesting/webapp/RESTClientPost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="319" selection-start-line="319" selection-end-line="319" />
+          <folding>
+            <element signature="method#watchDirectory#0;class#RESTClientPost#0" />
+            <element signature="method#readCSV#0;class#RESTClientPost#0" />
+            <element signature="method#client#0;class#RESTClientPost#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/jerseytesting/webapp/RESTServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="62" column="22" lean-forward="true" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="240" column="34" lean-forward="true" selection-start-line="240" selection-start-column="34" selection-end-line="240" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/MyThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jerseytesting/webapp/RESTTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="225" column="4" selection-start-line="225" selection-start-column="4" selection-end-line="225" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/RESTClientPost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="296" column="51" selection-start-line="296" selection-start-column="51" selection-end-line="296" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#readCSV#0;class#RESTClientPost#0" />
+            <element signature="method#stringToReq#0;class#RESTClientPost#0" />
+            <element signature="method#JDBCConnection#0;class#RESTClientPost#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>jerseytesting:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>jerseytesting</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>postgresql-42.2.4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

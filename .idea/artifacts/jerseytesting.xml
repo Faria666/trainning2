@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="jerseytesting">
+    <output-path>$PROJECT_DIR$/out/artifacts/jerseytesting</output-path>
+    <root id="root">
+      <element id="archive" name="jerseytesting.jar">
+        <element id="module-output" name="jerseytesting" />
+      </element>
+    </root>
+  </artifact>
+</component>

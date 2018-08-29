@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Build an image with the command module for a remote docker host
+      command: docker build -t built-by-ansible
