@@ -249,13 +249,7 @@ public class RESTClientPost {
 
     protected static void requestTreatment( Request request){
         Answer answer = new Answer();
-
-        /*String date = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date());
-        answer.setOperation("none");
-        answer.setResult(0);
-        answer.setDate(date);*/
-
-
+        
         if(request != null)
             answer = client(request);
         if(answer.getOperation().compareTo("none")!=0 ) {

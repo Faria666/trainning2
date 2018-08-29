@@ -43,5 +43,14 @@ RUN wget -c http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9
 RUN mkdir /usr/proj 
 
 WORKDIR /usr/proj
+
+RUN git clone https://github.com/Faria666/trainning.git
+
+WORKDIR /usr/proj/trainning
+
+RUN mvn jetty:run
+
 ENV MAVEN_HOME /opt/maven
+
+EXPOSE 8080
 

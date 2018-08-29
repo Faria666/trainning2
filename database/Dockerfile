@@ -2,7 +2,13 @@
 # example Dockerfile for https://docs.docker.com/engine/examples/postgresql_service/
 #
 
-FROM ubuntu
+FROM ubuntu:trusty
+
+RUN apt-get update
+RUN apt-get -y install gnupg
+RUN apt-get -y install sudo
+RUN sudo apt-get -y install software-properties-common
+RUN sudo apt -y --fix-broken install python-pycurl python-apt
 
 # Add the PostgreSQL PGP key to verify their Debian packages.
 # It should be the same key as https://www.postgresql.org/media/keys/ACCC4CF8.asc
