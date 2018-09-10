@@ -225,24 +225,5 @@ public class RESTTest {
     }
 
 
-    @Test
-    public void testStringToReq(){
-        ArrayList<String> str = new ArrayList<>();
-        ArrayList<Request> req;
-        String a1 = "21,34";
-        String a2 = ",";
-        String a3 = "45,02";
-        String a4 = ",add";
-        String a5 = "\n";
-        str.add(a1);
-        str.add(a2);
-        str.add(a3);
-        str.add(a4);
-        str.add(a5);
-        req = RESTClientPost.stringToReq(str);
-        Request aux = req.get(0);
-        if(a1.equals(String.valueOf(aux.getA())) && a3.equals(String.valueOf(aux.getB())) && a4.equals(aux.getOp()))
-            Assert.assertTrue(true);
-    }
 
 }

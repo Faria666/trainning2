@@ -48,8 +48,7 @@ public class NewQueue extends Request {
     }
 
     /**
-     * Gets an object from the beginning of the queue. The object is removed
-     * from the queue. If there are no objects in the queue, returns null.
+     * Gets an object from the beginning of the queue. The object is removed from the queue. If there are no objects in the queue, returns null.
      */
     public Request getObject() {
 

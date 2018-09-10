@@ -6,7 +6,6 @@ import java.util.Date;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
@@ -20,20 +19,26 @@ public class RESTServer {
 
     private ObjectMapper mapper = new ObjectMapper();
 
+    /**
+     * this is the REST server that will answer the REST requests made from the REST clients, those requests only be successfully answered if the request is in JSON String format
+     * @param json is the JSON String request that will be converted to a Request Object
+     * @return returns the answer for the request made by the REST client in JSON String format
+     */
+
     public Response calculator(final String json){
 
-        double val1;
-        double val2;
-        double sum;
-        double mult;
-        double div;
-        double avg;
-        double res;
-        String answer = null;
-        String op=null;
-        String date=null;
-        Answer ans=null;
-        Request req=null;
+        final double val1;
+        final double val2;
+        final double sum;
+        final double mult;
+        final double div;
+        final double avg;
+        final double res;
+        final String answer;
+        final String op;
+        final String date;
+        final Answer ans;
+        final Request req;
 
         log.debug("Processing request: {}", json);
 
@@ -83,12 +88,6 @@ public class RESTServer {
         return Response.status(Response.Status.OK).entity(answer).build();
 
     }
-
-     /**
-     * this is the REST server that will answer the REST requests made from the REST clients, those requests only be successfully answered if the request is in JSON String format
-     * @param json is the JSON String request that will be converted to a Request Object
-     * @return returns the answer for the request made by the REST client in JSON String format
-     */
 
     @POST
     @Path("/calc")

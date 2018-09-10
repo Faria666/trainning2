@@ -30,127 +30,16 @@ public class RESTClientPost {
 
     private static final Logger log = LoggerFactory.getLogger(RESTClientPost.class);
 
-    private static final String QUOTATION_DELIMITER = "\"";
+    /**
+     * Function to pick the name of files in a determinate directory
+     * @param directory is the directory where to look for the files
+     * @return return an array with the name of all files found in that directory
+     */
 
-    protected static ArrayList<String> readCSV(ArrayList<String> files, String inputDirectory, String outputDirectory){
-
-        Scanner scanner = null;
-        ArrayList<String> requests = new ArrayList<>();
-
-        for(int i = 0; i< files.size();i++){
-            try {
-
-                scanner = new Scanner(new File(inputDirectory + files.get(i)));
-
-                scanner.useDelimiter(QUOTATION_DELIMITER);
-
-                while(scanner.hasNext())
-                {
-                    requests.add(scanner.next());
-
-                }
-            }
-            catch (FileNotFoundException fe)
-            {
-                fe.printStackTrace();
-            }
-            finally
-            {
-                scanner.close();
-
-                try{
-
-                    File afile =new File(inputDirectory + files.get(i));
-
-                    if(afile.renameTo(new File(outputDirectory + "Done - " + afile.getName()))){
-                        System.out.println("File is moved successful!");
-                    }else{
-                        System.out.println("File is failed to move!");
-                    }
-                    log.debug("Reading file:", afile.getName());
-
-                }catch(Exception e){
-                    e.printStackTrace();
-                }
-            }
-        }
-
-        return requests;
-    }
-
-    protected static ArrayList<Request> stringToReq(ArrayList<String> data){
-        Request req;
-        ArrayList<Request> request = new ArrayList<>();
-        String aux;
-        String[] splitted = new String[0];
-        String[] toConvert;
-        String[] noComma;
-        int count;
-
-
-        //split by the \n
-        for(int i = 0; i<data.size();i++){
-            aux = data.get(i);
-            splitted = add(splitted, aux.split("\n"));
-        }
-
-
-        noComma = new String[splitted.length];
-        count = 0;
-
-        for(int i = 0; i<splitted.length; i++){
-            if (splitted[i].compareTo(",") != 0){
-                noComma[count] = splitted[i];
-                count++;
-            }
-        }
-
-        toConvert = new String[noComma.length];
-        count = 0;
-
-
-        //remove char , from the operation field
-        for(int k = 0 ; k<noComma.length;k++){
-            if(noComma[k] != null) {
-                if (noComma[k].charAt(0) == ',') {
-                    toConvert[count] = noComma[k].substring(1);
-                    count++;
-                } else {
-                    toConvert[count] = noComma[k];
-                    count++;
-                }
-            }
-
-        }
-
-        //convert data to Request object
-        for(int i =0; i<toConvert.length;i=i+3) {
-            if(toConvert[i] != null) {
-                DecimalFormat decimalformat = new DecimalFormat("#");
-                double temp1 = 0;
-                try {
-                    temp1 = decimalformat.parse(toConvert[i]).doubleValue();
-                } catch (ParseException e) {
-                    e.printStackTrace();
-                }
-                double temp2 = 0;
-                try {
-                    temp2 = decimalformat.parse(toConvert[i+1]).doubleValue();
-                } catch (ParseException e) {
-                    e.printStackTrace();
-                }
-                String temp3 = toConvert[i+2];
-                req = new Request(temp1, temp2, temp3);
-                request.add(req);
-            }
-        }
-        return request;
-    }
-
-    protected static ArrayList<String> watchDirectory(String directory) {
-        File folder = new File(directory);
-        File[] listOfFiles = folder.listFiles();
-        ArrayList<String> files = new ArrayList<>();
+    protected static ArrayList<String> watchDirectory(final String directory) {
+        final File folder = new File(directory);
+        final File[] listOfFiles = folder.listFiles();
+        final ArrayList<String> files = new ArrayList<>();
 
         for (int i = 0; i < listOfFiles.length; i++) {
             if (listOfFiles[i].isFile()) {
@@ -162,10 +51,19 @@ public class RESTClientPost {
         return files;
     }
 
-    protected static ArrayList<Request> readFileWithFramework(String inputDirectory, String outputDirectory, ArrayList<String> files) throws IOException {
+    /**
+     * Function that will read from the files, transform the data in Request objects and finally move the treated file to other directory
+     * @param inputDirectory is the directory where the new files will appear
+     * @param outputDirectory is the directory where the files already readed will be moved to
+     * @param files is the array with the name of the files found in the input directory
+     * @return return an array of Request objects
+     * @throws IOException
+     */
+
+    protected static ArrayList<Request> readFileWithFramework(final String inputDirectory,final String outputDirectory,final ArrayList<String> files) throws IOException {
 
         Request req;
-        ArrayList<Request> requests = new ArrayList<>();
+        final ArrayList<Request> requests = new ArrayList<>();
 
         for(int i = 0; i< files.size();i++) {
             try {
@@ -220,9 +118,16 @@ public class RESTClientPost {
         return requests;
     }
 
-    protected static ArrayList<Request> processFiles(String inputDirectory, String outputDirectory){
-        ArrayList<String> files;
-        ArrayList<Request> requests = new ArrayList<>();
+    /**
+     * Function that calls the function that is always looking for new files in the directory and the function that will read and move those files
+     * @param inputDirectory is the directory where the new files will appear
+     * @param outputDirectory is the directory where the readed files will be moved to
+     * @return
+     */
+
+    protected static ArrayList<Request> processFiles(final String inputDirectory,final String outputDirectory){
+        final ArrayList<String> files;
+        final ArrayList<Request> requests = new ArrayList<>();
 
         while(true){
 
@@ -237,9 +142,15 @@ public class RESTClientPost {
         }
     }
 
-    protected static NewQueue createQueue(ArrayList<Request> requests){
+    /**
+     * Creates and populates the queue composed by all the requests read from de CSV files
+     * @param requests is the Requests objects that contains all the info necessery for the server calculate and send back the answer
+     * @return returns the queue already populated
+     */
 
-        NewQueue queue = new NewQueue();
+    protected static NewQueue createQueue(final ArrayList<Request> requests){
+
+        final NewQueue queue = new NewQueue();
         
         for(int i = 0; i < requests.size(); i++){
             queue.putObject(requests.get(i));
@@ -247,7 +158,12 @@ public class RESTClientPost {
         return queue;
     }
 
-    protected static void requestTreatment( Request request){
+
+    /**
+     * Function that will be running in every thread created
+     * @param request is the request to be treated by each thread, that sent it to the server
+     */
+    protected static void requestTreatment( final Request request){
         Answer answer = new Answer();
         
         if(request != null)
@@ -257,13 +173,19 @@ public class RESTClientPost {
         }
     }
 
-    protected static Answer client(Request req){
 
-        ObjectMapper mapper = new ObjectMapper();
+    /**
+     * Connects to the REST server and send a request waiting for the response
+     * @param req is the request sent to the server to calculate
+     * @return returns the answer in the form of a Answer object
+     */
+    protected static Answer client(final Request req){
+
+        final ObjectMapper mapper = new ObjectMapper();
         String request = null;
-        String ans;
-        String location = "/calc";
-        String URI = "http://localhost:8080/calculator";
+        final String ans;
+        final String location = "/calc";
+        final String URI = "http://localhost:8080/calculator";
         Answer answer = new Answer();
 
         try {
@@ -306,11 +228,17 @@ public class RESTClientPost {
         return answer;
     }
 
-    private static void JDBCConnection(Answer answer, Request request) {
 
-        String jdbc = "jdbc:postgresql://localhost:5432/jpfar";
-        String username = "jpfar";
-        String password = "jpfar";
+    /**
+     * Connects to the database and proceed to the insertion of the data in the tables
+     * @param answer is the answer received from the server
+     * @param request is the request made to the server
+     */
+    private static void JDBCConnection(final Answer answer, final Request request) {
+
+        final String jdbc = "jdbc:postgresql://localhost:5432/jpfar";
+        final String username = "jpfar";
+        final String password = "jpfar";
 
         int id = 0;
 
@@ -328,7 +256,7 @@ public class RESTClientPost {
             ResultSet rs = stmt.executeQuery("SELECT max(idr) from requests");
             if(rs.next()) {
                 id = rs.getInt(1);
-                System.out.println(id);
+                //System.out.println(id);
             }
 
             id++;
@@ -352,7 +280,6 @@ public class RESTClientPost {
             ps.execute();
 
 
-
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -370,9 +297,10 @@ public class RESTClientPost {
         }
     }
 
+
     public static void main(String[] args) {
-        String inputDirectory = "/home/joao-faria/Desktop/jerseytesting/files/input/";
-        String outputDirectory = "/home/joao-faria/Desktop/jerseytesting/files/output/";
+        final String inputDirectory = "/home/joao-faria/Desktop/jerseytesting/files/input/";
+        final String outputDirectory = "/home/joao-faria/Desktop/jerseytesting/files/output/";
         NewQueue queue;
 
         ArrayList<Request> requests;
