@@ -239,7 +239,7 @@ public class RESTClientPost {
 
     private static void JDBCConnection(final Answer answer, final Request request) {
 
-        final String jdbc = "jdbc:postgresql://172.17.0.3:5432/docker";//...localhost:5432/jpfar...
+        final String jdbc = "jdbc:postgresql://172.17.0.3:5432/postgres";//...localhost:5432/jpfar...
         final String username = "docker";//"jpfar";
         final String password = "docker";//"jpfar";
 
