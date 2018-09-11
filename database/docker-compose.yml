@@ -3,6 +3,8 @@ version: '2'
 services:
   postgres:
     image: postgres
+    volumes:
+      - ./init.sql:/home/joao-faria/Desktop/jerseytesting/init.sql
     ports:
       - "5432:5432"
 

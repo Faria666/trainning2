@@ -239,9 +239,13 @@ public class RESTClientPost {
 
     private static void JDBCConnection(final Answer answer, final Request request) {
 
-        final String jdbc = "jdbc:postgresql://172.17.0.3:5432/postgres";//...localhost:5432/jpfar...
-        final String username = "docker";//"jpfar";
-        final String password = "docker";//"jpfar";
+        final String jdbc = "jdbc:postgresql://localhost:5432/postgres";//...localhost:5432/jpfar...
+        final String username = "postgres";//"jpfar";
+        final String password = null;
+
+        /*final String jdbc = "jdbc:postgresql://localhost:5432/jpfar";
+        final String username = "jpfar";
+        final String password = "jpfar";*/
 
         int id = 0;
 
@@ -251,7 +255,7 @@ public class RESTClientPost {
 
         try {
 
-            conn = DriverManager.getConnection(jdbc, username, password);
+            conn = DriverManager.getConnection(jdbc, username,password);
 
 
             stmt = conn.createStatement();
