@@ -163,6 +163,7 @@ public class RESTClientPost {
      * Function that will be running in every thread created
      * @param request is the request to be treated by each thread, that sent it to the server
      */
+
     protected static void requestTreatment( final Request request){
         Answer answer = new Answer();
         
@@ -179,13 +180,14 @@ public class RESTClientPost {
      * @param req is the request sent to the server to calculate
      * @return returns the answer in the form of a Answer object
      */
+
     protected static Answer client(final Request req){
 
         final ObjectMapper mapper = new ObjectMapper();
         String request = null;
         final String ans;
         final String location = "/calc";
-        final String URI = "http://localhost:8080/calculator";
+        final String URI = "http://172.17.0.2:8080/calculator";//...localhost:8080...
         Answer answer = new Answer();
 
         try {
@@ -234,11 +236,12 @@ public class RESTClientPost {
      * @param answer is the answer received from the server
      * @param request is the request made to the server
      */
+
     private static void JDBCConnection(final Answer answer, final Request request) {
 
-        final String jdbc = "jdbc:postgresql://localhost:5432/jpfar";
-        final String username = "jpfar";
-        final String password = "jpfar";
+        final String jdbc = "jdbc:postgresql://172.17.0.3:5432/docker";//...localhost:5432/jpfar...
+        final String username = "docker";//"jpfar";
+        final String password = "docker";//"jpfar";
 
         int id = 0;
 
