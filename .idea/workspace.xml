@@ -167,8 +167,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/RESTClientPost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="241" column="8" selection-start-line="241" selection-start-column="8" selection-end-line="241" selection-end-column="8" />
+            <state relative-caret-position="92">
+              <caret line="244" column="8" selection-start-line="244" selection-start-column="8" selection-end-line="244" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -344,7 +344,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="25" />
     <option name="width" value="960" />
     <option name="height" value="1008" />
@@ -655,13 +655,13 @@
       <window_info id="Favorites" order="6" sideWeight="0.5046584" side_tool="true" weight="0.28068304" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49733192" weight="0.32954547" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.52454644" weight="0.26818183" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5240128" visible="true" weight="0.26818183" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49519745" weight="0.3159091" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49839914" weight="0.3272727" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" weight="0.32915717" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4754536" side_tool="true" visible="true" weight="0.26818183" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4759872" side_tool="true" visible="true" weight="0.26818183" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.46851653" side_tool="true" weight="0.26818183" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.47438633" weight="0.3272727" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -785,8 +785,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/trainning/webapp/Request.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/RESTClientPost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="241" column="8" selection-start-line="241" selection-start-column="8" selection-end-line="241" selection-end-column="8" />
+        <state relative-caret-position="92">
+          <caret line="244" column="8" selection-start-line="244" selection-start-column="8" selection-end-line="244" selection-end-column="8" />
         </state>
       </provider>
     </entry>
