@@ -241,7 +241,7 @@ public class RESTClientPost {
 
         final String jdbc = "jdbc:postgresql://localhost:5432/postgres";//...localhost:5432/jpfar...
         final String username = "postgres";//"jpfar";
-        final String password = null;
+        final String password = null;//"jpfar";
 
         int id = 0;
 
