@@ -11,7 +11,7 @@ import org.junit.Test;
 import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 
-public class RESTTest {
+public class RESTTestRest {
 
     @Test
     public void testRequest(){
