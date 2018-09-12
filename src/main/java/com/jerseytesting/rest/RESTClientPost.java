@@ -238,7 +238,7 @@ public class RESTClientPost {
      * @param request is the request made to the server
      */
 
-    private static void JDBCConnection(final Answer answer, final Request request) {
+    private static void JDBCConnection(final Answer answer, final Request request) throws SQLException {
 
         final String jdbc = "jdbc:postgresql://localhost:5432/postgres";//...localhost:5432/jpfar...
         final String username = "postgres";//"jpfar";
@@ -286,6 +286,37 @@ public class RESTClientPost {
 
         } catch (SQLException e) {
             e.printStackTrace();
+            conn = DriverManager.getConnection(jdbc, username,password);
+
+
+            stmt = conn.createStatement();
+            //--------------------SELECT----------------------
+            ResultSet rs = stmt.executeQuery("SELECT max(idr) from requests");
+            if(rs.next()) {
+                id = rs.getInt(1);
+                //System.out.println(id);
+            }
+
+            id++;
+
+            //--------------------INSERT----------------------
+            log.debug("Inserting request: {} {} {} {} into database", id, request.getA(), request.getB(), request.getOp());
+            log.debug("Inserting answer: {} {} {} {} into database", id,  null, null, null);
+
+            ps = conn.prepareStatement("INSERT INTO requests(idr, val1, val2, op) VALUES(?,?,?,?)");
+            ps.setInt(1,id);
+            ps.setDouble(2,request.getA());
+            ps.setDouble(3,request.getB());
+            ps.setString(4, request.getOp());
+            ps.execute();
+
+            ps = conn.prepareStatement("INSERT INTO answers(ida, op, res, dat) VALUES(?,?,?,?)");
+            ps.setInt(1,id);
+            ps.setString(2,null);
+            ps.setDouble(3, Double.parseDouble(null));
+            ps.setString(4, null);
+            ps.execute();
+
         } finally {
             try {
 
