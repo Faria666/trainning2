@@ -165,7 +165,7 @@ public class RESTClientPost {
      * @param request is the request to be treated by each thread, that sent it to the server
      */
 
-    public static void requestTreatment(final Request request){
+    public static void requestTreatment(final Request request) throws SQLException {
         Answer answer = new Answer();
         
         if(request != null)
