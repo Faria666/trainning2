@@ -105,7 +105,7 @@ public class RESTClientPost {
                     File afile = new File(inputDirectory + files.get(i));
 
                     if (afile.renameTo(new File(outputDirectory + "Done - " + afile.getName()))) {
-                        System.out.println("File is moved successful!");
+                        System.out.println("File is moved successfully!");
                     } else {
                         System.out.println("File is failed to move!");
                     }
