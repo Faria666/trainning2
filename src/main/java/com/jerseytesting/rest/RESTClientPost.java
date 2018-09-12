@@ -171,7 +171,10 @@ public class RESTClientPost {
         if(request != null)
             answer = client(request);
         if(answer.getOperation().compareTo("none")!=0 ) {
-            JDBCConnection(answer, request);
+            int aux = JDBCConnection(answer, request);
+            if(aux == -1){
+                JDBCConnection(answer, request);
+            }
         }
     }
 
@@ -238,7 +241,7 @@ public class RESTClientPost {
      * @param request is the request made to the server
      */
 
-    private static void JDBCConnection(final Answer answer, final Request request) {
+    private static int JDBCConnection(final Answer answer, final Request request) {
 
         final String jdbc = "jdbc:postgresql://localhost:5432/postgres";//...localhost:5432/jpfar...
         final String username = "postgres";//"jpfar";
@@ -260,7 +263,6 @@ public class RESTClientPost {
             ResultSet rs = stmt.executeQuery("SELECT max(idr) from requests");
             if(rs.next()) {
                 id = rs.getInt(1);
-                //System.out.println(id);
             }
 
             id++;
@@ -286,6 +288,7 @@ public class RESTClientPost {
 
         } catch (SQLException e) {
             e.printStackTrace();
+            return -1;
         } finally {
             try {
 
@@ -299,6 +302,7 @@ public class RESTClientPost {
                 e.printStackTrace();
             }
         }
+        return id;
     }
 
 
