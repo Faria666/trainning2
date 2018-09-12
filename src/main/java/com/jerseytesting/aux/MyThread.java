@@ -3,6 +3,8 @@ package com.jerseytesting.aux;
 
 import com.jerseytesting.rest.RESTClientPost;
 
+import java.sql.SQLException;
+
 public class MyThread extends Thread {
     private Request request;
 
@@ -17,6 +19,10 @@ public class MyThread extends Thread {
     @Override
     public void run()
     {
-        RESTClientPost.requestTreatment(request);
+        try {
+            RESTClientPost.requestTreatment(request);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

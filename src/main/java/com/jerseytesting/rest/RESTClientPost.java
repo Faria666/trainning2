@@ -286,6 +286,7 @@ public class RESTClientPost {
 
         } catch (SQLException e) {
             e.printStackTrace();
+            
             conn = DriverManager.getConnection(jdbc, username,password);
 
 
