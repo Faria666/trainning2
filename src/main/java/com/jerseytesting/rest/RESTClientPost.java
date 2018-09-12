@@ -1,7 +1,11 @@
-package com.jerseytesting.webapp;
+package com.jerseytesting.rest;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.jerseytesting.aux.Answer;
+import com.jerseytesting.aux.MyThread;
+import com.jerseytesting.aux.NewQueue;
+import com.jerseytesting.aux.Request;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.slf4j.Logger;
@@ -10,7 +14,6 @@ import javax.ws.rs.client.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.Reader;
 import java.nio.file.Files;
@@ -20,11 +23,9 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Scanner;
+
 import org.apache.commons.csv.CSVFormat;
 import java.nio.file.Paths;
-
-import static org.eclipse.jetty.util.ArrayUtil.add;
 
 public class RESTClientPost {
 
@@ -36,7 +37,7 @@ public class RESTClientPost {
      * @return return an array with the name of all files found in that directory
      */
 
-    protected static ArrayList<String> watchDirectory(final String directory) {
+    public static ArrayList<String> watchDirectory(final String directory) {
         final File folder = new File(directory);
         final File[] listOfFiles = folder.listFiles();
         final ArrayList<String> files = new ArrayList<>();
@@ -60,7 +61,7 @@ public class RESTClientPost {
      * @throws IOException
      */
 
-    protected static ArrayList<Request> readFileWithFramework(final String inputDirectory,final String outputDirectory,final ArrayList<String> files) throws IOException {
+    protected static ArrayList<Request> readFileWithFramework(final String inputDirectory, final String outputDirectory, final ArrayList<String> files) throws IOException {
 
         Request req;
         final ArrayList<Request> requests = new ArrayList<>();
@@ -144,11 +145,11 @@ public class RESTClientPost {
 
     /**
      * Creates and populates the queue composed by all the requests read from de CSV files
-     * @param requests is the Requests objects that contains all the info necessery for the server calculate and send back the answer
+     * @param requests is the Requests objects that contains all the info necessary for the server calculate and send back the answer
      * @return returns the queue already populated
      */
 
-    protected static NewQueue createQueue(final ArrayList<Request> requests){
+    public static NewQueue createQueue(final ArrayList<Request> requests){
 
         final NewQueue queue = new NewQueue();
         
@@ -164,7 +165,7 @@ public class RESTClientPost {
      * @param request is the request to be treated by each thread, that sent it to the server
      */
 
-    protected static void requestTreatment( final Request request){
+    public static void requestTreatment(final Request request){
         Answer answer = new Answer();
         
         if(request != null)

@@ -1,4 +1,4 @@
-package com.jerseytesting.webapp;
+package com.jerseytesting.rest;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -8,6 +8,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.jerseytesting.aux.Answer;
+import com.jerseytesting.aux.Request;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

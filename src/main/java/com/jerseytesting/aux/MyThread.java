@@ -1,5 +1,7 @@
-package com.jerseytesting.webapp;
+package com.jerseytesting.aux;
 
+
+import com.jerseytesting.rest.RESTClientPost;
 
 public class MyThread extends Thread {
     private Request request;

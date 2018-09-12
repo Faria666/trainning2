@@ -1,4 +1,4 @@
-package com.jerseytesting.webapp;
+package com.jerseytesting.aux;
 
 public class Answer {
     private String operation;

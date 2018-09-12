@@ -1,9 +1,10 @@
-package com.jerseytesting.webapp;
+package com.jerseytesting.aux;
 
+import com.jerseytesting.rest.RESTClientPost;
+import com.jerseytesting.rest.RESTServer;
 import org.junit.Assert;
 import org.junit.Test;
 import javax.ws.rs.core.Response;
-import java.io.IOException;
 import java.util.ArrayList;
 
 public class RESTTest {
@@ -223,7 +224,5 @@ public class RESTTest {
         else
             Assert.assertFalse(false);
     }
-
-
 
 }
