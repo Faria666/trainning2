@@ -260,7 +260,7 @@ public class RESTClientPost {
             ResultSet rs = stmt.executeQuery("SELECT max(idr) from requests");
             if(rs.next()) {
                 id = rs.getInt(1);
-                //System.out.println(id);
+
             }
 
             id++;
@@ -295,7 +295,7 @@ public class RESTClientPost {
             ResultSet rs = stmt.executeQuery("SELECT max(idr) from requests");
             if(rs.next()) {
                 id = rs.getInt(1);
-                //System.out.println(id);
+
             }
 
             id++;
