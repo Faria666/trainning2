@@ -176,8 +176,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting/rest/RESTClientPost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="183" lean-forward="true" selection-start-line="183" selection-end-line="183" />
+            <state relative-caret-position="152">
+              <caret line="316" column="45" lean-forward="true" selection-start-line="316" selection-start-column="45" selection-end-line="316" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -469,7 +469,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536763874718" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536766045486" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/jerseytesting" />
@@ -723,9 +723,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1008" extended-state="7" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49534163" visible="true" weight="0.16061899" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49534163" visible="true" weight="0.16061899" />
       <window_info id="Structure" order="1" sideWeight="0.5022727" side_tool="true" weight="0.1664888" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -734,13 +733,13 @@
       <window_info id="Favorites" order="6" sideWeight="0.5046584" side_tool="true" weight="0.28068304" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49573106" weight="0.32954547" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.52241194" visible="true" weight="0.26818183" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.52187836" visible="true" weight="0.26818183" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49519745" weight="0.3159091" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49839914" weight="0.3272727" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" weight="0.32915717" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.47758806" side_tool="true" weight="0.26818183" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.47812167" side_tool="true" visible="true" weight="0.26818183" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.46851653" side_tool="true" weight="0.26818183" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.47225186" weight="0.3272727" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -922,8 +921,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting/rest/RESTClientPost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="183" lean-forward="true" selection-start-line="183" selection-end-line="183" />
+        <state relative-caret-position="152">
+          <caret line="316" column="45" lean-forward="true" selection-start-line="316" selection-start-column="45" selection-end-line="316" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
