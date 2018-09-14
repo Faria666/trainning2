@@ -21,82 +21,97 @@ public class RESTServer {
 
     private ObjectMapper mapper = new ObjectMapper();
 
-    /**
-     * this is the REST server that will answer the REST requests made from the REST clients, those requests only be successfully answered if the request is in JSON String format
-     * @param json is the JSON String request that will be converted to a Request Object
-     * @return returns the answer for the request made by the REST client in JSON String format
-     */
+    private Request convertToJson(final String json) throws IOException {
 
-    public Response calculator(final String json){
-
-        final double val1;
-        final double val2;
-        final double sum;
-        final double mult;
-        final double div;
-        final double avg;
-        final double res;
-        final String answer;
-        final String op;
-        final String date;
-        final Answer ans;
-        final Request req;
-
+        final Request request;
         log.debug("Processing request: {}", json);
 
-        try {
-            req = mapper.readValue(json, Request.class);
-        } catch (IOException | NullPointerException e) {
-            return Response.status(Response.Status.BAD_REQUEST).entity("error").build();
-        }
+        request = mapper.readValue(json, Request.class);
 
+        return request;
+    }
 
-        val1 = req.getA();
-        val2 = req.getB();
-        op = req.getOp();
+    private String convertToString(final Answer answerObject, final String json) throws JsonProcessingException {
+        String answer;
 
-        log.debug("Processing number: {} and number: {}  with operation: {}", val1, val2, op);
-
-        sum = val1 + val2;
-        mult = val1 * val2;
-        div = (val1 / val2);
-        avg = (sum / 2);
-
-        if (op.compareToIgnoreCase("add") == 0)
-            res = sum;
-        else if (op.compareToIgnoreCase("mult") == 0)
-            res = mult;
-        else if (op.compareToIgnoreCase("div") == 0)
-            res = div;
-        else if (op.compareToIgnoreCase("avg") == 0)
-            res = avg;
-        else {
-            return Response.status(Response.Status.BAD_REQUEST).entity("error").build();
-        }
-
-        date = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date());
-
-
-        ans = new Answer(op, res, date);
-
-        try {
-            answer = mapper.writeValueAsString(ans);
-        } catch (JsonProcessingException e) {
-            return Response.status(Response.Status.CONFLICT).entity("error").build();
-        }
+        answer = mapper.writeValueAsString(answerObject);
 
         log.debug("Retreiving answer {} for request: {}", answer, json);
 
-        return Response.status(Response.Status.OK).entity(answer).build();
+        return answer;
+
+    }
+
+    private double calculator(final Request request){
+
+        double result = 0;
+        final double value1;
+        final double value2;
+        final double sum;
+        final double multiplication;
+        final double division;
+        final double average;
+        final String operation;
+
+
+        value1 = request.getA();
+        value2 = request.getB();
+        operation = request.getOp();
+
+        log.debug("Processing number: {} and number: {}  with operation: {}", value1, value2, operation);
+
+        sum = value1 + value2;
+        multiplication = value1 * value2;
+        division = (value1 / value2);
+        average = (sum / 2);
+
+        if (operation.compareToIgnoreCase("add") == 0)
+            result = sum;
+        else if (operation.compareToIgnoreCase("mult") == 0)
+            result = multiplication;
+        else if (operation.compareToIgnoreCase("div") == 0)
+            result = division;
+        else if (operation.compareToIgnoreCase("avg") == 0)
+            result = average;
+
+
+        return result;
+    }
+
+    private Answer buildAnswer(final String operation, final double result){
+
+        String date;
+        String answer;
+        Answer answerObject;
+
+        date = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date());
+
+        answerObject = new Answer(operation, result, date);
+
+        return answerObject;
+
 
     }
 
     @POST
     @Path("/calc")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response postRequest(final String json) {
+    public Response postRequest(final String json) throws IOException {
 
-        return calculator(json);
+        double result;
+        String answer;
+        Request request;
+        Answer answerObject;
+
+        request = convertToJson(json);
+
+        result = calculator(request);
+
+        answerObject = buildAnswer(request.getOp(),result);
+
+        answer = convertToString(answerObject, json);
+
+        return Response.status(Response.Status.OK).entity(answer).build();
 
     }
 

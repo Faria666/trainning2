@@ -7,6 +7,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import javax.ws.rs.core.Response;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class RESTTestAux {
@@ -21,7 +22,7 @@ public class RESTTestAux {
     }
 
     @Test
-    public void testRequestAccept() {
+    public void testRequestAccept() throws IOException {
         String request = "{"+ "\"" + "a"+"\""+":"+"\""+"12"+"\""+", "+"\""+"b"+"\""+":"+"\""+"67"+"\""+", "+"\""+"op"+"\""+":"+"\""+"add"+"\""+"}";
         RESTServer server = new RESTServer();
         Response response = server.postRequest(request);
@@ -30,7 +31,7 @@ public class RESTTestAux {
     }
 
     @Test
-    public void testRequestAccept2() {
+    public void testRequestAccept2() throws IOException {
         String request = "{"+ "\"" + "a"+"\""+":"+"\""+"12"+"\""+", "+"\""+"b"+"\""+":"+"\""+"67"+"\""+", "+"\""+"op"+"\""+":"+"\""+"mult"+"\""+"}";
         RESTServer server = new RESTServer();
         Response response = server.postRequest(request);
@@ -39,7 +40,7 @@ public class RESTTestAux {
     }
 
     @Test
-    public void testRequestAccept3() {
+    public void testRequestAccept3() throws IOException {
         String request = "{"+ "\"" + "a"+"\""+":"+"\""+"12"+"\""+", "+"\""+"b"+"\""+":"+"\""+"67"+"\""+", "+"\""+"op"+"\""+":"+"\""+"div"+"\""+"}";
         RESTServer server = new RESTServer();
         Response response = server.postRequest(request);
@@ -48,7 +49,7 @@ public class RESTTestAux {
     }
 
     @Test
-    public void testRequestAccept4() {
+    public void testRequestAccept4() throws IOException {
         String request = "{"+ "\"" + "a"+"\""+":"+"\""+"12"+"\""+", "+"\""+"b"+"\""+":"+"\""+"67"+"\""+", "+"\""+"op"+"\""+":"+"\""+"avg"+"\""+"}";
         RESTServer server = new RESTServer();
         Response response = server.postRequest(request);
@@ -57,7 +58,7 @@ public class RESTTestAux {
     }
 
     @Test
-    public void testRequestAccept5() {
+    public void testRequestAccept5() throws IOException {
         String request = "{"+ "\"" + "a"+"\""+":"+"\""+"12"+"\""+", "+"\""+"b"+"\""+":"+"\""+"67"+"\""+", "+"\""+"op"+"\""+":"+"\""+"adkgukgd"+"\""+"}";
         RESTServer server = new RESTServer();
         Response response = server.postRequest(request);
@@ -66,7 +67,7 @@ public class RESTTestAux {
     }
 
     @Test
-    public void testRequestFail2() {
+    public void testRequestFail2() throws IOException {
         String request = "olyjh";
         RESTServer server = new RESTServer();
         Response response = server.postRequest(request);
@@ -75,7 +76,7 @@ public class RESTTestAux {
     }
 
     @Test
-    public void testRequestFail3(){
+    public void testRequestFail3() throws IOException {
         String request = "";
         RESTServer server = new RESTServer();
         Response response = server.postRequest(request);
@@ -83,7 +84,7 @@ public class RESTTestAux {
     }
 
     @Test
-    public void testRequestFail4(){
+    public void testRequestFail4() throws IOException {
         String request = null;
         RESTServer server = new RESTServer();
         Response response = server.postRequest(request);
@@ -91,7 +92,7 @@ public class RESTTestAux {
     }
 
     @Test
-    public void testRequestFail5(){
+    public void testRequestFail5() throws IOException {
         String request = "12345";
         RESTServer server = new RESTServer();
         Response response = server.postRequest(request);
@@ -99,7 +100,7 @@ public class RESTTestAux {
     }
 
     @Test
-    public void testRequestFail6(){
+    public void testRequestFail6() throws IOException {
         String request = " ";
         RESTServer server = new RESTServer();
         Response response = server.postRequest(request);

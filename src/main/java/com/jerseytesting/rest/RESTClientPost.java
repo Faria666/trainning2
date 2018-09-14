@@ -63,8 +63,8 @@ public class RESTClientPost {
 
     protected static ArrayList<Request> readFileWithFramework(final String inputDirectory, final String outputDirectory, final ArrayList<String> files) throws IOException {
 
-        Request req;
-        final ArrayList<Request> requests = new ArrayList<>();
+        Request request;
+        final ArrayList<Request> requestList = new ArrayList<>();
 
         for(int i = 0; i< files.size();i++) {
             try {
@@ -94,8 +94,8 @@ public class RESTClientPost {
                             e.printStackTrace();
                         }
                         String temp3 = op;
-                        req = new Request(temp1, temp2, temp3);
-                        requests.add(req);
+                        request = new Request(temp1, temp2, temp3);
+                        requestList.add(request);
                     }
                 }
             } finally {
@@ -116,7 +116,7 @@ public class RESTClientPost {
                 }
             }
         }
-        return requests;
+        return requestList;
     }
 
     /**
@@ -128,33 +128,33 @@ public class RESTClientPost {
 
     protected static ArrayList<Request> processFiles(final String inputDirectory,final String outputDirectory){
         final ArrayList<String> files;
-        final ArrayList<Request> requests = new ArrayList<>();
+        final ArrayList<Request> requestList = new ArrayList<>();
 
         while(true){
 
             files = watchDirectory(inputDirectory);
 
             try {
-                requests.addAll(readFileWithFramework(inputDirectory, outputDirectory, files));
+                requestList.addAll(readFileWithFramework(inputDirectory, outputDirectory, files));
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            return requests;
+            return requestList;
         }
     }
 
     /**
      * Creates and populates the queue composed by all the requests read from de CSV files
-     * @param requests is the Requests objects that contains all the info necessary for the server calculate and send back the answer
+     * @param requestList is the Requests objects that contains all the info necessary for the server calculate and send back the answer
      * @return returns the queue already populated
      */
 
-    public static NewQueue createQueue(final ArrayList<Request> requests){
+    public static NewQueue createQueue(final ArrayList<Request> requestList){
 
         final NewQueue queue = new NewQueue();
         
-        for(int i = 0; i < requests.size(); i++){
-            queue.putObject(requests.get(i));
+        for(int i = 0; i < requestList.size(); i++){
+            queue.putObject(requestList.get(i));
         }
         return queue;
     }
@@ -178,21 +178,21 @@ public class RESTClientPost {
 
     /**
      * Connects to the REST server and send a request waiting for the response
-     * @param req is the request sent to the server to calculate
+     * @param requestObject is the request sent to the server to calculate
      * @return returns the answer in the form of a Answer object
      */
 
-    protected static Answer client(final Request req){
+    protected static Answer client(final Request requestObject){
 
         final ObjectMapper mapper = new ObjectMapper();
         String request = null;
-        final String ans;
+        final String answer;
         final String location = "/calc";
-        final String URI = "http://172.17.0.2:8080/calculator";//...localhost:8080...
-        Answer answer = new Answer();
+        final String URI = "http://172.17.0.3:8080/calculator";//...localhost:8080...
+        Answer answerObject = new Answer();
 
         try {
-            request = mapper.writeValueAsString(req);
+            request = mapper.writeValueAsString(requestObject);
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
@@ -215,20 +215,20 @@ public class RESTClientPost {
 
         System.out.println(response.getStatus());*/
 
-        ans = response.readEntity(String.class);
+        answer = response.readEntity(String.class);
 
-        System.out.println(ans + "\n");
+        System.out.println(answer + "\n");
 
         try {
-            answer = mapper.readValue(ans, Answer.class);
+            answerObject = mapper.readValue(answer, Answer.class);
         } catch (IOException e) {
             String date = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date());
-            answer.setOperation("none");
-            answer.setResult(0);
-            answer.setDate(date);
+            answerObject.setOperation("none");
+            answerObject.setResult(0);
+            answerObject.setDate(date);
         }
-        log.debug("Request processed, answer: {} {} {}", answer.getOperation(), answer.getResult(), answer.getDate());
-        return answer;
+        log.debug("Request processed, answer: {} {} {}", answerObject.getOperation(), answerObject.getResult(), answerObject.getDate());
+        return answerObject;
     }
 
 
@@ -246,18 +246,18 @@ public class RESTClientPost {
 
         int id = 0;
 
-        Connection conn = null;
-        Statement stmt = null;
+        Connection connection = null;
+        Statement statement = null;
         PreparedStatement ps;
 
         try {
 
-            conn = DriverManager.getConnection(jdbc, username,password);
+            connection = DriverManager.getConnection(jdbc, username,password);
 
 
-            stmt = conn.createStatement();
+            statement = connection.createStatement();
             //--------------------SELECT----------------------
-            ResultSet rs = stmt.executeQuery("SELECT max(idr) from requests");
+            ResultSet rs = statement.executeQuery("SELECT max(idr) from requests");
             if(rs.next()) {
                 id = rs.getInt(1);
 
@@ -269,14 +269,14 @@ public class RESTClientPost {
             log.debug("Inserting request: {} {} {} {} into database", id, request.getA(), request.getB(), request.getOp());
             log.debug("Inserting answer: {} {} {} {} into database", id,  answer.getOperation(), answer.getResult(), answer.getDate());
 
-            ps = conn.prepareStatement("INSERT INTO requests(idr, val1, val2, op) VALUES(?,?,?,?)");
+            ps = connection.prepareStatement("INSERT INTO requests(idr, val1, val2, op) VALUES(?,?,?,?)");
             ps.setInt(1,id);
             ps.setDouble(2,request.getA());
             ps.setDouble(3,request.getB());
             ps.setString(4, request.getOp());
             ps.execute();
 
-            ps = conn.prepareStatement("INSERT INTO answers(ida, op, res, dat) VALUES(?,?,?,?)");
+            ps = connection.prepareStatement("INSERT INTO answers(ida, op, res, dat) VALUES(?,?,?,?)");
             ps.setInt(1,id);
             ps.setString(2,answer.getOperation());
             ps.setDouble(3,answer.getResult());
@@ -287,12 +287,12 @@ public class RESTClientPost {
         } catch (SQLException e) {
             e.printStackTrace();
 
-            conn = DriverManager.getConnection(jdbc, username,password);
+            connection = DriverManager.getConnection(jdbc, username,password);
 
 
-            stmt = conn.createStatement();
+            statement = connection.createStatement();
             //--------------------SELECT----------------------
-            ResultSet rs = stmt.executeQuery("SELECT max(idr) from requests");
+            ResultSet rs = statement.executeQuery("SELECT max(idr) from requests");
             if(rs.next()) {
                 id = rs.getInt(1);
 
@@ -304,14 +304,14 @@ public class RESTClientPost {
             log.debug("Inserting request: {} {} {} {} into database", id, request.getA(), request.getB(), request.getOp());
             log.debug("Inserting answer: {} {} {} {} into database", id,  null, null, null);
 
-            ps = conn.prepareStatement("INSERT INTO requests(idr, val1, val2, op) VALUES(?,?,?,?)");
+            ps = connection.prepareStatement("INSERT INTO requests(idr, val1, val2, op) VALUES(?,?,?,?)");
             ps.setInt(1,id);
             ps.setDouble(2,request.getA());
             ps.setDouble(3,request.getB());
             ps.setString(4, request.getOp());
             ps.execute();
 
-            ps = conn.prepareStatement("INSERT INTO answers(ida, op, res, dat) VALUES(?,?,?,?)");
+            ps = connection.prepareStatement("INSERT INTO answers(ida, op, res, dat) VALUES(?,?,?,?)");
             ps.setInt(1,id);
             ps.setString(2,null);
             ps.setDouble(3, Double.parseDouble(null));
@@ -321,11 +321,11 @@ public class RESTClientPost {
         } finally {
             try {
 
-                if (stmt != null) {
-                    stmt.close();
+                if (statement != null) {
+                    statement.close();
                 }
-                if (conn != null) {
-                    conn.close();
+                if (connection != null) {
+                    connection.close();
                 }
             } catch (Exception e) {
                 e.printStackTrace();
@@ -339,15 +339,15 @@ public class RESTClientPost {
         final String outputDirectory = "/home/joao-faria/Desktop/jerseytesting/files/output/";
         NewQueue queue;
 
-        ArrayList<Request> requests;
+        ArrayList<Request> requestList;
         int threads = 5;
 
 
         do {
 
-            requests = processFiles(inputDirectory, outputDirectory);
+            requestList = processFiles(inputDirectory, outputDirectory);
 
-            queue = createQueue(requests);
+            queue = createQueue(requestList);
 
             for (int i = 0; i < threads; i++) {
                 Request request = queue.getObject();
