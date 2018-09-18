@@ -336,8 +336,8 @@ public class RESTClientPost {
 
 
     public static void main(String[] args){
-        final String inputDirectory = "/home/joao-faria/Desktop/jerseytesting/files/input/";
-        final String outputDirectory = "/home/joao-faria/Desktop/jerseytesting/files/output/";
+        final String inputDirectory = "/home/joao-faria/Desktop/jerseytesting (cópia)/files/input/";
+        final String outputDirectory = "/home/joao-faria/Desktop/jerseytesting (cópia)/files/output/";
         ArrayBlockingQueue queue;
 
         ArrayList<Request> requestList;
