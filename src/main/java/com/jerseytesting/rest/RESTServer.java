@@ -44,23 +44,22 @@ public class RESTServer {
 
     private double calculator(final Request request){
 
-        double result = 0;
+        /*double result = 0;
+        final String operation;
         final double value1;
         final double value2;
         final double sum;
         final double multiplication;
         final double division;
         final double average;
-        final String operation;
 
+        value1 = request.getValue1();
+        value2 = request.getValue2();
+        operation = request.getOperation();*/
 
-        value1 = request.getA();
-        value2 = request.getB();
-        operation = request.getOp();
+        log.debug("Processing number: {} and number: {}  with operation: {}", request.getValue1(), request.getValue2(), request.getOperation());
 
-        log.debug("Processing number: {} and number: {}  with operation: {}", value1, value2, operation);
-
-        sum = value1 + value2;
+        /*sum = value1 + value2;
         multiplication = value1 * value2;
         division = (value1 / value2);
         average = (sum / 2);
@@ -72,16 +71,49 @@ public class RESTServer {
         else if (operation.compareToIgnoreCase("div") == 0)
             result = division;
         else if (operation.compareToIgnoreCase("avg") == 0)
-            result = average;
+            result = average;*/
 
 
-        return result;
+        /*BiFunction<Double, Double, Double> calculate = (Value1, Value2) -> {
+            if (operation.compareToIgnoreCase("add") == 0) return value1 + value2;
+            else if (operation.compareToIgnoreCase("mult") == 0) return value1 * value2;
+            else if (operation.compareToIgnoreCase("div") == 0) return value1 / value2;
+            else if (operation.compareToIgnoreCase("avg") == 0) return (value1 + value2)/2;
+            else return 0.0;
+        };
+
+        result = calculate.apply(value1, value2);*/
+
+
+        /*(request.getValue1(), request.getValue2(), request.getOperation()) -> {
+            if (request.getOperation().compareToIgnoreCase("add") == 0) return request.getValue1() + request.getValue2();
+            else if (request.getOperation().compareToIgnoreCase("mult") == 0) return request.getValue1() * request.getValue2();
+            else if (request.getOperation().compareToIgnoreCase("div") == 0) return request.getValue1() / request.getValue2();
+            else if (request.getOperation().compareToIgnoreCase("avg") == 0) return (request.getValue1() + request.getValue2())/2;
+        };*/
+
+
+
+        Calculate calculate = (value1, value2, operation) -> {
+
+            if (operation.compareToIgnoreCase("add") == 0) return value1 + value2;
+            else if (operation.compareToIgnoreCase("mult") == 0) return value1 * value2;
+            else if (operation.compareToIgnoreCase("div") == 0) return value1 / value2;
+            else if (operation.compareToIgnoreCase("avg") == 0) return (value1 + value2)/2;
+            else return 0;
+        };
+
+        return calculate.obtainResult(request.getValue1(),request.getValue2(),request.getOperation());
+
+    }
+
+    private interface Calculate{
+        double obtainResult(double value1, double value2, String operation);
     }
 
     private Answer buildAnswer(final String operation, final double result){
 
         String date;
-        String answer;
         Answer answerObject;
 
         date = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date());
@@ -90,7 +122,6 @@ public class RESTServer {
 
         return answerObject;
 
-
     }
 
     @POST
@@ -98,16 +129,16 @@ public class RESTServer {
     @Produces(MediaType.APPLICATION_JSON)
     public Response postRequest(final String json) throws IOException {
 
-        double result;
-        String answer;
-        Request request;
-        Answer answerObject;
+        final double result;
+        final String answer;
+        final Request request;
+        final Answer answerObject;
 
         request = convertToJson(json);
 
         result = calculator(request);
 
-        answerObject = buildAnswer(request.getOp(),result);
+        answerObject = buildAnswer(request.getOperation(),result);
 
         answer = convertToString(answerObject, json);
 

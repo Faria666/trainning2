@@ -1,24 +1,24 @@
 package com.jerseytesting.aux;
 
 public class Request {
-    private double a;
-    private double b;
-    private String op;
+    private double value1;
+    private double value2;
+    private String operation;
 
     /**
      * his is used to get the first number in the request object
      * @return return the value of the number
      */
 
-    public double getA() { return a; }
+    public double getValue1() { return value1; }
 
     /**
      * this is used to set the value of the second number in the request object
-     * @param a is the first number that will be introduced in the request object field
+     * @param value1 is the first number that will be introduced in the request object field
      */
 
-    public void setA(double a) {
-        this.a = a;
+    public void setValue1(double value1) {
+        this.value1 = value1;
     }
 
     /**
@@ -26,17 +26,17 @@ public class Request {
      * @return return the value of the number
      */
 
-    public double getB() {
-        return b;
+    public double getValue2() {
+        return value2;
     }
 
     /**
      * this is used to set the value of the second number in the request object
-     * @param b is the second number that will be introduced in the request object field
+     * @param value2 is the second number that will be introduced in the request object field
      */
 
-    public void setB(double b) {
-        this.b = b;
+    public void setValue2(double value2) {
+        this.value2 = value2;
     }
 
     /**
@@ -44,30 +44,30 @@ public class Request {
      * @return return the value of the operation
      */
 
-    public String getOp() {
-        return op;
+    public String getOperation() {
+        return operation;
     }
 
     /**
      *  this is used to set the operation in the request object
-     * @param op is the operation that will be introduced in the request object field
+     * @param operation is the operation that will be introduced in the request object field
      */
 
-    public void setOp(String op) {
-        this.op = op;
+    public void setOperation(String operation) {
+        this.operation = operation;
     }
 
     /**
      * This constructs the request made to the REST server
-     * @param a is the first number that will be used to make the operation
-     * @param b is the second number that will be used to make the operation
-     * @param op is the math operation to do using the two numbers referred before
+     * @param value1 is the first number that will be used to make the operation
+     * @param value2 is the second number that will be used to make the operation
+     * @param operation is the math operation to do using the two numbers referred before
      */
 
-    public Request(double a, double b, String op) {
-        this.a = a;
-        this.b = b;
-        this.op = op;
+    public Request(double value1, double value2, String operation) {
+        this.value1 = value1;
+        this.value2 = value2;
+        this.operation = operation;
     }
 
     /**

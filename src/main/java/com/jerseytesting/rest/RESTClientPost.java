@@ -2,10 +2,7 @@ package com.jerseytesting.rest;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.jerseytesting.aux.Answer;
-import com.jerseytesting.aux.MyThread;
-import com.jerseytesting.aux.NewQueue;
-import com.jerseytesting.aux.Request;
+import com.jerseytesting.aux.*;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.slf4j.Logger;
@@ -26,6 +23,7 @@ import java.util.Date;
 
 import org.apache.commons.csv.CSVFormat;
 import java.nio.file.Paths;
+import java.util.concurrent.ArrayBlockingQueue;
 
 public class RESTClientPost {
 
@@ -149,12 +147,13 @@ public class RESTClientPost {
      * @return returns the queue already populated
      */
 
-    public static NewQueue createQueue(final ArrayList<Request> requestList){
+    public static ArrayBlockingQueue createQueue(final ArrayList<Request> requestList){
 
-        final NewQueue queue = new NewQueue();
-        
+        final ArrayBlockingQueue queue = new ArrayBlockingQueue(1024);
+
         for(int i = 0; i < requestList.size(); i++){
-            queue.putObject(requestList.get(i));
+            Producer producer = new Producer(queue,requestList.get(i));
+            new Thread(producer).start();
         }
         return queue;
     }
@@ -182,14 +181,16 @@ public class RESTClientPost {
      * @return returns the answer in the form of a Answer object
      */
 
-    protected static Answer client(final Request requestObject){
+    private static Answer client(final Request requestObject){
 
         final ObjectMapper mapper = new ObjectMapper();
         String request = null;
         final String answer;
         final String location = "/calc";
-        final String URI = "http://172.17.0.3:8080/calculator";//...localhost:8080...
+        final String URI = "http://localhost:8080/calculator";//...localhost:8080...
         Answer answerObject = new Answer();
+
+
 
         try {
             request = mapper.writeValueAsString(requestObject);
@@ -211,9 +212,9 @@ public class RESTClientPost {
 
         Response response = invocationBuilder.post(Entity.entity(request,MediaType.APPLICATION_JSON));
 
-        /*System.out.print("\nStatus: ");
+        System.out.print("\nStatus: ");
 
-        System.out.println(response.getStatus());*/
+        System.out.println(response.getStatus());
 
         answer = response.readEntity(String.class);
 
@@ -266,14 +267,14 @@ public class RESTClientPost {
             id++;
 
             //--------------------INSERT----------------------
-            log.debug("Inserting request: {} {} {} {} into database", id, request.getA(), request.getB(), request.getOp());
+            log.debug("Inserting request: {} {} {} {} into database", id, request.getValue1(), request.getValue2(), request.getOperation());
             log.debug("Inserting answer: {} {} {} {} into database", id,  answer.getOperation(), answer.getResult(), answer.getDate());
 
             ps = connection.prepareStatement("INSERT INTO requests(idr, val1, val2, op) VALUES(?,?,?,?)");
             ps.setInt(1,id);
-            ps.setDouble(2,request.getA());
-            ps.setDouble(3,request.getB());
-            ps.setString(4, request.getOp());
+            ps.setDouble(2,request.getValue1());
+            ps.setDouble(3,request.getValue2());
+            ps.setString(4, request.getOperation());
             ps.execute();
 
             ps = connection.prepareStatement("INSERT INTO answers(ida, op, res, dat) VALUES(?,?,?,?)");
@@ -301,14 +302,14 @@ public class RESTClientPost {
             id++;
 
             //--------------------INSERT----------------------
-            log.debug("Inserting request: {} {} {} {} into database", id, request.getA(), request.getB(), request.getOp());
+            log.debug("Inserting request: {} {} {} {} into database", id, request.getValue1(), request.getValue2(), request.getOperation());
             log.debug("Inserting answer: {} {} {} {} into database", id,  null, null, null);
 
             ps = connection.prepareStatement("INSERT INTO requests(idr, val1, val2, op) VALUES(?,?,?,?)");
             ps.setInt(1,id);
-            ps.setDouble(2,request.getA());
-            ps.setDouble(3,request.getB());
-            ps.setString(4, request.getOp());
+            ps.setDouble(2,request.getValue1());
+            ps.setDouble(3,request.getValue2());
+            ps.setString(4, request.getOperation());
             ps.execute();
 
             ps = connection.prepareStatement("INSERT INTO answers(ida, op, res, dat) VALUES(?,?,?,?)");
@@ -334,10 +335,10 @@ public class RESTClientPost {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
         final String inputDirectory = "/home/joao-faria/Desktop/jerseytesting/files/input/";
         final String outputDirectory = "/home/joao-faria/Desktop/jerseytesting/files/output/";
-        NewQueue queue;
+        ArrayBlockingQueue queue;
 
         ArrayList<Request> requestList;
         int threads = 5;
@@ -350,17 +351,8 @@ public class RESTClientPost {
             queue = createQueue(requestList);
 
             for (int i = 0; i < threads; i++) {
-                Request request = queue.getObject();
-                if (request != null) {
-                    MyThread thread = new MyThread(request);
-                    thread.start();
-
-                    try {
-                        thread.join();
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
+                Consumer consumer = new Consumer(queue);
+                new Thread(consumer).start();
             }
         } while (true);
     }
