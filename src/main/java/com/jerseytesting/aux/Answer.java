@@ -1,15 +1,43 @@
 package com.jerseytesting.aux;
 
+
+import javax.persistence.*;
+
+
+@Entity
+@Table(name = "Answer")
 public class Answer {
-    private String operation;
+
+    private int answerId;
     private double result;
+    private String operation;
     private String date;
+
+
+    /**
+     * this is used to get the Id
+     * @return the Id
+     */
+    @Id
+    @Column(name="answer_id")
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    public int getAnswerId(){
+        return answerId;
+    }
+
+    /**
+     * this is to set the answer Id in the answer object field
+     * @param answerId is the Id of the answer
+     */
+    public void setAnswerId(int answerId){
+        this.answerId = answerId;
+    }
 
     /**
      * this is used to get the operation done
      * @return the operation
      */
-
+    @Column(name="operation")
     public String getOperation() {
         return operation;
     }
@@ -27,7 +55,7 @@ public class Answer {
      * this is used to get the date of the operation done
      * @return the date of the operation
      */
-
+    @Column(name="date")
     public String getDate() {
         return date;
     }
@@ -45,7 +73,7 @@ public class Answer {
      * this is used to get the result of the operation done
      * @return the result of the operation
      */
-
+    @Column(name="result")
     public double getResult() {
         return result;
     }

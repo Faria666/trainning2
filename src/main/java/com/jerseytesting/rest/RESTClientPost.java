@@ -7,6 +7,10 @@ import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import javax.ws.rs.client.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -334,6 +338,17 @@ public class RESTClientPost {
         }
     }
 
+    private static void insertJDBC(final Answer answer, final Request request){
+
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("jerseytesting-JPA");
+
+        EntityManager em = emf.createEntityManager();
+
+        em.getTransaction().begin();
+        em.persist(answer);
+        em.persist(request);
+        em.getTransaction().commit();
+    }
 
     public static void main(String[] args){
         final String inputDirectory = "/home/joao-faria/Desktop/jerseytesting (cópia)/files/input/";
