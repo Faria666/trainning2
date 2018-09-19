@@ -86,6 +86,8 @@ public class RESTServer {
         final Request request;
         final Answer answerObject;
 
+        System.out.println("HERE");
+
         request = convertToJson(json);
 
         result = calculator(request);

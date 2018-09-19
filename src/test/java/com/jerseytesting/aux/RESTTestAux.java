@@ -176,7 +176,7 @@ public class RESTTestAux {
         filesexpected.add("heyhey.csv");
         filesexpected.add("heyhow.csv");
         filesexpected.add("heyhoy.csv");
-        ArrayList<String> temp = RESTClientPost.watchDirectory(directory);
+        ArrayList<String> temp = RESTClientPost.seekFiles(directory);
         for(int i = 0; i< temp.size(); i++) {
             if (flag == false)
                 break;
@@ -198,7 +198,7 @@ public class RESTTestAux {
         String directory = "/home/joao-faria/Desktop/jerseytesting/src/test/testDirectoryIn/" ;
         ArrayList<String> filesexpected = new ArrayList<>();
         filesexpected.add("ukuku.csv");
-        ArrayList<String> temp = RESTClientPost.watchDirectory(directory);
+        ArrayList<String> temp = RESTClientPost.seekFiles(directory);
         for(int i = 0; i< temp.size(); i++){
             if(flag == false)
                 break;

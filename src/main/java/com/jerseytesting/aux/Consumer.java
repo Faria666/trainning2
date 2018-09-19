@@ -8,7 +8,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 public class Consumer implements Runnable{
 
 
-    protected ArrayBlockingQueue queue = null;
+    protected ArrayBlockingQueue queue;
 
 
     public Consumer(ArrayBlockingQueue queue) {
@@ -19,11 +19,14 @@ public class Consumer implements Runnable{
     public void run() {
 
         try {
+            System.out.println("HERE1");
             RESTClientPost.requestTreatment((Request) queue.take());
+            System.out.println("HERE2");
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
     }
 }

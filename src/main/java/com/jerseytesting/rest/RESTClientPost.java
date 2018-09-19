@@ -17,7 +17,7 @@ import javax.ws.rs.core.Response;
 import java.io.File;
 import java.io.IOException;
 import java.io.Reader;
-import java.nio.file.Files;
+import java.nio.file.*;
 import java.sql.*;
 import java.text.DecimalFormat;
 import java.text.ParseException;
@@ -26,7 +26,8 @@ import java.util.ArrayList;
 import java.util.Date;
 
 import org.apache.commons.csv.CSVFormat;
-import java.nio.file.Paths;
+
+import java.util.List;
 import java.util.concurrent.ArrayBlockingQueue;
 
 public class RESTClientPost {
@@ -34,12 +35,50 @@ public class RESTClientPost {
     private static final Logger log = LoggerFactory.getLogger(RESTClientPost.class);
 
     /**
+     * Function to for changes in a determinate directory
+     * @param directory is the directory where to look for the changes
+     * @return return a boolean that is true if have changes or false if not
+     */
+
+    protected  static boolean watchDirectory(final String directory){
+
+        boolean flag = false;
+
+        Path path = Paths.get(directory);
+        try {
+            // get watch service which will monitor the directory
+            WatchService watcher = path.getFileSystem().newWatchService();
+            // associate watch service with the directory to listen to the event
+            // types
+            path.register(watcher, StandardWatchEventKinds.ENTRY_CREATE);
+            System.out.println("\nMonitoring directory for changes...");
+            // listen to events
+            WatchKey watchKey = watcher.take();
+            // get list of events as they occur
+            List<WatchEvent<?>> events = watchKey.pollEvents();
+            //iterate over events
+            for (WatchEvent event : events) {
+                //check if the event refers to a new file created
+                if (event.kind() == StandardWatchEventKinds.ENTRY_CREATE) {
+                    flag = true;
+                    //print file name which is newly created
+                    System.out.println("Created: " + event.context().toString());
+
+                }
+            }
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
+        return flag;
+    }
+
+    /**
      * Function to pick the name of files in a determinate directory
      * @param directory is the directory where to look for the files
      * @return return an array with the name of all files found in that directory
      */
 
-    public static ArrayList<String> watchDirectory(final String directory) {
+    public static ArrayList<String> seekFiles(final String directory) {
         final File folder = new File(directory);
         final File[] listOfFiles = folder.listFiles();
         final ArrayList<String> files = new ArrayList<>();
@@ -60,7 +99,6 @@ public class RESTClientPost {
      * @param outputDirectory is the directory where the files already readed will be moved to
      * @param files is the array with the name of the files found in the input directory
      * @return return an array of Request objects
-     * @throws IOException
      */
 
     protected static ArrayList<Request> readFileWithFramework(final String inputDirectory, final String outputDirectory, final ArrayList<String> files) throws IOException {
@@ -134,7 +172,7 @@ public class RESTClientPost {
 
         while(true){
 
-            files = watchDirectory(inputDirectory);
+            files = seekFiles(inputDirectory);
 
             try {
                 requestList.addAll(readFileWithFramework(inputDirectory, outputDirectory, files));
@@ -355,6 +393,8 @@ public class RESTClientPost {
     }
 
     public static void main(String[] args){
+
+        boolean changes;
         final String inputDirectory = "/home/joao-faria/Desktop/jerseytesting (cópia)/files/input/";
         final String outputDirectory = "/home/joao-faria/Desktop/jerseytesting (cópia)/files/output/";
         ArrayBlockingQueue queue;
@@ -364,6 +404,7 @@ public class RESTClientPost {
 
 
         do {
+            changes = watchDirectory(inputDirectory);
 
             requestList = processFiles(inputDirectory, outputDirectory);
 
@@ -373,6 +414,6 @@ public class RESTClientPost {
                 Consumer consumer = new Consumer(queue);
                 new Thread(consumer).start();
             }
-        } while (true);
+        } while (changes);
     }
 }
