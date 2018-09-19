@@ -64,7 +64,6 @@ public class RESTClientPost {
                     flag = true;
                     //print file name which is newly created
                     System.out.println("Created: " + event.context().toString());
-
                 }
             }
         } catch (IOException | InterruptedException e) {
@@ -280,7 +279,7 @@ public class RESTClientPost {
      * @param request is the request made to the server
      */
 
-    private static void JDBCConnection(final Answer answer, final Request request) throws SQLException {
+    private static void JDBConnection(final Answer answer, final Request request) throws SQLException {
 
         final String jdbc = "jdbc:postgresql://localhost:5432/postgres";//...localhost:5432/jpfar...
         final String username = "postgres";//"jpfar";
