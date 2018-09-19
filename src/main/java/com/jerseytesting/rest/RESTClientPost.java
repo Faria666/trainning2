@@ -174,10 +174,9 @@ public class RESTClientPost {
         if(request != null)
             answer = client(request);
         if(answer.getOperation().compareTo("none")!=0 ) {
-            JDBCConnection(answer, request);
+            insertJDBC(answer, request);
         }
     }
-
 
     /**
      * Connects to the REST server and send a request waiting for the response
@@ -235,7 +234,6 @@ public class RESTClientPost {
         log.debug("Request processed, answer: {} {} {}", answerObject.getOperation(), answerObject.getResult(), answerObject.getDate());
         return answerObject;
     }
-
 
     /**
      * Connects to the database and proceed to the insertion of the data in the tables
@@ -337,6 +335,12 @@ public class RESTClientPost {
             }
         }
     }
+
+    /**
+     * Connects to the database and proceed to the insertion of the data in the tables
+     * @param answer is the answer received from the server
+     * @param request is the request made to the server
+     */
 
     private static void insertJDBC(final Answer answer, final Request request){
 
