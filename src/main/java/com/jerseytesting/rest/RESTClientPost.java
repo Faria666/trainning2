@@ -58,6 +58,7 @@ public class RESTClientPost {
             List<WatchEvent<?>> events = watchKey.pollEvents();
             //iterate over events
             for (WatchEvent event : events) {
+                flag = false;
                 //check if the event refers to a new file created
                 if (event.kind() == StandardWatchEventKinds.ENTRY_CREATE) {
                     flag = true;
