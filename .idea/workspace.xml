@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="handling sqlException warning in the consumer class">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting/aux/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jerseytesting/aux/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting/rest/RESTClientPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jerseytesting/rest/RESTClientPost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting/rest/RESTServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jerseytesting/rest/RESTServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting/aux/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jerseytesting/aux/Consumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting/rest/RESTClientPost.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jerseytesting/rest/RESTClientPost.class" afterDir="false" />
-    </list>
+    <list default="true" id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="handling warnings and modifications in watchDirectory function" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -195,13 +187,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="531" />
-          <entry key="txt" value="128" />
+          <entry key="txt" value="218" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="531" />
-          <entry key="PLAIN_TEXT" value="128" />
+          <entry key="PLAIN_TEXT" value="218" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -232,8 +224,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting/rest/RESTClientPost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="87" column="32" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
+            <state relative-caret-position="449">
+              <caret line="87" column="54" lean-forward="true" selection-start-line="87" selection-start-column="54" selection-end-line="87" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -495,7 +487,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537460918102" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537461165470" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/jerseytesting" />
@@ -640,7 +632,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537352284996</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="handling warnings and modifications in watchDirectory function">
+      <created>1537460946242</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1537460946242</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -709,7 +708,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" weight="0.32915717" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.53788686" side_tool="true" visible="true" weight="0.32687926" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.48132336" side_tool="true" weight="0.26765376" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.4621131" visible="true" weight="0.32687926" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4621131" weight="0.32687926" />
       <window_info anchor="bottom" id="DB Execution Console" order="11" />
       <window_info anchor="bottom" id="Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -771,7 +770,9 @@
     <MESSAGE value="modification in the watchDirectory function" />
     <MESSAGE value="modification in the watchDirectory function and handling warnings" />
     <MESSAGE value="handling sqlException warning in the consumer class" />
-    <option name="LAST_COMMIT_MESSAGE" value="handling sqlException warning in the consumer class" />
+    <MESSAGE value="handling warning in function seekFiles" />
+    <MESSAGE value="handling warnings and modifications in watchDirectory function" />
+    <option name="LAST_COMMIT_MESSAGE" value="handling warnings and modifications in watchDirectory function" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -956,8 +957,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting/rest/RESTClientPost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="87" column="32" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
+        <state relative-caret-position="449">
+          <caret line="87" column="54" lean-forward="true" selection-start-line="87" selection-start-column="54" selection-end-line="87" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
