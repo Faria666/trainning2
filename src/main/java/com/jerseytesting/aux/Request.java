@@ -14,6 +14,7 @@ public class Request {
      * his is used to get the request Id of the Request object
      * @return return the request Id
      */
+
     /*@Id
     @Column(name="request_id")
     @GeneratedValue(strategy= GenerationType.IDENTITY)
@@ -26,6 +27,7 @@ public class Request {
      * this is used to set the request Id in the request object
      * @param requestId is the Id of the request
      */
+
     /*public void setRequestId(int requestId){
         this.requestId = requestId;
     }
@@ -35,6 +37,7 @@ public class Request {
      * his is used to get the first number in the request object
      * @return return the value of the number
      */
+
     @Column(name="value1")
     public double getValue1() { return value1; }
 
@@ -51,6 +54,7 @@ public class Request {
      * his is used to get the second number in the request object
      * @return return the value of the number
      */
+
     @Column(name="value2")
     public double getValue2() {
         return value2;
@@ -69,6 +73,7 @@ public class Request {
      * this is used to get the operation in the request object
      * @return return the value of the operation
      */
+
     @Column(name="operation")
     public String getOperation() {
         return operation;
