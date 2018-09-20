@@ -228,7 +228,7 @@ public class RESTClientPost {
         String request = null;
         final String answer;
         final String location = "/calc";
-        final String URI = "http://localhost:8080/calculator";//...localhost:8080...
+        final String URI = "http://172.17.0.2:8080/calculator";//...localhost:8080...
         Answer answerObject = new Answer();
 
 
@@ -279,107 +279,6 @@ public class RESTClientPost {
      * @param request is the request made to the server
      */
 
-    private static void JDBConnection(final Answer answer, final Request request) throws SQLException {
-
-        final String jdbc = "jdbc:postgresql://localhost:5432/postgres";//...localhost:5432/jpfar...
-        final String username = "postgres";//"jpfar";
-        final String password = null;//"jpfar";
-
-        int id = 0;
-
-        Connection connection = null;
-        Statement statement = null;
-        PreparedStatement ps;
-
-        try {
-
-            connection = DriverManager.getConnection(jdbc, username,password);
-
-
-            statement = connection.createStatement();
-            //--------------------SELECT----------------------
-            ResultSet rs = statement.executeQuery("SELECT max(idr) from requests");
-            if(rs.next()) {
-                id = rs.getInt(1);
-
-            }
-
-            id++;
-
-            //--------------------INSERT----------------------
-            log.debug("Inserting request: {} {} {} {} into database", id, request.getValue1(), request.getValue2(), request.getOperation());
-            log.debug("Inserting answer: {} {} {} {} into database", id,  answer.getOperation(), answer.getResult(), answer.getDate());
-
-            ps = connection.prepareStatement("INSERT INTO requests(idr, val1, val2, op) VALUES(?,?,?,?)");
-            ps.setInt(1,id);
-            ps.setDouble(2,request.getValue1());
-            ps.setDouble(3,request.getValue2());
-            ps.setString(4, request.getOperation());
-            ps.execute();
-
-            ps = connection.prepareStatement("INSERT INTO answers(ida, op, res, dat) VALUES(?,?,?,?)");
-            ps.setInt(1,id);
-            ps.setString(2,answer.getOperation());
-            ps.setDouble(3,answer.getResult());
-            ps.setString(4, answer.getDate());
-            ps.execute();
-
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-
-            connection = DriverManager.getConnection(jdbc, username,password);
-
-
-            statement = connection.createStatement();
-            //--------------------SELECT----------------------
-            ResultSet rs = statement.executeQuery("SELECT max(idr) from requests");
-            if(rs.next()) {
-                id = rs.getInt(1);
-
-            }
-
-            id++;
-
-            //--------------------INSERT----------------------
-            log.debug("Inserting request: {} {} {} {} into database", id, request.getValue1(), request.getValue2(), request.getOperation());
-            log.debug("Inserting answer: {} {} {} {} into database", id,  null, null, null);
-
-            ps = connection.prepareStatement("INSERT INTO requests(idr, val1, val2, op) VALUES(?,?,?,?)");
-            ps.setInt(1,id);
-            ps.setDouble(2,request.getValue1());
-            ps.setDouble(3,request.getValue2());
-            ps.setString(4, request.getOperation());
-            ps.execute();
-
-            ps = connection.prepareStatement("INSERT INTO answers(ida, op, res, dat) VALUES(?,?,?,?)");
-            ps.setInt(1,id);
-            ps.setString(2,null);
-            ps.setDouble(3, Double.parseDouble(null));
-            ps.setString(4, null);
-            ps.execute();
-
-        } finally {
-            try {
-
-                if (statement != null) {
-                    statement.close();
-                }
-                if (connection != null) {
-                    connection.close();
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    /**
-     * Connects to the database and proceed to the insertion of the data in the tables
-     * @param answer is the answer received from the server
-     * @param request is the request made to the server
-     */
-
     private static void insertJDBC(final Answer answer, final Request request){
 
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("jerseytesting-JPA");
@@ -395,8 +294,8 @@ public class RESTClientPost {
     public static void main(String[] args){
 
         boolean changes;
-        final String inputDirectory = "/home/joao-faria/Desktop/jerseytesting (cópia)/files/input/";
-        final String outputDirectory = "/home/joao-faria/Desktop/jerseytesting (cópia)/files/output/";
+        final String inputDirectory = "/home/joao-faria/Desktop/jerseytesting2/files/input/";
+        final String outputDirectory = "/home/joao-faria/Desktop/jerseytesting2/files/output/";
         ArrayBlockingQueue queue;
 
         ArrayList<Request> requestList;

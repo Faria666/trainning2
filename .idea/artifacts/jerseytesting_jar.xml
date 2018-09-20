@@ -2,7 +2,7 @@
   <artifact type="jar" name="jerseytesting:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/jerseytesting_jar</output-path>
     <root id="archive" name="jerseytesting.jar">
-      <element id="module-output" name="jerseytesting" />
+      <element id="module-output" name="jerseytesting2" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/glassfish/hk2/external/javax.inject/2.5.0-b42/javax.inject-2.5.0-b42.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar" path-in-jar="/" />

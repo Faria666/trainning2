@@ -14,22 +14,22 @@ public class Request {
      * his is used to get the request Id of the Request object
      * @return return the request Id
      */
-    @Id
+    /*@Id
     @Column(name="request_id")
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     public int getRequestId(){
         return requestId;
-    }
+    }*/
 
 
     /**
      * this is used to set the request Id in the request object
      * @param requestId is the Id of the request
      */
-    public void setRequestId(int requestId){
+    /*public void setRequestId(int requestId){
         this.requestId = requestId;
     }
-
+*/
 
     /**
      * his is used to get the first number in the request object

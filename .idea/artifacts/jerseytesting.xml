@@ -3,7 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/jerseytesting</output-path>
     <root id="root">
       <element id="archive" name="jerseytesting.jar">
-        <element id="module-output" name="jerseytesting" />
+        <element id="module-output" name="jerseytesting2" />
       </element>
     </root>
   </artifact>

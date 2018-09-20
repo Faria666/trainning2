@@ -44,7 +44,7 @@ RUN mkdir /usr/proj
 
 WORKDIR /usr/proj
 
-RUN git clone https://github.com/Faria666/trainning.git
+RUN git clone https://github.com/Faria666/trainning2.git
 
 WORKDIR /usr/proj/trainning
 
