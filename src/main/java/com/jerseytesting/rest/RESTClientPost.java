@@ -289,6 +289,7 @@ public class RESTClientPost {
         em.persist(answer);
         em.persist(request);
         em.getTransaction().commit();
+        em.close();
     }
 
     public static void main(String[] args){
