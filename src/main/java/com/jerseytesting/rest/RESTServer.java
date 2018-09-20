@@ -21,7 +21,7 @@ public class RESTServer {
 
     private ObjectMapper mapper = new ObjectMapper();
 
-    private Request convertToJson(final String json) throws IOException {
+    private Request convertToObj(final String json) throws IOException {
 
         final Request request;
         log.debug("Processing request: {}", json);
@@ -36,7 +36,7 @@ public class RESTServer {
 
         answer = mapper.writeValueAsString(answerObject);
 
-        log.debug("Retreiving answer {} for request: {}", answer, json);
+        log.debug("Retrieving answer {} for request: {}", answer, json);
 
         return answer;
 
@@ -88,7 +88,7 @@ public class RESTServer {
 
         System.out.println("HERE");
 
-        request = convertToJson(json);
+        request = convertToObj(json);
 
         result = calculator(request);
 

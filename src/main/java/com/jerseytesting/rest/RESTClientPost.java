@@ -40,7 +40,9 @@ public class RESTClientPost {
      * @return return a boolean that is true if have changes or false if not
      */
 
-    protected  static boolean watchDirectory(final String directory){
+
+
+    private static boolean watchDirectory(final String directory){
 
         boolean flag = false;
 
@@ -48,21 +50,20 @@ public class RESTClientPost {
         try {
             // get watch service which will monitor the directory
             WatchService watcher = path.getFileSystem().newWatchService();
-            // associate watch service with the directory to listen to the event
-            // types
+            // associate watch service with the directory to listen to the event types
             path.register(watcher, StandardWatchEventKinds.ENTRY_CREATE);
             System.out.println("\nMonitoring directory for changes...");
             // listen to events
             WatchKey watchKey = watcher.take();
             // get list of events as they occur
             List<WatchEvent<?>> events = watchKey.pollEvents();
-            //iterate over events
+
             for (WatchEvent event : events) {
                 flag = false;
                 //check if the event refers to a new file created
                 if (event.kind() == StandardWatchEventKinds.ENTRY_CREATE) {
                     flag = true;
-                    //print file name which is newly created
+
                     System.out.println("Created: " + event.context().toString());
                 }
             }
@@ -83,6 +84,7 @@ public class RESTClientPost {
         final File[] listOfFiles = folder.listFiles();
         final ArrayList<String> files = new ArrayList<>();
 
+        assert listOfFiles != null;
         for (int i = 0; i < listOfFiles.length; i++) {
             if (listOfFiles[i].isFile()) {
                 files.add(listOfFiles[i].getName());
@@ -101,7 +103,7 @@ public class RESTClientPost {
      * @return return an array of Request objects
      */
 
-    protected static ArrayList<Request> readFileWithFramework(final String inputDirectory, final String outputDirectory, final ArrayList<String> files) throws IOException {
+    private static ArrayList<Request> readFileWithFramework(final String inputDirectory, final String outputDirectory, final ArrayList<String> files) throws IOException {
 
         Request request;
         final ArrayList<Request> requestList = new ArrayList<>();
@@ -111,7 +113,7 @@ public class RESTClientPost {
 
                 try (
                         Reader reader = Files.newBufferedReader(Paths.get(inputDirectory + files.get(i)));
-                        CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT);
+                        CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT)
                 ) {
                     for (CSVRecord csvRecord : csvParser) {
 
@@ -133,8 +135,7 @@ public class RESTClientPost {
                         } catch (ParseException e) {
                             e.printStackTrace();
                         }
-                        String temp3 = op;
-                        request = new Request(temp1, temp2, temp3);
+                        request = new Request(temp1, temp2, op);
                         requestList.add(request);
                     }
                 }
@@ -163,24 +164,23 @@ public class RESTClientPost {
      * Function that calls the function that is always looking for new files in the directory and the function that will read and move those files
      * @param inputDirectory is the directory where the new files will appear
      * @param outputDirectory is the directory where the readed files will be moved to
-     * @return
+     * @return returns the list of the requests that were in the files
      */
 
-    protected static ArrayList<Request> processFiles(final String inputDirectory,final String outputDirectory){
+    private static ArrayList<Request> processFiles(final String inputDirectory, final String outputDirectory){
         final ArrayList<String> files;
         final ArrayList<Request> requestList = new ArrayList<>();
 
-        while(true){
 
-            files = seekFiles(inputDirectory);
+        files = seekFiles(inputDirectory);
 
-            try {
-                requestList.addAll(readFileWithFramework(inputDirectory, outputDirectory, files));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            return requestList;
+        try {
+            requestList.addAll(readFileWithFramework(inputDirectory, outputDirectory, files));
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+        return requestList;
+
     }
 
     /**
@@ -189,7 +189,7 @@ public class RESTClientPost {
      * @return returns the queue already populated
      */
 
-    public static ArrayBlockingQueue createQueue(final ArrayList<Request> requestList){
+    private static ArrayBlockingQueue createQueue(final ArrayList<Request> requestList){
 
         final ArrayBlockingQueue queue = new ArrayBlockingQueue(1024);
 
@@ -206,7 +206,7 @@ public class RESTClientPost {
      * @param request is the request to be treated by each thread, that sent it to the server
      */
 
-    public static void requestTreatment(final Request request) throws SQLException {
+    public static void requestTreatment(final Request request){
         Answer answer = new Answer();
         
         if(request != null)
@@ -228,7 +228,7 @@ public class RESTClientPost {
         String request = null;
         final String answer;
         final String location = "/calc";
-        final String URI = "http://172.17.0.2:8080/calculator";//...localhost:8080...
+        final String URI = "http://localhost:8080/calculator";//...localhost:8080...
         Answer answerObject = new Answer();
 
 

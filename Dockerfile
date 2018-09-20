@@ -39,16 +39,14 @@ RUN wget -c http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9
     sudo chown -R jetty:jetty /opt/jetty9 &&\
     sudo chmod u=rwx,g=rxs,o= /opt/jetty9
 
-# Change directory and clone project ->  &&\ cd /usr/proj &&\ git clone
-RUN mkdir /usr/proj 
+# Change directory and clone project ->  &&\ cd /usr/proj2 &&\ git clone
+RUN mkdir /usr/proj2 
 
-WORKDIR /usr/proj
+WORKDIR /usr/proj2
 
 RUN git clone https://github.com/Faria666/trainning2.git
 
-WORKDIR /usr/proj/trainning
-
-RUN mvn jetty:run
+WORKDIR /usr/proj2/trainning2
 
 ENV MAVEN_HOME /opt/maven
 
