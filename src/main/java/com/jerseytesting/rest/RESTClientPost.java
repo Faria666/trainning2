@@ -40,8 +40,6 @@ public class RESTClientPost {
      * @return return a boolean that is true if have changes or false if not
      */
 
-
-
     private static boolean watchDirectory(final String directory){
 
         boolean flag = false;
@@ -60,11 +58,11 @@ public class RESTClientPost {
 
             for (WatchEvent event : events) {
                 flag = false;
-                //check if the event refers to a new file created
+                //check if the events refers to a new file created
                 if (event.kind() == StandardWatchEventKinds.ENTRY_CREATE) {
                     flag = true;
 
-                    System.out.println("Created: " + event.context().toString());
+                    System.out.println("Created: " + event.context().toString() + ";");
                 }
             }
         } catch (IOException | InterruptedException e) {
