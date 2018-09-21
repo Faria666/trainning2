@@ -62,7 +62,7 @@ public class RESTClientPost {
                 if (event.kind() == StandardWatchEventKinds.ENTRY_CREATE) {
                     flag = true;
 
-                    System.out.println("Created: " + event.context().toString() + ";");
+                    System.out.println("Created: " + event.context().toString() + " ;");
                 }
             }
         } catch (IOException | InterruptedException e) {
