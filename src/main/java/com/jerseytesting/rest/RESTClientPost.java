@@ -7,7 +7,6 @@ import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -18,15 +17,12 @@ import java.io.File;
 import java.io.IOException;
 import java.io.Reader;
 import java.nio.file.*;
-import java.sql.*;
 import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-
 import org.apache.commons.csv.CSVFormat;
-
 import java.util.List;
 import java.util.concurrent.ArrayBlockingQueue;
 
