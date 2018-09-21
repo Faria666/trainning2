@@ -21,6 +21,13 @@ public class RESTServer {
 
     private ObjectMapper mapper = new ObjectMapper();
 
+    /**
+     * Function that converts a String parameter into a Request object
+     * @param json is the String of the request received from the client
+     * @return return an Request object with all the fields containning data from the json String
+     * @throws IOException
+     */
+
     private Request convertToObj(final String json) throws IOException {
 
         final Request request;
@@ -31,6 +38,14 @@ public class RESTServer {
         return request;
     }
 
+    /**
+     * Function that converts a Answer object into a JSON String where all the data is written in conformity with JSON conventions
+     * @param answerObject is the object with all the data about the answer to retrieve to the client
+     * @param json is the String that contains the request, only for logging purposes
+     * @return return a JSON String with all the data contained in the object
+     * @throws JsonProcessingException
+     */
+
     private String convertToString(final Answer answerObject, final String json) throws JsonProcessingException {
         String answer;
 
@@ -39,8 +54,13 @@ public class RESTServer {
         log.debug("Retrieving answer {} for request: {}", answer, json);
 
         return answer;
-
     }
+
+    /**
+     * Function that calculates the result of the operation specified in the request from the client
+     * @param request is the Request object that contains all the data from the client request
+     * @return return the value resultant from the operation
+     */
 
     private double calculator(final Request request){
 
@@ -56,12 +76,18 @@ public class RESTServer {
         };
 
         return calculate.obtainResult(request.getValue1(),request.getValue2(),request.getOperation());
-
     }
 
     private interface Calculate{
         double obtainResult(double value1, double value2, String operation);
     }
+
+    /**
+     *Function that builds the answer to send to the client, merge the result of the calculation of the operation, the date and hour of the operation and the operation made
+     * @param operation is the operation made
+     * @param result is the result of the operation
+     * @return returns a Answer object that contains all the data referent to the treeatment of the request from the client
+     */
 
     private Answer buildAnswer(final String operation, final double result){
 
@@ -73,7 +99,6 @@ public class RESTServer {
         answerObject = new Answer(operation, result, date);
 
         return answerObject;
-
     }
 
     @POST
@@ -97,7 +122,5 @@ public class RESTServer {
         answer = convertToString(answerObject, json);
 
         return Response.status(Response.Status.OK).entity(answer).build();
-
     }
-
 }
