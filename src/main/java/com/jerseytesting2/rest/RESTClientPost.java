@@ -1,8 +1,8 @@
-package com.jerseytesting.rest;
+package com.jerseytesting2.rest;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.jerseytesting.aux.*;
+import com.jerseytesting2.aux.*;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.slf4j.Logger;
@@ -275,7 +275,7 @@ public class RESTClientPost {
 
     private static void insertJDBC(final Answer answer, final Request request){
 
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("jerseytesting-JPA");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("jerseytesting2-JPA");
 
         EntityManager em = emf.createEntityManager();
 

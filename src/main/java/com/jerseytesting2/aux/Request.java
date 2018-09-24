@@ -1,4 +1,4 @@
-package com.jerseytesting.aux;
+package com.jerseytesting2.aux;
 
 import javax.persistence.*;
 

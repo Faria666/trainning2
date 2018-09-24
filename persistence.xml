@@ -6,7 +6,7 @@
     <persistence-unit name="jerseytesting-JPA">
         <description>JPA</description>
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
-        <class>com.jerseytesting.entity.Farmer</class>
+        <class>com.jerseytesting2.entity.Farmer</class>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>

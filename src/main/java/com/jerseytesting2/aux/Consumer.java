@@ -1,8 +1,7 @@
-package com.jerseytesting.aux;
+package com.jerseytesting2.aux;
 
-import com.jerseytesting.rest.RESTClientPost;
+import com.jerseytesting2.rest.RESTClientPost;
 
-import java.sql.SQLException;
 import java.util.concurrent.ArrayBlockingQueue;
 
 public class Consumer implements Runnable{
