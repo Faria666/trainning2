@@ -46,7 +46,7 @@ public class RESTServer {
      * @throws JsonProcessingException
      */
 
-    private String convertToString(final Answer answerObject, final String json) throws JsonProcessingException {
+    private String convertToJson(final Answer answerObject, final String json) throws JsonProcessingException {
         String answer;
 
         answer = mapper.writeValueAsString(answerObject);
@@ -86,7 +86,7 @@ public class RESTServer {
      *Function that builds the answer to send to the client, merge the result of the calculation of the operation, the date and hour of the operation and the operation made
      * @param operation is the operation made
      * @param result is the result of the operation
-     * @return returns a Answer object that contains all the data referent to the treeatment of the request from the client
+     * @return returns a Answer object that contains all the data referent to the treatment of the request from the client
      */
 
     private Answer buildAnswer(final String operation, final double result){
@@ -119,7 +119,7 @@ public class RESTServer {
 
         answerObject = buildAnswer(request.getOperation(),result);
 
-        answer = convertToString(answerObject, json);
+        answer = convertToJson(answerObject, json);
 
         return Response.status(Response.Status.OK).entity(answer).build();
     }
