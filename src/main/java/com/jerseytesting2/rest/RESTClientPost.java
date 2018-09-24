@@ -247,9 +247,9 @@ public class RESTClientPost {
 
         Response response = invocationBuilder.post(Entity.entity(request,MediaType.APPLICATION_JSON));
 
-        System.out.print("\nStatus: ");
+        //System.out.print("\nStatus: ");
 
-        System.out.println(response.getStatus());
+        //System.out.println(response.getStatus());
 
         answer = response.readEntity(String.class);
 
