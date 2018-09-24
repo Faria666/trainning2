@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="rename package">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting2/rest/RESTClientPost.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jerseytesting2/rest/RESTClientPost.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting2/rest/RESTServer$Calculate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting2/rest/RESTServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jerseytesting2/rest/RESTServer.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -192,14 +197,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2003" />
+          <entry key="java" value="2188" />
           <entry key="txt" value="265" />
+          <entry key="xml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2003" />
+          <entry key="JAVA" value="2188" />
           <entry key="PLAIN_TEXT" value="265" />
+          <entry key="XML" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -207,10 +214,10 @@
           <entry key="Dockerfile" value="2" />
           <entry key="class" value="2" />
           <entry key="html" value="1" />
-          <entry key="java" value="6" />
+          <entry key="java" value="7" />
           <entry key="md" value="1" />
           <entry key="sql" value="1" />
-          <entry key="xml" value="1" />
+          <entry key="xml" value="6" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
@@ -220,10 +227,10 @@
           <entry key="DBN-SQL" value="1" />
           <entry key="Dockerfile" value="1" />
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="6" />
+          <entry key="JAVA" value="7" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="1" />
+          <entry key="XML" value="6" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -234,13 +241,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
+            <state relative-caret-position="975">
+              <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#readFileWithFramework#0;class#RESTClientPost#0" />
+                <element signature="method#processFiles#0;class#RESTClientPost#0" />
+                <element signature="method#createQueue#0;class#RESTClientPost#0" />
                 <element signature="method#requestTreatment#0;class#RESTClientPost#0" />
                 <element signature="method#insertJDBC#0;class#RESTClientPost#0" />
               </folding>
@@ -251,8 +261,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-118">
-              <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+            <state relative-caret-position="435">
+              <caret line="35" column="56" lean-forward="true" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -260,29 +270,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Answer.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Request.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/persistence.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+            <state relative-caret-position="390">
+              <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -340,7 +332,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/jerseytesting/webapp/RESTClientTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jerseytesting/webapp/RESTServerTest.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/jerseytesting/webapp/RESTClientPost.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/trainning/webapp/RESTClientPost.java" />
         <option value="$PROJECT_DIR$/src/main/java/REST/RESTServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/REST/RESTClientPost.java" />
@@ -375,7 +366,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/aux/BlockingQueue.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/jerseytesting/aux/RESTTestAux.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/aux/Consumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/aux/MyThread.java" />
@@ -384,8 +374,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/aux/Answer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/rest/RESTClientPost.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/rest/RESTServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTServer.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -422,9 +414,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="25" />
-    <option name="width" value="1281" />
+    <option name="width" value="970" />
     <option name="height" value="1008" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -490,6 +482,21 @@
               <item name="jerseytesting2" type="462c0819:PsiDirectoryNode" />
               <item name="rest" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="jerseytesting2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jerseytesting2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jerseytesting2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jerseytesting2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -498,7 +505,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537786171003" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537795419733" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/jerseytesting" />
@@ -702,10 +709,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1281" height="1008" extended-state="4" />
+    <frame x="0" y="25" width="1920" height="1008" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49534163" visible="true" weight="0.2097166" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49534163" visible="true" weight="0.16221985" />
       <window_info id="Structure" order="1" sideWeight="0.5022727" side_tool="true" weight="0.1664888" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -717,15 +724,15 @@
       <window_info id="Job Explorer" order="9" weight="0.32977587" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49392712" weight="0.32915717" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.506937" weight="0.2665148" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5048026" weight="0.2665148" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49519745" weight="0.3159091" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49786553" weight="0.32687926" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49675325" weight="0.32687926" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" weight="0.32915717" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.5060729" side_tool="true" visible="true" weight="0.2665148" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.54112554" side_tool="true" visible="true" weight="0.32687926" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.48132336" side_tool="true" weight="0.26765376" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4610459" weight="0.32687926" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.45887446" weight="0.32687926" />
       <window_info anchor="bottom" id="DB Execution Console" order="11" />
       <window_info anchor="bottom" id="Console" order="12" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
@@ -740,7 +747,7 @@
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3276414" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49534163" visible="true" weight="0.16808964" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49534163" visible="true" weight="0.32900432" />
       <window_info id="Structure" order="1" sideWeight="0.5022727" side_tool="true" weight="0.1664888" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -751,18 +758,19 @@
       <window_info id="Project Explorer" order="8" />
       <window_info id="Job Explorer" order="9" weight="0.32977587" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49573106" weight="0.32954547" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.511206" visible="true" weight="0.2665148" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49392712" weight="0.32915717" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5048026" weight="0.2665148" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49519745" weight="0.3159091" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49786553" weight="0.32687926" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49675325" weight="0.32687926" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" weight="0.32915717" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.48879403" side_tool="true" visible="true" weight="0.2665148" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.54112554" side_tool="true" visible="true" weight="0.32687926" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.48132336" side_tool="true" weight="0.26765376" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.46264675" weight="0.32687926" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.45887446" weight="0.32687926" />
       <window_info anchor="bottom" id="DB Execution Console" order="11" />
       <window_info anchor="bottom" id="Console" order="12" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24945295" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -770,7 +778,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.6067236" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.6066434" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3276414" />
     </layout-to-restore>
   </component>
@@ -831,13 +839,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/REST/RESTClientPost.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rest/webapp/RESTServer.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rest/webapp/RESTClientPost.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1320">
-          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/calc/Mult.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/calc/Sum.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/calc/Div.java" />
@@ -884,13 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -933,6 +927,35 @@
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#readFileWithFramework#0;class#RESTClientPost#0" />
+            <element signature="method#processFiles#0;class#RESTClientPost#0" />
+            <element signature="method#createQueue#0;class#RESTClientPost#0" />
+            <element signature="method#requestTreatment#0;class#RESTClientPost#0" />
+            <element signature="method#insertJDBC#0;class#RESTClientPost#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="835">
+          <caret line="338" column="41" selection-start-line="338" selection-start-column="41" selection-end-line="338" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Answer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -947,32 +970,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Answer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-118">
-          <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+        <state relative-caret-position="435">
+          <caret line="35" column="56" lean-forward="true" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#requestTreatment#0;class#RESTClientPost#0" />
-            <element signature="method#insertJDBC#0;class#RESTClientPost#0" />
-          </folding>
+        <state relative-caret-position="390">
+          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
         </state>
       </provider>
     </entry>
