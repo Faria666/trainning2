@@ -59,7 +59,7 @@ public class RESTServer {
     /**
      * Function that calculates the result of the operation specified in the request from the client
      * @param request is the Request object that contains all the data from the client request
-     * @return return the value resultant from the operation
+     * @return return the value resultant from the operation made
      */
 
     private double calculator(final Request request){

@@ -6,7 +6,7 @@
         </encoder>
     </appender>
 
-    <logger name="com.jerseytesting.aux" level="debug" />
+    <logger name="com.jerseytesting2.aux" level="debug" />
 
     <root level="INFO">
         <appender-ref ref="STDOUT" />
