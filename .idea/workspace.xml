@@ -2,50 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="rename package">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/aux/Answer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/aux/Consumer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/aux/Producer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/aux/Request.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/aux/class-use/Answer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/aux/class-use/Consumer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/aux/class-use/Producer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/aux/class-use/Request.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/aux/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/aux/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/aux/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/aux/package-use.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/rest/RESTClientPost.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/rest/RESTServer.Calculate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/rest/RESTServer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/rest/class-use/RESTClientPost.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/rest/class-use/RESTServer.Calculate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/rest/class-use/RESTServer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/rest/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/rest/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/rest/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/rest/package-use.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/Answer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/RESTServer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/RESTServerTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/Request.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/class-use/Answer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/class-use/RESTServer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/class-use/RESTServerTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/class-use/Request.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting/webapp/package-use.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting/aux/Answer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting/aux/Consumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting/aux/Producer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting/aux/Request.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting/rest/RESTClientPost.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting/rest/RESTServer$Calculate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting/rest/RESTServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -277,15 +234,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1360">
-              <caret line="224" column="62" selection-start-line="224" selection-start-column="62" selection-end-line="224" selection-end-column="62" />
+            <state relative-caret-position="152">
+              <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#readFileWithFramework#0;class#RESTClientPost#0" />
-                <element signature="method#createQueue#0;class#RESTClientPost#0" />
                 <element signature="method#requestTreatment#0;class#RESTClientPost#0" />
                 <element signature="method#insertJDBC#0;class#RESTClientPost#0" />
               </folding>
@@ -293,11 +248,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="61" column="65" selection-start-line="61" selection-start-column="65" selection-end-line="61" selection-end-column="65" />
+            <state relative-caret-position="-118">
+              <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -380,7 +335,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/Queue.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/newQueue.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/RESTClientPost2.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jerseytesting/webapp/RESTClientTest.java" />
@@ -431,6 +385,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/rest/RESTClientPost.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/rest/RESTServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java" />
       </list>
     </option>
   </component>
@@ -543,7 +498,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537785673973" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537786171003" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/jerseytesting" />
@@ -999,26 +954,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="224" column="62" selection-start-line="224" selection-start-column="62" selection-end-line="224" selection-end-column="62" />
+        <state relative-caret-position="-118">
+          <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#readFileWithFramework#0;class#RESTClientPost#0" />
-            <element signature="method#createQueue#0;class#RESTClientPost#0" />
-            <element signature="method#requestTreatment#0;class#RESTClientPost#0" />
-            <element signature="method#insertJDBC#0;class#RESTClientPost#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTServer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="61" column="65" selection-start-line="61" selection-start-column="65" selection-end-line="61" selection-end-column="65" />
+        <state relative-caret-position="152">
+          <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#requestTreatment#0;class#RESTClientPost#0" />
+            <element signature="method#insertJDBC#0;class#RESTClientPost#0" />
           </folding>
         </state>
       </provider>

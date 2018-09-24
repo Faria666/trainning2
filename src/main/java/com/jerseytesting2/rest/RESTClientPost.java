@@ -73,7 +73,7 @@ public class RESTClientPost {
      * @return return an array with the name of all files found in that directory
      */
 
-    public static ArrayList<String> seekFiles(final String directory) {
+    private static ArrayList<String> seekFiles(final String directory) {
         final File folder = new File(directory);
         final File[] listOfFiles = folder.listFiles();
         final ArrayList<String> files = new ArrayList<>();
