@@ -225,7 +225,7 @@ public class RESTClientPost {
         String request = null;
         final String answer;
         final String location = "/calc";
-        final String URI = "http://172.17.0.2:8080/calculator";
+        final String URI = "http://localhost:8080/calculator";
         Answer answerObject = new Answer();
 
 
@@ -250,9 +250,9 @@ public class RESTClientPost {
 
         Response response = invocationBuilder.post(Entity.entity(request,MediaType.APPLICATION_JSON));
 
-        //System.out.print("\nStatus: ");
+        System.out.print("\nStatus: ");
 
-        //System.out.println(response.getStatus());
+        System.out.println(response.getStatus());
 
         answer = response.readEntity(String.class);
 
