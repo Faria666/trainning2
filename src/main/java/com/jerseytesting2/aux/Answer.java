@@ -19,20 +19,20 @@ public class Answer {
      * @return the Id
      */
 
-    /*@Id
+    @Id
     @Column(name="answer_id")
     public int getAnswerId(){
         return answerId;
-    }*/
+    }
 
     /**
      * this is to set the answer Id in the answer object field
      * @param answerId is the Id of the answer
      */
 
-    /*public void setAnswerId(int answerId){
+    public void setAnswerId(int answerId){
         this.answerId = answerId;
-    }*/
+    }
 
     /**
      * this is used to get the operation done

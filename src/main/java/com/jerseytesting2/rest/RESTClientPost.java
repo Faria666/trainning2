@@ -275,7 +275,7 @@ public class RESTClientPost {
 
     private static void insertJDBC(final Answer answer, final Request request){
 
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("jerseytesting2-JPA");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("jerseytesting-JPA");
 
         EntityManager em = emf.createEntityManager();
 
@@ -294,7 +294,7 @@ public class RESTClientPost {
         ArrayBlockingQueue queue;
 
         ArrayList<Request> requestList;
-        int threads = 5;
+
 
 
         do {
@@ -304,7 +304,7 @@ public class RESTClientPost {
 
             queue = createQueue(requestList);
 
-            for (int i = 0; i < threads; i++) {
+            while(queue.size()!= 0){
                 Consumer consumer = new Consumer(queue);
                 new Thread(consumer).start();
             }

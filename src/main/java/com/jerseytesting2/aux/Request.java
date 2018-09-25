@@ -15,12 +15,12 @@ public class Request {
      * @return return the request Id
      */
 
-    /*@Id
-    @Column(name="request_id")
+    @Id
+    @Column(name="requestId")
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     public int getRequestId(){
         return requestId;
-    }*/
+    }
 
 
     /**
@@ -28,10 +28,10 @@ public class Request {
      * @param requestId is the Id of the request
      */
 
-    /*public void setRequestId(int requestId){
+    public void setRequestId(int requestId){
         this.requestId = requestId;
     }
-*/
+
 
     /**
      * his is used to get the first number in the request object
