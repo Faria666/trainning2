@@ -1,11 +1,15 @@
 package com.jerseytesting2.aux;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 
 
 @Entity
-@Table(name = "Answer")
+@Table(name = "answer")
 public class Answer {
 
     private int answerId;
@@ -21,7 +25,7 @@ public class Answer {
 
     @Id
     @Column(name="answerId")
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy= GenerationType.SEQUENCE)
     public int getAnswerId(){
         return answerId;
     }
