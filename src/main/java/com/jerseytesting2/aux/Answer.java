@@ -20,7 +20,8 @@ public class Answer {
      */
 
     @Id
-    @Column(name="answer_id")
+    @Column(name="answerId")
+    @GeneratedValue(strategy= GenerationType.AUTO)
     public int getAnswerId(){
         return answerId;
     }
