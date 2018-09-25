@@ -1,5 +1,6 @@
 package com.jerseytesting2.rest;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jerseytesting2.aux.*;
@@ -27,6 +28,8 @@ import java.util.List;
 import java.util.concurrent.ArrayBlockingQueue;
 
 public class RESTClientPost {
+
+    @JsonIgnoreProperties(ignoreUnknown = true)
 
     private static final Logger log = LoggerFactory.getLogger(RESTClientPost.class);
 
@@ -222,7 +225,7 @@ public class RESTClientPost {
         String request = null;
         final String answer;
         final String location = "/calc";
-        final String URI = "http://localhost:8080/calculator";
+        final String URI = "http://172.17.0.2:8080/calculator";
         Answer answerObject = new Answer();
 
 
@@ -282,6 +285,7 @@ public class RESTClientPost {
         em.getTransaction().begin();
         em.persist(answer);
         em.persist(request);
+        em.flush();
         em.getTransaction().commit();
         em.close();
     }

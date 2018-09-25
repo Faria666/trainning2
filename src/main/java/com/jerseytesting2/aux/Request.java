@@ -1,9 +1,14 @@
 package com.jerseytesting2.aux;
 
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+
 import javax.persistence.*;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
+
+
 @Entity
-@Table(name = "Request")
+@Table(name = "request")
 public class Request {
     private int requestId;
     private double value1;
@@ -17,7 +22,7 @@ public class Request {
 
     @Id
     @Column(name="requestId")
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy= GenerationType.SEQUENCE)
     public int getRequestId(){
         return requestId;
     }
