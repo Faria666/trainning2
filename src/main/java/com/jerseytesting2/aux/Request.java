@@ -17,7 +17,7 @@ public class Request {
 
     @Id
     @Column(name="requestId")
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.AUTO)
     public int getRequestId(){
         return requestId;
     }
