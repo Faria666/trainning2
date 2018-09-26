@@ -40,13 +40,15 @@ RUN wget -c http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9
     sudo chmod u=rwx,g=rxs,o= /opt/jetty9
 
 # Change directory and clone project 
-RUN mkdir /usr/proj2 
+RUN mkdir /usr/proj3
 
-WORKDIR /usr/proj2
+WORKDIR /usr/proj3
 
 RUN git clone https://github.com/Faria666/trainning2.git
 
-WORKDIR /usr/proj2/trainning2
+WORKDIR /usr/proj3/trainning2
 
 ENV MAVEN_HOME /opt/maven
+
+EXPOSE 8080:8080
 

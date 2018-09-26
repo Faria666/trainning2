@@ -225,7 +225,7 @@ public class RESTClientPost {
         String request = null;
         final String answer;
         final String location = "/calc";
-        final String URI = "http://localhost:8080/calculator";
+        final String URI = "http://172.17.0.3:8080/calculator";
         Answer answerObject = new Answer();
 
 

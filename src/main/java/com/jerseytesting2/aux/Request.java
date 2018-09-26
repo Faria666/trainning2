@@ -22,7 +22,7 @@ public class Request {
 
     @Id
     @Column(name="requestId")
-    @GeneratedValue(strategy= GenerationType.SEQUENCE)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     public int getRequestId(){
         return requestId;
     }
