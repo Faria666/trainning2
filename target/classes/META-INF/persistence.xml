@@ -15,7 +15,7 @@
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect"/> <!-- DB Dialect -->
             <property name="hibernate.hbm2ddl.auto" value="update" /> <!-- create / create-drop / update -->
 
-            <property name="hibernate.connection.autocommit" value="true" />
+            <property name="hibernate.connection.autocommit" value="true" /> <!-- automatically commits after the operations are made -->
 
 
         </properties>
