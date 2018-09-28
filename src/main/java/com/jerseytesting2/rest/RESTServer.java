@@ -64,7 +64,7 @@ public class RESTServer {
      * @return return the value resultant from the operation made
      */
 
-    private double calculator(final Request request){
+    public double calculator(final Request request){
 
         log.debug("Processing number: {} and number: {}  with operation: {}", request.getValue1(), request.getValue2(), request.getOperation());
 
