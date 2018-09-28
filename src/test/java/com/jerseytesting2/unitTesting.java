@@ -15,7 +15,7 @@ public class unitTesting {
     @Test
     public void testRequestAcceptAdd() throws IOException {
         String request = "{"+ "\"" + "value1"+"\""+":"+"\""+"12"+"\""+", "+"\""+"value2"+"\""+":"+"\""+"67"+"\""+", "+"\""+"operation"+"\""+":"+"\""+"add"+"\""+"}";
-        RESTServer server = Mockito.mock(RESTServer.class);
+        RESTServer server = new RESTServer();
         Response response = server.postRequest(request);
         Assert.assertEquals(Response.Status.OK.getStatusCode(),response.getStatus());
 
