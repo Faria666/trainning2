@@ -1,21 +1,21 @@
 package com.jerseytesting2;
 
-import com.jerseytesting2.aux.Answer;
-import com.jerseytesting2.aux.Request;
 import com.jerseytesting2.rest.RESTServer;
 import org.junit.Assert;
 import org.junit.Test;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
+import org.mockito.Mockito;
+
 
 
 public class unitTesting {
 
 
     @Test
-    public void testRequestAccept() throws IOException {
+    public void testRequestAcceptAdd() throws IOException {
         String request = "{"+ "\"" + "value1"+"\""+":"+"\""+"12"+"\""+", "+"\""+"value2"+"\""+":"+"\""+"67"+"\""+", "+"\""+"operation"+"\""+":"+"\""+"add"+"\""+"}";
-        RESTServer server = new RESTServer();
+        RESTServer server = Mockito.mock(RESTServer.class);
         Response response = server.postRequest(request);
         Assert.assertEquals(Response.Status.OK.getStatusCode(),response.getStatus());
 
