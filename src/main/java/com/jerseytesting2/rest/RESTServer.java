@@ -91,7 +91,7 @@ public class RESTServer {
      * @return returns a Answer object that contains all the data referent to the treatment of the request from the client
      */
 
-    private Answer buildAnswer(final String operation, final double result){
+    private static Answer buildAnswer(final String operation, final double result){
 
         String date;
         Answer answerObject;
