@@ -30,7 +30,7 @@ public class RESTServer {
      * @throws IOException
      */
 
-    private Request convertToObj(final String json) throws IOException {
+    public Request convertToObj(final String json) throws IOException {
 
         final Request request;
         log.debug("Processing request: {}", json);
@@ -48,7 +48,7 @@ public class RESTServer {
      * @throws JsonProcessingException
      */
 
-    private String convertToJson(final Answer answerObject, final String json) throws JsonProcessingException {
+    public String convertToJson(final Answer answerObject, final String json) throws JsonProcessingException {
         String answer;
 
         answer = mapper.writeValueAsString(answerObject);
@@ -64,7 +64,7 @@ public class RESTServer {
      * @return return the value resultant from the operation made
      */
 
-    private double calculator(final Request request){
+    public double calculator(final Request request){
 
         log.debug("Processing number: {} and number: {}  with operation: {}", request.getValue1(), request.getValue2(), request.getOperation());
 
@@ -80,7 +80,7 @@ public class RESTServer {
         return calculate.obtainResult(request.getValue1(),request.getValue2(),request.getOperation());
     }
 
-    private interface Calculate{
+    public interface Calculate{
         double obtainResult(double value1, double value2, String operation);
     }
 
@@ -91,7 +91,7 @@ public class RESTServer {
      * @return returns a Answer object that contains all the data referent to the treatment of the request from the client
      */
 
-    private Answer buildAnswer(final String operation, final double result){
+    public static Answer buildAnswer(final String operation, final double result){
 
         String date;
         Answer answerObject;

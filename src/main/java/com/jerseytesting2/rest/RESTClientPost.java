@@ -34,7 +34,7 @@ public class RESTClientPost {
     private static final Logger log = LoggerFactory.getLogger(RESTClientPost.class);
 
     /**
-     * Function to for changes in a determinate directory
+     * Function to look for changes in a determinate directory
      * @param directory is the directory where to look for the changes
      * @return return a boolean that is true if have changes or false if not
      */
