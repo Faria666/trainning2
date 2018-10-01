@@ -76,7 +76,7 @@ public class RESTClientPost {
      * @return return an array with the name of all files found in that directory
      */
 
-    private static ArrayList<String> seekFiles(final String directory) {
+    public static ArrayList<String> seekFiles(final String directory) {
         final File folder = new File(directory);
         final File[] listOfFiles = folder.listFiles();
         final ArrayList<String> files = new ArrayList<>();
@@ -100,7 +100,7 @@ public class RESTClientPost {
      * @return return an array of Request objects
      */
 
-    private static ArrayList<Request> readFileWithFramework(final String inputDirectory, final String outputDirectory, final ArrayList<String> files) throws IOException {
+    public static ArrayList<Request> readFileWithFramework(final String inputDirectory, final String outputDirectory, final ArrayList<String> files) throws IOException {
 
         Request request;
         final ArrayList<Request> requestList = new ArrayList<>();
