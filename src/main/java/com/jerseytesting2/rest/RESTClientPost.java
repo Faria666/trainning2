@@ -39,7 +39,7 @@ public class RESTClientPost {
      * @return return a boolean that is true if have changes or false if not
      */
 
-    private static boolean watchDirectory(final String directory){
+    public static boolean watchDirectory(final String directory){
 
         boolean flag = false;
 
