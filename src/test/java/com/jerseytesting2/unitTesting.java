@@ -143,14 +143,6 @@ public class unitTesting {
 
 
     @Test
-    public void testClient(){
-        Request request = new Request(10,5,"add");
-        RESTClientPost client = mock(RESTClientPost.class);
-
-        client.client(request);
-    }
-
-    @Test
     public void testCreateQueue() throws InterruptedException {
         boolean flag = false;
         ArrayList<Request> requests = new ArrayList<>();
