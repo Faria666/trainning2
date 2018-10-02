@@ -2,6 +2,7 @@ package com.jerseytesting2;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.jerseytesting2.aux.Answer;
+import com.jerseytesting2.aux.Consumer;
 import com.jerseytesting2.aux.Request;
 import com.jerseytesting2.rest.RESTClientPost;
 import com.jerseytesting2.rest.RESTServer;
@@ -15,6 +16,7 @@ import javax.ws.rs.core.Response;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.concurrent.ArrayBlockingQueue;
 
 import static org.mockito.Mockito.*;
 
@@ -123,7 +125,9 @@ public class unitTesting {
         }else{
             System.out.println("Rename failed");
         }
-        requestList = RESTClientPost.readFileWithFramework("/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/watchTest/", "/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/watchTest/", files);
+
+        RESTClientPost client = mock(RESTClientPost.class);
+        requestList = client.readFileWithFramework("/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/watchTest/", "/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/watchTest/", files);
         if(requestList.get(0).getValue1() == 21.34 && requestList.get(0).getValue2( )== 45.02 && requestList.get(0).getOperation().compareToIgnoreCase("add")==0)
             flag = true;
 
@@ -135,25 +139,74 @@ public class unitTesting {
     public void testSeekFiles(){
         boolean flag = false;
         ArrayList<String> files;
-        files = RESTClientPost.seekFiles("/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/seekTest/");
+        RESTClientPost client = mock(RESTClientPost.class);
+        files = client.seekFiles("/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/seekTest/");
         if(files.get(0).compareToIgnoreCase("Done - test.csv")==0)
             flag = true;
         Assert.assertTrue(flag);
     }
 
-    /*@Test
-    public void testWatchDirectory(){
-        boolean result, flag = false;
-        File file = new File("/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/wdTest/newfile.csv");
-        result = RESTClientPost.watchDirectory("/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/wdTest/");
-        if(result = true)
-            flag = true;
-        Assert.assertTrue(flag);
-    }*/
 
     @Test
     public void testClient(){
+        Request request = new Request(10,5,"add");
+        RESTClientPost client = mock(RESTClientPost.class);
+
+        client.client(request);
+    }
+
+    @Test
+    public void testCreateQueue() throws InterruptedException {
+        boolean flag = false;
+        ArrayList<Request> requests = new ArrayList<>();
+        Request request = new Request(10, 5, "add");
+        Request auxiliar;
+        requests.add(request);
+        RESTClientPost client = mock(RESTClientPost.class);
+        ArrayBlockingQueue blockingQ =client.createQueue(requests);
+        auxiliar = (Request) blockingQ.take();
+        if(auxiliar.getValue1() == 10 && auxiliar.getValue2() == 5 && auxiliar.getOperation().compareToIgnoreCase("add")==0)
+            flag = true;
+        Assert.assertTrue(flag);
+    }
+
+
+
+    /*@Test
+    public void testWatchDirectory(){
+        boolean flag = false;
+        File file = new File("/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/wdTest/newfile.csv");
+        RESTClientPost client = mock(RESTClientPost.class);
+        when(client.watchDirectory("/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/wdTest/")).thenReturn(flag = true);
+        Assert.assertTrue(flag);
+    }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @Test
+    public void testInsertJDBC(){
+        Request request = new Request(10,5,"add");
+        Answer answer = new Answer("add",15,"12/12/12 12:12:12");
+        RESTClientPost client = mock(RESTClientPost.class);
+        client.insertJDBC(answer,request);
 
     }
+
 
 }
