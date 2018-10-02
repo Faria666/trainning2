@@ -2,16 +2,11 @@ package com.jerseytesting2;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.jerseytesting2.aux.Answer;
-import com.jerseytesting2.aux.Consumer;
 import com.jerseytesting2.aux.Request;
 import com.jerseytesting2.rest.RESTClientPost;
 import com.jerseytesting2.rest.RESTServer;
-import junit.framework.TestCase;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
-
-
 import javax.ws.rs.core.Response;
 import java.io.File;
 import java.io.IOException;
@@ -160,12 +155,12 @@ public class unitTesting {
         boolean flag = false;
         ArrayList<Request> requests = new ArrayList<>();
         Request request = new Request(10, 5, "add");
-        Request auxiliar;
+        Request auxiliary;
         requests.add(request);
         RESTClientPost client = mock(RESTClientPost.class);
         ArrayBlockingQueue blockingQ = client.createQueue(requests);
-        auxiliar = (Request) blockingQ.take();
-        if(auxiliar.getValue1() == 10 && auxiliar.getValue2() == 5 && auxiliar.getOperation().compareToIgnoreCase("add")==0)
+        auxiliary = (Request) blockingQ.take();
+        if(auxiliary.getValue1() == 10 && auxiliary.getValue2() == 5 && auxiliary.getOperation().compareToIgnoreCase("add")==0)
             flag = true;
         Assert.assertTrue(flag);
     }
@@ -178,33 +173,4 @@ public class unitTesting {
         when(client.watchDirectory("/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/wdTest/")).thenReturn(flag = true);
         Assert.assertTrue(flag);
     }*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    @Test
-    public void testInsertJDBC(){
-        Request request = new Request(10,5,"add");
-        Answer answer = new Answer("add",15,"12/12/12 12:12:12");
-        RESTClientPost client = mock(RESTClientPost.class);
-        client.insertJDBC(answer,request);
-
-    }
-
-
 }
