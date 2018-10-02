@@ -22,7 +22,7 @@ import static org.mockito.Mockito.*;
 public class unitTesting {
 
     RESTServer server = new RESTServer();
-    RESTClientPost client = new RESTClientPost();
+
 
     @Test
     public void testRestServer() throws IOException {
