@@ -163,14 +163,12 @@ public class unitTesting {
         Request auxiliar;
         requests.add(request);
         RESTClientPost client = mock(RESTClientPost.class);
-        ArrayBlockingQueue blockingQ =client.createQueue(requests);
+        ArrayBlockingQueue blockingQ = client.createQueue(requests);
         auxiliar = (Request) blockingQ.take();
         if(auxiliar.getValue1() == 10 && auxiliar.getValue2() == 5 && auxiliar.getOperation().compareToIgnoreCase("add")==0)
             flag = true;
         Assert.assertTrue(flag);
     }
-
-
 
     /*@Test
     public void testWatchDirectory(){

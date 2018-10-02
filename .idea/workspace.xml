@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="mods in testing file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/jerseytesting2/unitTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jerseytesting2/unitTesting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting2/rest/RESTClientPost.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jerseytesting2/rest/RESTClientPost.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/jerseytesting2/unitTesting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/jerseytesting2/unitTesting.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -60,7 +61,7 @@
     <SUITE FILE_PATH="coverage/jerseytesting2$auxTest.ic" NAME="unitTesting Coverage Results" MODIFIED="1538055623886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.jerseytesting2.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/jerseytesting2$unitTesting.ic" NAME="unitTesting Coverage Results" MODIFIED="1538474964565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/jerseytesting2$unitTesting.ic" NAME="unitTesting Coverage Results" MODIFIED="1538478046843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.jerseytesting2.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/jerseytesting$RESTTest_testReadFile.ic" NAME="RESTTest.testReadFile Coverage Results" MODIFIED="1534515651783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -204,14 +205,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="25" />
-          <entry key="java" value="6173" />
+          <entry key="java" value="6222" />
           <entry key="txt" value="298" />
           <entry key="xml" value="144" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6173" />
+          <entry key="JAVA" value="6222" />
           <entry key="PLAIN_TEXT" value="323" />
           <entry key="XML" value="144" />
         </counts>
@@ -254,8 +255,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2988">
-                  <caret line="250" selection-start-line="250" selection-end-line="250" />
+                <state relative-caret-position="1513">
+                  <caret line="267" column="9" lean-forward="true" selection-start-line="267" selection-start-column="9" selection-end-line="267" selection-end-column="9" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -282,8 +283,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/jerseytesting2/unitTesting.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="189" column="7" selection-start-line="189" selection-start-column="7" selection-end-line="189" selection-end-column="7" />
+                <state relative-caret-position="330">
+                  <caret line="173" column="37" lean-forward="true" selection-start-line="173" selection-start-column="37" selection-end-line="173" selection-end-column="37" />
                 </state>
               </provider>
             </entry>
@@ -554,7 +555,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538474962868" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538478118583" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/jerseytesting2" />
@@ -870,22 +871,17 @@
       <option name="project" value="LOCAL" />
       <updated>1538468291985</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="mods in testing file">
+      <created>1538475048398</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1538475048398</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="unitTesting - 2018.10.02 at 09h 46m 30s.xml">
-      <configuration name="unitTesting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="unitTesting - 2018.10.02 at 10h 08m 20s.xml">
-      <configuration name="unitTesting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="unitTesting - 2018.10.02 at 10h 12m 28s.xml">
-      <configuration name="unitTesting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="unitTesting - 2018.10.02 at 10h 15m 13s.xml">
-      <configuration name="unitTesting" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="unitTesting - 2018.10.02 at 10h 48m 05s.xml">
       <configuration name="unitTesting" configurationId="JUnit" />
     </history-entry>
@@ -902,6 +898,18 @@
       <configuration name="unitTesting" configurationId="JUnit" />
     </history-entry>
     <history-entry file="unitTesting - 2018.10.02 at 11h 08m 21s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting - 2018.10.02 at 11h 09m 30s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting - 2018.10.02 at 11h 44m 32s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting - 2018.10.02 at 11h 52m 54s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting - 2018.10.02 at 12h 00m 53s.xml">
       <configuration name="unitTesting" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -930,7 +938,7 @@
       <window_info id="Job Explorer" order="9" weight="0.32924226" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49392712" weight="0.32915717" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.50053364" weight="0.35990888" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.50053364" visible="true" weight="0.35990888" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49519745" weight="0.31548974" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -938,7 +946,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32915717" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4994664" side_tool="true" weight="0.33257404" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.48132336" side_tool="true" weight="0.2665148" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.4583778" visible="true" weight="0.32687926" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4583778" weight="0.32687926" />
       <window_info anchor="bottom" id="DB Execution Console" order="11" />
       <window_info anchor="bottom" id="Console" order="12" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
@@ -1188,8 +1196,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2988">
-          <caret line="250" selection-start-line="250" selection-end-line="250" />
+        <state relative-caret-position="1513">
+          <caret line="267" column="9" lean-forward="true" selection-start-line="267" selection-start-column="9" selection-end-line="267" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1198,8 +1206,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/jerseytesting2/unitTesting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="189" column="7" selection-start-line="189" selection-start-column="7" selection-end-line="189" selection-end-column="7" />
+        <state relative-caret-position="330">
+          <caret line="173" column="37" lean-forward="true" selection-start-line="173" selection-start-column="37" selection-end-line="173" selection-end-column="37" />
         </state>
       </provider>
     </entry>
