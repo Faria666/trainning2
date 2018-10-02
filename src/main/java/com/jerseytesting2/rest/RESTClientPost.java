@@ -186,7 +186,7 @@ public class RESTClientPost {
      * @return returns the queue already populated
      */
 
-    private static ArrayBlockingQueue createQueue(final ArrayList<Request> requestList){
+    public static ArrayBlockingQueue createQueue(final ArrayList<Request> requestList){
 
         final ArrayBlockingQueue queue = new ArrayBlockingQueue(1024);
 
@@ -219,7 +219,7 @@ public class RESTClientPost {
      * @return returns the answer in the form of a Answer object
      */
 
-    private static Answer client(final Request requestObject){
+    public static Answer client(final Request requestObject){
 
         final ObjectMapper mapper = new ObjectMapper();
         String request = null;
@@ -276,7 +276,7 @@ public class RESTClientPost {
      * @param request is the request made to the server
      */
 
-    private static void insertJDBC(final Answer answer, final Request request){
+    public static void insertJDBC(final Answer answer, final Request request){
 
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("jerseytesting-JPA");
 
