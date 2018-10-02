@@ -276,7 +276,7 @@ public class RESTClientPost {
      * @param request is the request made to the server
      */
 
-    public static void insertJDBC(final Answer answer, final Request request){
+    private static void insertJDBC(final Answer answer, final Request request){
 
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("jerseytesting-JPA");
 
