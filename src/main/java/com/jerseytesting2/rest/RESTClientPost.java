@@ -299,8 +299,6 @@ public class RESTClientPost {
 
         ArrayList<Request> requestList;
 
-
-
         do {
             changes = watchDirectory(inputDirectory);
 
