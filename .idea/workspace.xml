@@ -3,19 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="mods in testing file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/heyhow (3ª cópia).csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/heyhow (cópia).csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/heyhow (outra cópia).csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/heyhow.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input/heyhow (cópia).csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input/heyhow (outra cópia).csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/output/Done - heyhow (3ª cópia).csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/output/Done - heyhow (cópia).csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/output/Done - heyhow (outra cópia).csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/output/Done - heyhow.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting2/rest/RESTServer$Calculate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jerseytesting2/rest/RESTServer$Calculate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting2/rest/RESTServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jerseytesting2/rest/RESTServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting2/rest/RESTClientPost.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jerseytesting2/rest/RESTClientPost.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,7 +60,7 @@
     <SUITE FILE_PATH="coverage/jerseytesting2$auxTest.ic" NAME="unitTesting Coverage Results" MODIFIED="1538055623886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.jerseytesting2.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/jerseytesting2$unitTesting.ic" NAME="unitTesting Coverage Results" MODIFIED="1538400540145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/jerseytesting2$unitTesting.ic" NAME="unitTesting Coverage Results" MODIFIED="1538401600598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.jerseytesting2.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/jerseytesting$RESTTest_testReadFile.ic" NAME="RESTTest.testReadFile Coverage Results" MODIFIED="1534515651783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -215,14 +204,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="25" />
-          <entry key="java" value="4919" />
+          <entry key="java" value="5212" />
           <entry key="txt" value="298" />
           <entry key="xml" value="144" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4919" />
+          <entry key="JAVA" value="5212" />
           <entry key="PLAIN_TEXT" value="323" />
           <entry key="XML" value="144" />
         </counts>
@@ -233,7 +222,7 @@
           <entry key="class" value="2" />
           <entry key="csv" value="1" />
           <entry key="html" value="1" />
-          <entry key="java" value="33" />
+          <entry key="java" value="34" />
           <entry key="md" value="1" />
           <entry key="sql" value="3" />
           <entry key="xml" value="14" />
@@ -246,7 +235,7 @@
           <entry key="DBN-SQL" value="3" />
           <entry key="Dockerfile" value="2" />
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="33" />
+          <entry key="JAVA" value="34" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="14" />
@@ -265,7 +254,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="628">
+                <state relative-caret-position="-2210">
                   <caret line="78" column="4" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -281,8 +270,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/jerseytesting2/unitTesting.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="370">
-                  <caret line="124" column="31" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
+                <state relative-caret-position="445">
+                  <caret line="154" column="28" selection-start-line="154" selection-start-column="28" selection-end-line="154" selection-end-column="28" />
                 </state>
               </provider>
             </entry>
@@ -553,7 +542,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538400846590" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538403318983" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/jerseytesting2" />
@@ -841,31 +830,17 @@
       <option name="project" value="LOCAL" />
       <updated>1538390137937</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="mods in testing file">
+      <created>1538400856949</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1538400856949</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="unitTesting - 2018.10.01 at 13h 57m 47s.xml">
-      <configuration name="unitTesting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="unitTesting - 2018.10.01 at 14h 11m 13s.xml">
-      <configuration name="unitTesting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="unitTesting - 2018.10.01 at 14h 12m 56s.xml">
-      <configuration name="unitTesting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="unitTesting - 2018.10.01 at 14h 14m 05s.xml">
-      <configuration name="unitTesting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="unitTesting - 2018.10.01 at 14h 17m 39s.xml">
-      <configuration name="unitTesting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="unitTesting - 2018.10.01 at 14h 26m 04s.xml">
-      <configuration name="unitTesting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="unitTesting - 2018.10.01 at 14h 27m 42s.xml">
-      <configuration name="unitTesting" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="unitTesting - 2018.10.01 at 14h 28m 03s.xml">
       <configuration name="unitTesting" configurationId="JUnit" />
     </history-entry>
@@ -873,6 +848,27 @@
       <configuration name="unitTesting" configurationId="JUnit" />
     </history-entry>
     <history-entry file="unitTesting - 2018.10.01 at 14h 29m 02s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting - 2018.10.01 at 14h 43m 57s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting - 2018.10.01 at 14h 44m 49s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting - 2018.10.01 at 14h 45m 04s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting - 2018.10.01 at 14h 45m 07s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting - 2018.10.01 at 14h 45m 22s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting - 2018.10.01 at 14h 46m 04s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting - 2018.10.01 at 14h 46m 43s.xml">
       <configuration name="unitTesting" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -901,8 +897,8 @@
       <window_info id="Job Explorer" order="9" weight="0.32953367" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49392712" weight="0.32915717" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.50043976" visible="true" weight="0.33257404" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49519745" weight="0.3159091" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.50043976" visible="true" weight="0.33257404" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49519745" weight="0.31548974" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49675325" weight="0.32687926" />
@@ -921,7 +917,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.6066434" />
-      <window_info active="true" anchor="right" id="Coverage" order="8" side_tool="true" visible="true" weight="0.32604057" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32604057" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49534163" visible="true" weight="0.1638207" />
@@ -1085,16 +1081,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1155,9 +1141,19 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/jerseytesting2/inputTest/test.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
+        <state relative-caret-position="-2210">
           <caret line="78" column="4" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1167,8 +1163,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/jerseytesting2/unitTesting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="124" column="31" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
+        <state relative-caret-position="445">
+          <caret line="154" column="28" selection-start-line="154" selection-start-column="28" selection-end-line="154" selection-end-column="28" />
         </state>
       </provider>
     </entry>
