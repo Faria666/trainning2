@@ -31,10 +31,15 @@ public class Calculator {
 
         result = Calculate.calculator(request);
 
-        answerObject = BuildAnswer.buildAnswer(request.getOperation(),result);
+        if(result != -1) {
 
-        answer = Convertions.convertToJson(answerObject, json);
+            answerObject = BuildAnswer.buildAnswer(request.getOperation(), result);
 
-        return Response.status(Response.Status.OK).entity(answer).build();
+            answer = Convertions.convertToJson(answerObject, json);
+
+            return Response.status(Response.Status.OK).entity(answer).build();
+        }
+        else
+            return Response.status(Response.Status.BAD_REQUEST).build();
     }
 }

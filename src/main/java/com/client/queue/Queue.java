@@ -37,10 +37,15 @@ public class Queue {
         Answer answer = new Answer();
 
         if(request != null)
-            answer = Connection.client(request, uri, location);
-        if(answer.getOperation().compareTo("none")!=0 ) {
-            Database.insertJDBC(answer, request);
-        }
+            try{
+                answer = Connection.client(request, uri, location);
+                if(answer.getOperation().compareTo("none")!=0 ) {
+                    Database.insertJDBC(answer, request);
+                }
+            }catch (NullPointerException e) {
+                return;
+            }
+
     }
 
 

@@ -60,13 +60,22 @@ public class Connection {
 
         System.out.println(answer + "\n");
 
-        try {
-            answerObject = mapper.readValue(answer, Answer.class);
-        } catch (IOException e) {
+        if(response.getStatus() != 400) {
+
+            try {
+                answerObject = mapper.readValue(answer, Answer.class);
+                return answerObject;
+
+            } catch (IOException e) {
+
+            }
+            log.debug("Request processed, answer: {} {} {}", answerObject.getOperation(), answerObject.getResult(), answerObject.getDate());
+        }
+        else{
             FileFunctions.invalidLines(requestObject);
         }
-        log.debug("Request processed, answer: {} {} {}", answerObject.getOperation(), answerObject.getResult(), answerObject.getDate());
-        return answerObject;
+        return null;
+
     }
 
     public Connection() {

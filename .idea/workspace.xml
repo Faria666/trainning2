@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="structure modifications">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="connections modifications">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/calculator/calculate/Calculate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calculator/calculate/Calculate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/client/aux/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/aux/Connection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/aux/FileFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/aux/FileFunctions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/queue/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/queue/Consumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/service/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/service/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/files/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/files/test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/files/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/files/test.csv" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -211,15 +209,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="51" />
-          <entry key="java" value="7845" />
-          <entry key="txt" value="324" />
+          <entry key="java" value="8025" />
+          <entry key="txt" value="341" />
           <entry key="xml" value="155" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7845" />
-          <entry key="PLAIN_TEXT" value="375" />
+          <entry key="JAVA" value="8025" />
+          <entry key="PLAIN_TEXT" value="392" />
           <entry key="XML" value="155" />
         </counts>
       </usages-collector>
@@ -229,7 +227,7 @@
           <entry key="class" value="3" />
           <entry key="csv" value="1" />
           <entry key="html" value="1" />
-          <entry key="java" value="66" />
+          <entry key="java" value="74" />
           <entry key="md" value="1" />
           <entry key="sql" value="4" />
           <entry key="xml" value="19" />
@@ -242,7 +240,7 @@
           <entry key="DBN-SQL" value="4" />
           <entry key="Dockerfile" value="4" />
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="66" />
+          <entry key="JAVA" value="74" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="19" />
@@ -257,22 +255,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="274">
+              <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/Client.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+            <state relative-caret-position="369">
+              <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -280,20 +278,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/client/aux/Connection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/client/aux/FileFunctions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="139" column="101" selection-start-line="139" selection-start-column="101" selection-end-line="139" selection-end-column="101" />
+            <state relative-caret-position="954">
+              <caret line="77" lean-forward="true" selection-start-line="76" selection-start-column="8" selection-end-line="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -393,15 +379,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/calculator/Calculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/calculator/convertions/Convertions.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/calculator/dataTreatment/BuildAnswer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/calculator/calculate/Calculate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/calculator/dataTreatment/Convertions.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/queue/Consumer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/client/aux/Connection.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/aux/FileFunctions.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/service/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/calculator/calculate/Calculate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/client/aux/Connection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java" />
       </list>
     </option>
   </component>
@@ -509,7 +495,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="aux" type="462c0819:PsiDirectoryNode" />
+              <item name="queue" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jerseytesting2" type="b2602c69:ProjectViewProjectNode" />
@@ -519,7 +505,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="queue" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jerseytesting2" type="b2602c69:ProjectViewProjectNode" />
@@ -573,7 +559,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539266715541" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539267702714" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/jerseytesting2" />
@@ -985,7 +971,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539264138348</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="connections modifications">
+      <created>1539266774191</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1539266774191</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1045,13 +1038,13 @@
       <window_info id="Job Explorer" order="9" weight="0.32924226" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.48932764" weight="0.32915717" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.47758806" visible="true" weight="0.2813212" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.47705442" visible="true" weight="0.2813212" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49519745" weight="0.31548974" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49675325" weight="0.32687926" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32915717" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.52241194" side_tool="true" visible="true" weight="0.2813212" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.5229456" side_tool="true" visible="true" weight="0.2813212" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.48132336" side_tool="true" weight="0.2665148" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.45570973" weight="0.32687926" />
       <window_info anchor="bottom" id="DB Execution Console" order="11" />
@@ -1089,7 +1082,8 @@
     <MESSAGE value="test file aux" />
     <MESSAGE value="mods in testing file" />
     <MESSAGE value="structure modifications" />
-    <option name="LAST_COMMIT_MESSAGE" value="structure modifications" />
+    <MESSAGE value="connections modifications" />
+    <option name="LAST_COMMIT_MESSAGE" value="connections modifications" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1210,16 +1204,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/dataTreatment/BuildAnswer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1237,26 +1221,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/dataTreatment/Convertions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/calculate/Calculate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/client/unitTesting.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1275">
@@ -1264,40 +1228,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="39" column="36" lean-forward="true" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/client/aux/Answer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1311,10 +1245,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/aux/Connection.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/dataTreatment/Convertions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+        <state relative-caret-position="286">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/dataTreatment/BuildAnswer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/calculate/Calculate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1323,8 +1297,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
+        <state relative-caret-position="274">
           <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/aux/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="954">
+          <caret line="77" lean-forward="true" selection-start-line="76" selection-start-column="8" selection-end-line="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

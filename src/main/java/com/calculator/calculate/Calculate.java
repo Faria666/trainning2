@@ -25,7 +25,7 @@ public class Calculate {
             else if (operation.compareToIgnoreCase("mult") == 0) return value1 * value2;
             else if (operation.compareToIgnoreCase("div") == 0) return value1 / value2;
             else if (operation.compareToIgnoreCase("avg") == 0) return (value1 + value2)/2;
-            else return 0;
+            else return -1;
         };
 
         return calculate.obtainResult(request.getValue1(),request.getValue2(),request.getOperation());
