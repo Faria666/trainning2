@@ -27,8 +27,6 @@ public class Client {
 
     @JsonIgnoreProperties(ignoreUnknown = true)
 
-    private static final Logger log = LoggerFactory.getLogger(Client.class);
-
     private static final String INPUT_DIRECTORY = "src/main/resources/files/input/";
     private static final String OUTPUT_DIRECTORY = "src/main/resources/files/output/";
     private static final String LOCATION = "/calc";
