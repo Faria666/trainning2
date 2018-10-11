@@ -210,7 +210,7 @@
 
   <build>
     <finalName>jerseytesting</finalName>
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+    <pluginManagement>
       <plugins>
 
         <plugin>
@@ -218,7 +218,6 @@
           <version>3.0.0</version>
         </plugin>
 
-        <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
@@ -336,18 +335,15 @@
                 <goal>report</goal>
               </goals>
               <configuration>
-                <!-- Sets the path to the file which contains the execution data. -->
 
                 <dataFile>target/jacoco.exec</dataFile>
-                <!-- Sets the output directory for the code coverage report. -->
+
                 <outputDirectory>target/jacoco-ut</outputDirectory>
               </configuration>
             </execution>
           </executions>
           <configuration>
-            <!--<systemPropertyVariables>
-              <jacoco-agent.destfile>target/jacoco.exec</jacoco-agent.destfile>
-            </systemPropertyVariables>-->
+
           </configuration>
         </plugin>
 
