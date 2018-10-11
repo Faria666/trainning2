@@ -1,12 +1,12 @@
 package com.client.queue;
 
-import com.client.aux.Request;
+import com.client.typeofobject.Request;
 
 import java.util.concurrent.ArrayBlockingQueue;
 
 public class Producer implements Runnable{
 
-    protected ArrayBlockingQueue queue = null;
+    protected ArrayBlockingQueue queue;
     private Request elem;
 
     public Producer(ArrayBlockingQueue queue, Request elem) {

@@ -1,4 +1,4 @@
-package com.client.aux;
+package com.client.others;
 
 import com.client.service.Client;
 import org.slf4j.Logger;
@@ -58,17 +58,17 @@ public class Directory {
      * @return return an array with the name of all files found in that directory
      */
 
-    public static ArrayList<String> seekFiles(final String directory) {
+    static ArrayList<String> seekFiles(final String directory) {
         final java.io.File folder = new java.io.File(directory);
         final File[] listOfFiles = folder.listFiles();
         final ArrayList<String> files = new ArrayList<>();
 
         assert listOfFiles != null;
-        for (int i = 0; i < listOfFiles.length; i++) {
-            if (listOfFiles[i].isFile()) {
-                files.add(listOfFiles[i].getName());
-                System.out.println("FileFunctions " + listOfFiles[i].getName());
-                log.debug("Processing file:" + listOfFiles[i].getName());
+        for (File listOfFile : listOfFiles) {
+            if (listOfFile.isFile()) {
+                files.add(listOfFile.getName());
+                System.out.println("FileFunctions " + listOfFile.getName());
+                log.debug("Processing file:" + listOfFile.getName());
             }
         }
         return files;

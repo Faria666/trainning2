@@ -1,4 +1,4 @@
-package com.client.aux;
+package com.client.typeofobject;
 
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 

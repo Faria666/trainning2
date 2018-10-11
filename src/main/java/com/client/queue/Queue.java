@@ -1,9 +1,9 @@
 package com.client.queue;
 
-import com.client.aux.Answer;
-import com.client.aux.Connection;
-import com.client.aux.Database;
-import com.client.aux.Request;
+import com.client.typeofobject.Answer;
+import com.client.others.Connection;
+import com.client.others.Database;
+import com.client.typeofobject.Request;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -21,8 +21,8 @@ public class Queue {
 
         final ArrayBlockingQueue queue = new ArrayBlockingQueue(1024);
 
-        for(int i = 0; i < requestList.size(); i++){
-            Producer producer = new Producer(queue,requestList.get(i));
+        for (Request aRequestList : requestList) {
+            Producer producer = new Producer(queue, aRequestList);
             new Thread(producer).start();
         }
         return queue;
@@ -33,17 +33,16 @@ public class Queue {
      * @param request is the request to be treated by each thread, that sent it to the server
      */
 
-    public static void requestTreatment(final Request request, String uri, String location) throws IOException {
-        Answer answer = new Answer();
+    static void requestTreatment(final Request request, String uri, String location) throws IOException {
+        Answer answer;
 
         if(request != null)
             try{
                 answer = Connection.client(request, uri, location);
-                if(answer.getOperation().compareTo("none")!=0 ) {
+                if (answer != null && answer.getOperation().compareTo("none") != 0) {
                     Database.insertJDBC(answer, request);
                 }
-            }catch (NullPointerException e) {
-                return;
+            }catch (NullPointerException ignored) {
             }
 
     }

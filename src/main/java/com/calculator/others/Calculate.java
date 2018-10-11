@@ -1,7 +1,7 @@
-package com.calculator.calculate;
+package com.calculator.others;
 
 import com.calculator.service.Calculator;
-import com.client.aux.Request;
+import com.client.typeofobject.Request;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
