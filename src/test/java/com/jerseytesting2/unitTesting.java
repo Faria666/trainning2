@@ -3,8 +3,8 @@ package com.jerseytesting2;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.jerseytesting2.aux.Answer;
 import com.jerseytesting2.aux.Request;
-import com.jerseytesting2.rest.RESTClientPost;
-import com.jerseytesting2.rest.RESTServer;
+import com.jerseytesting2.calculator.Calculator;
+import com.jerseytesting2.calculator.Client;
 import org.junit.Assert;
 import org.junit.Test;
 import javax.ws.rs.core.Response;
@@ -18,7 +18,7 @@ import static org.mockito.Mockito.*;
 
 public class unitTesting {
 
-    RESTServer server = new RESTServer();
+    Calculator server = new Calculator();
 
 
     @Test
@@ -98,7 +98,7 @@ public class unitTesting {
         double result = 15;
         String operation = "add";
         Answer answer;
-        answer = RESTServer.buildAnswer(operation, result);
+        answer = Calculator.buildAnswer(operation, result);
         if((answer.getOperation().compareToIgnoreCase(operation) == 0) && answer.getResult() == 15)
             flag = true;
         Assert.assertTrue(flag);
@@ -121,7 +121,7 @@ public class unitTesting {
             System.out.println("Rename failed");
         }
 
-        RESTClientPost client = mock(RESTClientPost.class);
+        Client client = mock(Client.class);
         requestList = client.readFileWithFramework("/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/watchTest/", "/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/watchTest/", files);
         if(requestList.get(0).getValue1() == 21.34 && requestList.get(0).getValue2( )== 45.02 && requestList.get(0).getOperation().compareToIgnoreCase("add")==0)
             flag = true;
@@ -134,7 +134,7 @@ public class unitTesting {
     public void testSeekFiles(){
         boolean flag = false;
         ArrayList<String> files;
-        RESTClientPost client = mock(RESTClientPost.class);
+        Client client = mock(Client.class);
         files = client.seekFiles("/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/seekTest/");
         if(files.get(0).compareToIgnoreCase("Done - test.csv")==0)
             flag = true;
@@ -149,7 +149,7 @@ public class unitTesting {
         Request request = new Request(10, 5, "add");
         Request auxiliary;
         requests.add(request);
-        RESTClientPost client = mock(RESTClientPost.class);
+        Client client = mock(Client.class);
         ArrayBlockingQueue blockingQ = client.createQueue(requests);
         auxiliary = (Request) blockingQ.take();
         if(auxiliary.getValue1() == 10 && auxiliary.getValue2() == 5 && auxiliary.getOperation().compareToIgnoreCase("add")==0)
@@ -160,8 +160,8 @@ public class unitTesting {
     /*@Test
     public void testWatchDirectory(){
         boolean flag = false;
-        File file = new File("/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/wdTest/newfile.csv");
-        RESTClientPost client = mock(RESTClientPost.class);
+        Files file = new Files("/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/wdTest/newfile.csv");
+        Client client = mock(Client.class);
         when(client.watchDirectory("/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/wdTest/")).thenReturn(flag = true);
         Assert.assertTrue(flag);
     }*/

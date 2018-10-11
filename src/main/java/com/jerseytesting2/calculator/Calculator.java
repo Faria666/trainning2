@@ -1,4 +1,4 @@
-package com.jerseytesting2.rest;
+package com.jerseytesting2.calculator;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -17,9 +17,9 @@ import org.slf4j.LoggerFactory;
 @JsonIgnoreProperties(ignoreUnknown = true)
 
 @Path("/calculator")
-public class RESTServer {
+public class Calculator {
 
-    private final Logger log = LoggerFactory.getLogger(RESTServer.class);
+    private final Logger log = LoggerFactory.getLogger(Calculator.class);
 
     private ObjectMapper mapper = new ObjectMapper();
 
