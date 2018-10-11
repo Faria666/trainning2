@@ -1,6 +1,6 @@
-package com.jerseytesting2.aux;
+package com.client.aux;
 
-import com.jerseytesting2.calculator.Client;
+import com.client.service.Client;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -67,7 +67,7 @@ public class Directory {
         for (int i = 0; i < listOfFiles.length; i++) {
             if (listOfFiles[i].isFile()) {
                 files.add(listOfFiles[i].getName());
-                System.out.println("Files " + listOfFiles[i].getName());
+                System.out.println("FileFunctions " + listOfFiles[i].getName());
                 log.debug("Processing file:" + listOfFiles[i].getName());
             }
         }

@@ -1,4 +1,4 @@
-package com.jerseytesting2.aux;
+package com.client.aux;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

@@ -1,26 +1,13 @@
-package com.jerseytesting2;
+package com.client;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.jerseytesting2.aux.Answer;
-import com.jerseytesting2.aux.Request;
-import com.jerseytesting2.calculator.Calculator;
-import com.jerseytesting2.calculator.Client;
-import org.junit.Assert;
-import org.junit.Test;
-import javax.ws.rs.core.Response;
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.concurrent.ArrayBlockingQueue;
-
-import static org.mockito.Mockito.*;
+import com.calculator.service.Calculator;
 
 
 public class unitTesting {
 
     Calculator server = new Calculator();
 
-
+/*
     @Test
     public void testRestServer() throws IOException {
         String request = "{" + "\"" + "value1" + "\"" + ":" + "\"" + "12" + "\"" + ", " + "\"" + "value2" + "\"" + ":" + "\"" + "67" + "\"" + ", " + "\"" + "operation" + "\"" + ":" + "\"" + "add" + "\"" + "}";
@@ -112,8 +99,8 @@ public class unitTesting {
         ArrayList<String> files = new ArrayList<>();
         files.add(file);
 
-        File oldfile =new File("/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/watchTest/Done - test.csv");
-        File newfile =new File("/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/watchTest/test.csv");
+        File oldfile =new File("/home/joao-faria/Desktop/client/src/test/java/com/client/watchTest/Done - test.csv");
+        File newfile =new File("/home/joao-faria/Desktop/client/src/test/java/com/client/watchTest/test.csv");
 
         if(oldfile.renameTo(newfile)){
             System.out.println("Rename succesful");
@@ -122,7 +109,7 @@ public class unitTesting {
         }
 
         Client client = mock(Client.class);
-        requestList = client.readFileWithFramework("/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/watchTest/", "/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/watchTest/", files);
+        requestList = client.readFileWithFramework("/home/joao-faria/Desktop/client/src/test/java/com/client/watchTest/", "/home/joao-faria/Desktop/client/src/test/java/com/client/watchTest/", files);
         if(requestList.get(0).getValue1() == 21.34 && requestList.get(0).getValue2( )== 45.02 && requestList.get(0).getOperation().compareToIgnoreCase("add")==0)
             flag = true;
 
@@ -135,7 +122,7 @@ public class unitTesting {
         boolean flag = false;
         ArrayList<String> files;
         Client client = mock(Client.class);
-        files = client.seekFiles("/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/seekTest/");
+        files = client.seekFiles("/home/joao-faria/Desktop/client/src/test/java/com/client/seekTest/");
         if(files.get(0).compareToIgnoreCase("Done - test.csv")==0)
             flag = true;
         Assert.assertTrue(flag);
@@ -157,12 +144,12 @@ public class unitTesting {
         Assert.assertTrue(flag);
     }
 
-    /*@Test
+    @Test
     public void testWatchDirectory(){
         boolean flag = false;
-        Files file = new Files("/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/wdTest/newfile.csv");
+        FileFunctions file = new FileFunctions("/home/joao-faria/Desktop/client/src/test/java/com/client/wdTest/newfile.csv");
         Client client = mock(Client.class);
-        when(client.watchDirectory("/home/joao-faria/Desktop/jerseytesting2/src/test/java/com/jerseytesting2/wdTest/")).thenReturn(flag = true);
+        when(client.watchDirectory("/home/joao-faria/Desktop/client/src/test/java/com/client/wdTest/")).thenReturn(flag = true);
         Assert.assertTrue(flag);
     }*/
 }

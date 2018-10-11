@@ -1,9 +1,9 @@
-package com.jerseytesting2.queue;
+package com.client.queue;
 
-import com.jerseytesting2.aux.Answer;
-import com.jerseytesting2.aux.Connection;
-import com.jerseytesting2.aux.Database;
-import com.jerseytesting2.aux.Request;
+import com.client.aux.Answer;
+import com.client.aux.Connection;
+import com.client.aux.Database;
+import com.client.aux.Request;
 
 import java.util.ArrayList;
 import java.util.concurrent.ArrayBlockingQueue;

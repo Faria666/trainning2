@@ -1,6 +1,6 @@
-package com.jerseytesting2.aux;
+package com.client.aux;
 
-import com.jerseytesting2.calculator.Client;
+import com.client.service.Client;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
@@ -9,14 +9,13 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.Reader;
-import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.Timestamp;
 import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.util.ArrayList;
 
-public class Files {
+public class FileFunctions {
 
     private static final Logger log = LoggerFactory.getLogger(Client.class);
 
@@ -71,9 +70,9 @@ public class Files {
                     java.io.File afile = new java.io.File(inputDirectory + files.get(i));
                     Timestamp timestamp = new Timestamp(System.currentTimeMillis());
                     if (afile.renameTo(new java.io.File(outputDirectory +  afile.getName() + " (" + timestamp + ")"))) {
-                        System.out.println("Files is moved successfully!");
+                        System.out.println("FileFunctions is moved successfully!");
                     } else {
-                        System.out.println("Files is failed to move!");
+                        System.out.println("FileFunctions is failed to move!");
                     }
                     log.debug("Reading file:", afile.getName());
 
@@ -109,6 +108,6 @@ public class Files {
     }
 
 
-    public Files() {
+    public FileFunctions() {
     }
 }

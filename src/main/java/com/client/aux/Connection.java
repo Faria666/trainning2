@@ -1,8 +1,8 @@
-package com.jerseytesting2.aux;
+package com.client.aux;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.jerseytesting2.calculator.Client;
+import com.client.service.Client;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

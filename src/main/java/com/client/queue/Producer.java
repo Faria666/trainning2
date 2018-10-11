@@ -1,6 +1,6 @@
-package com.jerseytesting2.queue;
+package com.client.queue;
 
-import com.jerseytesting2.aux.Request;
+import com.client.aux.Request;
 
 import java.util.concurrent.ArrayBlockingQueue;
 

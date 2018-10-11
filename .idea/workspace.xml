@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="mods in testing file">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/files/test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="structure modifications">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/calculator/calculate/Calculate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/calculator/dataTreatment/BuildAnswer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/calculator/dataTreatment/Convertions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/output/Done - test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/test.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/allclasses-frame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/allclasses-noframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/Answer.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/Answer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/Consumer.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/Consumer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/Producer.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/Producer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/Request.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/Request.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/auxTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/auxTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/class-use/Answer.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/class-use/Answer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/class-use/Consumer.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/class-use/Consumer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/class-use/Producer.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/class-use/Producer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/class-use/Request.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/class-use/Request.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/class-use/auxTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/class-use/auxTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/package-tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/package-use.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/rest/RESTClientPost.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/rest/RESTClientPost.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/rest/RESTServer.Calculate.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/rest/RESTServer.Calculate.html" afterDir="false" />
@@ -29,13 +32,20 @@
       <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/rest/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/rest/package-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/rest/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/rest/package-tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/rest/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/rest/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-10.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-12.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-13.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-15.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-16.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-17.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-6.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-7.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-8.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-9.html" afterDir="false" />
@@ -43,15 +53,28 @@
       <change beforePath="$PROJECT_DIR$/javadoc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/overview-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/overview-tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/package-list" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/package-list" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/queue/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/queue/Producer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/calculator/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/calculator/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/aux/Answer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/aux/Connection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/aux/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Directory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/aux/Directory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Files.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/aux/FileFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/aux/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/calculator/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/service/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/queue/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/queue/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/queue/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/queue/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jerseytesting2/queue/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jerseytesting2/seekTest/Done - test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jerseytesting2/unitTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jerseytesting2/unitTesting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jerseytesting2/watchTest/Done - test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting2/rest/RESTClientPost.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jerseytesting2/rest/RESTClientPost.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jerseytesting2/unitTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/client/unitTesting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting2/aux/Answer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting2/aux/Consumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting2/aux/Producer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting2/aux/Request.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting2/rest/RESTClientPost.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting2/rest/RESTServer$Calculate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jerseytesting2/rest/RESTServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/jerseytesting2/unitTesting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/jerseytesting2/unitTesting.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -252,16 +275,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="42" />
-          <entry key="java" value="6923" />
-          <entry key="txt" value="298" />
+          <entry key="dummy" value="51" />
+          <entry key="java" value="7010" />
+          <entry key="txt" value="324" />
           <entry key="xml" value="144" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6923" />
-          <entry key="PLAIN_TEXT" value="340" />
+          <entry key="JAVA" value="7010" />
+          <entry key="PLAIN_TEXT" value="375" />
           <entry key="XML" value="144" />
         </counts>
       </usages-collector>
@@ -271,10 +294,10 @@
           <entry key="class" value="3" />
           <entry key="csv" value="1" />
           <entry key="html" value="1" />
-          <entry key="java" value="55" />
+          <entry key="java" value="59" />
           <entry key="md" value="1" />
           <entry key="sql" value="4" />
-          <entry key="xml" value="17" />
+          <entry key="xml" value="19" />
           <entry key="yml" value="4" />
         </counts>
       </usages-collector>
@@ -284,10 +307,10 @@
           <entry key="DBN-SQL" value="4" />
           <entry key="Dockerfile" value="4" />
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="55" />
+          <entry key="JAVA" value="59" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="XML" value="17" />
+          <entry key="XML" value="19" />
           <entry key="YAML" value="4" />
         </counts>
       </usages-collector>
@@ -298,44 +321,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/calculator/Client.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="54" column="69" selection-start-line="54" selection-start-column="69" selection-end-line="54" selection-end-column="69" />
+            <state relative-caret-position="60">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Connection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Database.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Directory.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/client/aux/Directory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-150">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -344,10 +343,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Files.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/client/aux/FileFunctions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="100" selection-start-line="100" selection-end-line="100" />
+            <state relative-caret-position="-495">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -356,7 +355,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/queue/Queue.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
               <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
@@ -368,10 +367,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/queue/Consumer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Consumer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="25" column="64" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+              <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -380,23 +379,58 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/queue/Producer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="525">
+              <caret line="35" column="39" lean-forward="true" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/calculator/Calculator.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/dataTreatment/BuildAnswer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1215">
-              <caret line="93" column="77" selection-start-line="93" selection-start-column="77" selection-end-line="93" selection-end-column="77" />
+            <state relative-caret-position="57">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="class#Calculate#0;class#RESTServer#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/calculate/Calculate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/dataTreatment/Convertions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -451,15 +485,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/trainning/webapp/Answer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trainning/webapp/NewQueue.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trainning/webapp/Request.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rest/RESTServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trainning/webapp/MyThread.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/rest/RESTTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rest/RESTClientPost.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/RESTServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/RESTClientPost.java" />
         <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/Answer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/webapp/MyThread.java" />
@@ -492,7 +517,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/jerseytesting2/auxTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTServer.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/jerseytesting2/unitTesting.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Database.java" />
@@ -501,7 +525,17 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/File.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting2/queue/Queue.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting2/queue/Consumer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/FileFunctions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jerseytesting2/unitTesting.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting2/calculator/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/client/calculator/Calculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/calculator/calculator/Calculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/calculator/Calculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/calculator/convertions/Convertions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/calculator/dataTreatment/BuildAnswer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/calculator/calculate/Calculate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/calculator/dataTreatment/Convertions.java" />
       </list>
     </option>
   </component>
@@ -581,7 +615,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jerseytesting2" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jerseytesting2" type="b2602c69:ProjectViewProjectNode" />
@@ -589,16 +623,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jerseytesting2" type="462c0819:PsiDirectoryNode" />
-              <item name="aux" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jerseytesting2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jerseytesting2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jerseytesting2" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="calculator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -607,8 +632,68 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="calculate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jerseytesting2" type="b2602c69:ProjectViewProjectNode" />
               <item name="jerseytesting2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="dataTreatment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jerseytesting2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jerseytesting2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jerseytesting2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jerseytesting2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jerseytesting2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jerseytesting2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="aux" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jerseytesting2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jerseytesting2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="queue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jerseytesting2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jerseytesting2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jerseytesting2" type="b2602c69:ProjectViewProjectNode" />
@@ -624,6 +709,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="jerseytesting2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jerseytesting2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -633,7 +726,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539262585811" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539264105063" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/jerseytesting2" />
@@ -684,13 +777,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RESTClientPost">
+  <component name="RunManager" selected="Application.Client">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jerseytesting2.calculator.Client" />
+      <option name="MAIN_CLASS_NAME" value="com.client.service.Client" />
       <module name="jerseytesting" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jerseytesting2.calculator.*" />
+          <option name="PATTERN" value="com.calculator.calculator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -728,12 +821,12 @@
       <module name="jerseytesting" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jerseytesting2.*" />
+          <option name="PATTERN" value="com.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jerseytesting2" />
-      <option name="MAIN_CLASS_NAME" value="com.jerseytesting2.unitTesting" />
+      <option name="PACKAGE_NAME" value="com.client" />
+      <option name="MAIN_CLASS_NAME" value="com.client.unitTesting" />
       <option name="METHOD_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -745,12 +838,12 @@
       <module name="jerseytesting" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jerseytesting2.*" />
+          <option name="PATTERN" value="com.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jerseytesting2" />
-      <option name="MAIN_CLASS_NAME" value="com.jerseytesting2.unitTesting" />
+      <option name="PACKAGE_NAME" value="com.client" />
+      <option name="MAIN_CLASS_NAME" value="com.client.unitTesting" />
       <option name="METHOD_NAME" value="testRequestAccept5" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -793,13 +886,13 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.RESTClientPost" />
+      <item itemvalue="Application.Client" />
       <item itemvalue="JUnit.unitTesting" />
       <item itemvalue="JUnit.unitTesting.testRequestAccept5" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RESTClientPost" />
+        <item itemvalue="Application.Client" />
         <item itemvalue="JUnit.unitTesting" />
         <item itemvalue="JUnit.unitTesting.testRequestAccept5" />
       </list>
@@ -977,7 +1070,21 @@
       <option name="project" value="LOCAL" />
       <updated>1538488759276</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="structure modifications">
+      <created>1539262527263</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1539262527263</updated>
+    </task>
+    <task id="LOCAL-00025" summary="structure modifications">
+      <created>1539262695205</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1539262695205</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1036,16 +1143,16 @@
       <window_info id="Project Explorer" order="8" weight="0.32924226" />
       <window_info id="Job Explorer" order="9" weight="0.32924226" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4909285" weight="0.32915717" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2813212" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.48932764" weight="0.32915717" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994664" weight="0.2813212" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49519745" weight="0.31548974" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49675325" weight="0.32687926" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32915717" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.5090715" side_tool="true" visible="true" weight="0.32915717" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.543223" side_tool="true" weight="0.32687926" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.48132336" side_tool="true" weight="0.2665148" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4583778" weight="0.32687926" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.45677695" visible="true" weight="0.32687926" />
       <window_info anchor="bottom" id="DB Execution Console" order="11" />
       <window_info anchor="bottom" id="Console" order="12" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
@@ -1080,16 +1187,14 @@
     <MESSAGE value="rename package" />
     <MESSAGE value="test file aux" />
     <MESSAGE value="mods in testing file" />
-    <option name="LAST_COMMIT_MESSAGE" value="mods in testing file" />
+    <MESSAGE value="structure modifications" />
+    <option name="LAST_COMMIT_MESSAGE" value="structure modifications" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/jerseytesting/webapp/RESTServer.java" />
-    <entry file="file://$PROJECT_DIR$/web/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/REST/RESTServer.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/REST/RESTClientPost.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rest/webapp/RESTServer.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rest/webapp/RESTClientPost.java" />
@@ -1150,14 +1255,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/jerseytesting2/inputTest/test.csv" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Request.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/aux/Request.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-615">
           <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Answer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/aux/Answer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-435">
           <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
@@ -1171,24 +1276,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jerseytesting2/unitTesting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
         </state>
       </provider>
     </entry>
@@ -1199,21 +1290,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/queue/Producer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Producer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/calculator/Calculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="93" column="77" selection-start-line="93" selection-start-column="77" selection-end-line="93" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#Calculate#0;class#RESTServer#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1226,27 +1306,17 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/database/init.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Files.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Connection.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/aux/Connection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Database.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/aux/Database.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
           <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
@@ -1256,17 +1326,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/aux/Directory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/aux/Directory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-150">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/queue/Queue.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
@@ -1276,20 +1346,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/queue/Consumer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Consumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="25" column="64" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+          <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jerseytesting2/calculator/Client.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/client/unitTesting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="54" column="69" selection-start-line="54" selection-start-column="69" selection-end-line="54" selection-end-column="69" />
+        <state relative-caret-position="60">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/aux/FileFunctions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-495">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/dataTreatment/BuildAnswer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="39" lean-forward="true" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/calculate/Calculate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/dataTreatment/Convertions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
