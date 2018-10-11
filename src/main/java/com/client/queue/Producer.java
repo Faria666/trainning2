@@ -1,6 +1,6 @@
 package com.client.queue;
 
-import com.client.typeofobject.Request;
+import com.types.Request;
 
 import java.util.concurrent.ArrayBlockingQueue;
 
