@@ -1,7 +1,7 @@
 package com.client.others;
 
-import com.client.typeofobject.Answer;
-import com.client.typeofobject.Request;
+import com.types.Answer;
+import com.types.Request;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.client.service.Client;
@@ -65,7 +65,9 @@ public class Connection {
             } catch (IOException e) {
                 FileFunctions.invalidLines(requestObject);
             }
-            log.debug("Request processed, answer: {} {} {}", answerObject.getOperation(), answerObject.getResult(), answerObject.getDate());
+            if (answerObject != null) {
+                log.debug("Request processed, answer: {} {} {}", answerObject.getOperation(), answerObject.getResult(), answerObject.getDate());
+            }
             return answerObject;
 
         }

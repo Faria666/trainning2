@@ -1,8 +1,8 @@
 package com.calculator.others;
 
 import com.calculator.service.Calculator;
-import com.client.typeofobject.Answer;
-import com.client.typeofobject.Request;
+import com.types.Answer;
+import com.types.Request;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;

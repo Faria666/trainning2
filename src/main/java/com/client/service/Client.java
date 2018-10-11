@@ -1,6 +1,6 @@
 package com.client.service;
 
-import com.client.typeofobject.Request;
+import com.types.Request;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.client.others.*;
 import com.client.queue.Consumer;
