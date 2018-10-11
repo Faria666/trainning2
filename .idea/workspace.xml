@@ -3,59 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="connections modifications">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/allclasses-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/allclasses-noframe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/Answer.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/Answer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/Consumer.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/Consumer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/Producer.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/Producer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/Request.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/Request.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/auxTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/auxTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/class-use/Answer.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/class-use/Answer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/class-use/Consumer.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/class-use/Consumer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/class-use/Producer.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/class-use/Producer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/class-use/Request.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/class-use/Request.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/class-use/auxTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/class-use/auxTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/aux/package-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/rest/RESTClientPost.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/rest/RESTClientPost.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/com/jerseytesting2/rest/RESTServer.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/jerseytesting2/rest/RESTServer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-15.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-16.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/overview-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/overview-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/package-list" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/package-list" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/calculator/calculate/Calculate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calculator/others/Calculate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/calculator/dataTreatment/BuildAnswer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calculator/others/BuildAnswer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/calculator/dataTreatment/Convertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calculator/others/Convertions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/restServer/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/aux/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/typeofobject/Answer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/aux/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/others/Connection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/aux/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/others/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/aux/Directory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/others/Directory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/aux/FileFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/aux/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/typeofobject/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/queue/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/queue/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/queue/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/queue/Producer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/client/service/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/service/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/files/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/files/test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/files/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/files/test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -256,14 +206,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="51" />
-          <entry key="java" value="8057" />
+          <entry key="java" value="8080" />
           <entry key="txt" value="342" />
           <entry key="xml" value="155" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8057" />
+          <entry key="JAVA" value="8080" />
           <entry key="PLAIN_TEXT" value="393" />
           <entry key="XML" value="155" />
         </counts>
@@ -274,9 +224,9 @@
           <entry key="class" value="3" />
           <entry key="csv" value="1" />
           <entry key="html" value="1" />
-          <entry key="java" value="84" />
+          <entry key="java" value="94" />
           <entry key="md" value="1" />
-          <entry key="sql" value="4" />
+          <entry key="sql" value="5" />
           <entry key="xml" value="19" />
           <entry key="yml" value="4" />
         </counts>
@@ -284,10 +234,10 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="DBN-SQL" value="4" />
+          <entry key="DBN-SQL" value="5" />
           <entry key="Dockerfile" value="4" />
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="84" />
+          <entry key="JAVA" value="94" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="19" />
@@ -301,11 +251,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="135">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -313,8 +263,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            <state relative-caret-position="489">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Connection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="62" column="12" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/others/Calculate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="102" lean-forward="true" selection-start-line="30" selection-start-column="102" selection-end-line="30" selection-end-column="102" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -414,12 +385,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/calculator/others/Calculate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/others/Directory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/client/others/Connection.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/queue/Producer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/calculator/others/Convertions.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/service/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/client/others/Connection.java" />
       </list>
     </option>
   </component>
@@ -517,6 +488,26 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="others" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jerseytesting2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jerseytesting2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jerseytesting2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jerseytesting2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -525,6 +516,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jerseytesting2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jerseytesting2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jerseytesting2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jerseytesting2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="restServer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jerseytesting2" type="b2602c69:ProjectViewProjectNode" />
@@ -571,7 +578,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539270989201" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539272539977" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/jerseytesting2" />
@@ -596,15 +603,18 @@
       <recent name="com.jerseytesting2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/restServer" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/test/java/com/jerseytesting2/inputTest" />
       <recent name="$PROJECT_DIR$/src/main/webapp/META-INF" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.jerseytesting.aux" />
       <recent name="com.jerseytesting.webapp" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.jerseytesting.webapp" />
@@ -997,7 +1007,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539267758751</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="connections modifications">
+      <created>1539271023566</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1539271023566</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1056,14 +1073,14 @@
       <window_info id="Project Explorer" order="8" weight="0.32924226" />
       <window_info id="Job Explorer" order="9" weight="0.32924226" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.48879403" weight="0.32915717" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4759872" weight="0.2813212" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.48826042" weight="0.32915717" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47705442" visible="true" weight="0.2813212" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49519745" weight="0.31548974" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49675325" weight="0.32687926" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32915717" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.5453575" side_tool="true" visible="true" weight="0.32687926" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4994664" weight="0.32915717" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.5229456" side_tool="true" visible="true" weight="0.2813212" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.48132336" side_tool="true" weight="0.2665148" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.45464247" weight="0.32687926" />
       <window_info anchor="bottom" id="DB Execution Console" order="11" />
@@ -1082,6 +1099,32 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.jsp" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1109,7 +1152,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/REST/RESTClientPost.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rest/webapp/RESTServer.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rest/webapp/RESTClientPost.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/calc/Mult.java" />
@@ -1190,7 +1232,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/restServer/Dockerfile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/database/docker-compose.yml">
@@ -1198,16 +1240,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/database/init.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1233,16 +1265,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/client/typeofobject/Request.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1257,10 +1279,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/others/Calculate.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/others/Convertions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="102" lean-forward="true" selection-start-line="30" selection-start-column="102" selection-end-line="30" selection-end-column="102" />
+        <state relative-caret-position="179">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/restServer/init.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1269,7 +1304,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Directory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
+        <state relative-caret-position="990">
           <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1277,27 +1312,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Connection.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/others/Convertions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        <state relative-caret-position="-1266">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1311,27 +1329,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Consumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/Client.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        <state relative-caret-position="469">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/others/Calculate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="102" lean-forward="true" selection-start-line="30" selection-start-column="102" selection-end-line="30" selection-end-column="102" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="135">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="62" column="12" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
         </state>
       </provider>
     </entry>

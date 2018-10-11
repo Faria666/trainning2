@@ -18,7 +18,7 @@ public class Client {
     private static final String INPUT_DIRECTORY = "src/main/resources/files/input/";
     private static final String OUTPUT_DIRECTORY = "src/main/resources/files/output/";
     private static final String UNSUPPORTED_DIRECTORY = "src/main/resources/files/unsupported/";
-    private static final String URI = "http://localhost:8080/calculator";
+    private static final String URI = "http://172.17.0.2:8080/calculator";
     private static final String LOCATION = "/calc";
 
 

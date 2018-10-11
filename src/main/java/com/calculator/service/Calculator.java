@@ -16,6 +16,7 @@ import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 @Path("/calculator")
 public class Calculator {
 
+
     @POST
     @Path("/calc")
     @Produces(MediaType.APPLICATION_JSON)
