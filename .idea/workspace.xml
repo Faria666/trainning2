@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="connections modifications">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/restServer/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/service/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/service/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/others/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/others/Connection.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -272,8 +270,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Connection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="62" column="12" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
+            <state relative-caret-position="444">
+              <caret line="68" column="32" lean-forward="true" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -578,7 +576,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539272539977" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539273054958" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/jerseytesting2" />
@@ -1014,7 +1012,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539271023566</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="connections modifications">
+      <created>1539272544047</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1539272544047</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1062,7 +1067,7 @@
     <frame x="0" y="25" width="1920" height="1008" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49445325" visible="true" weight="0.15528281" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49445325" visible="true" weight="0.15528281" />
       <window_info id="Structure" order="1" sideWeight="0.50554675" side_tool="true" weight="0.22518677" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1074,7 +1079,7 @@
       <window_info id="Job Explorer" order="9" weight="0.32924226" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.48826042" weight="0.32915717" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47705442" visible="true" weight="0.2813212" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.47705442" visible="true" weight="0.2813212" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49519745" weight="0.31548974" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1375,8 +1380,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Connection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="62" column="12" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
+        <state relative-caret-position="444">
+          <caret line="68" column="32" lean-forward="true" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
         </state>
       </provider>
     </entry>
