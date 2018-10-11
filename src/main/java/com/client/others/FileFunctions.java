@@ -1,5 +1,6 @@
-package com.client.aux;
+package com.client.others;
 
+import com.client.typeofobject.Request;
 import com.client.service.Client;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
@@ -7,9 +8,11 @@ import org.apache.commons.csv.CSVRecord;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Reader;
+import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.Timestamp;
 import java.text.DecimalFormat;
@@ -28,21 +31,21 @@ public class FileFunctions {
      * @return return an array of Request objects
      */
 
-    public static ArrayList<Request> readFileWithFramework(final String inputDirectory, final String outputDirectory, final String failDirectory , final ArrayList<String> files) throws IOException {
+    private static ArrayList<Request> readFileWithFramework(final String inputDirectory, final String outputDirectory, final String failDirectory, final ArrayList<String> files) throws IOException {
 
         Request request;
         final ArrayList<Request> requestList = new ArrayList<>();
         String extension;
 
-        for(int i = 0; i< files.size();i++) {
+        for (String file : files) {
 
-            extension = files.get(i).substring(files.get(i).length()-3);
+            extension = file.substring(file.length() - 3);
 
-            if(extension.compareToIgnoreCase("csv")==0) {
+            if (extension.compareToIgnoreCase("csv") == 0) {
                 try {
 
                     try (
-                            Reader reader = java.nio.file.Files.newBufferedReader(Paths.get(inputDirectory + files.get(i)));
+                            Reader reader = Files.newBufferedReader(Paths.get(inputDirectory + file));
                             CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT)
                     ) {
                         for (CSVRecord csvRecord : csvParser) {
@@ -73,9 +76,9 @@ public class FileFunctions {
 
                     try {
 
-                        java.io.File afile = new java.io.File(inputDirectory + files.get(i));
+                        File afile = new File(inputDirectory + file);
                         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-                        if (afile.renameTo(new java.io.File(outputDirectory + afile.getName() + " (" + timestamp + ")"))) {
+                        if (afile.renameTo(new File(outputDirectory + afile.getName() + " (" + timestamp + ")"))) {
                             System.out.println("File is moved successfully!");
                         } else {
                             System.out.println("File is failed to move!");
@@ -86,17 +89,15 @@ public class FileFunctions {
                         e.printStackTrace();
                     }
                 }
-            }
-
-            else{
+            } else {
 
                 System.out.println("Ficheiro não suportado!");
 
                 try {
 
-                    java.io.File afile = new java.io.File(inputDirectory + files.get(i));
+                    File afile = new File(inputDirectory + file);
                     Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-                    if (afile.renameTo(new java.io.File(failDirectory + afile.getName() + " (" + timestamp + ")"))) {
+                    if (afile.renameTo(new File(failDirectory + afile.getName() + " (" + timestamp + ")"))) {
                         System.out.println("File is moved successfully!");
                     } else {
                         System.out.println("File is failed to move!");
@@ -135,7 +136,7 @@ public class FileFunctions {
 
     }
 
-    public static void invalidLines(Request request) throws IOException {
+    static void invalidLines(Request request) throws IOException {
         String filename= "src/main/resources/files/invalid.txt";
         String phrase = "-->     " + request.getValue1() + "   |   " + request.getValue2() + "   |   " + request.getOperation() + "\n";
         FileWriter fw = new FileWriter(filename,true); //the true will append the new data

@@ -1,4 +1,7 @@
-package com.client.aux;
+package com.client.others;
+
+import com.client.typeofobject.Answer;
+import com.client.typeofobject.Request;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

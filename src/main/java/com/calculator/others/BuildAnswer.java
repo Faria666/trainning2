@@ -1,6 +1,6 @@
-package com.calculator.dataTreatment;
+package com.calculator.others;
 
-import com.client.aux.Answer;
+import com.client.typeofobject.Answer;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

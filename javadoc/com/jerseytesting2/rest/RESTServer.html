@@ -190,7 +190,7 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>private <a href="../../../com/jerseytesting2/aux/Answer.html" title="class in com.client.aux">Answer</a></code></td>
+<td class="colFirst"><code>private <a href="../../../com/jerseytesting2/aux/Answer.html" title="class in com.client.others">Answer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/jerseytesting2/rest/RESTServer.html#buildAnswer-java.lang.String-double-">buildAnswer</a></span>(java.lang.String&nbsp;operation,
            double&nbsp;result)</code>
 <div class="block">Function that builds the answer to send to the client, merge the result of the calculation of the operation, the date and hour of the operation and the operation made</div>
@@ -198,19 +198,19 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>private double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/jerseytesting2/rest/RESTServer.html#calculator-com.client.aux.Request-">calculator</a></span>(<a href="../../../com/jerseytesting2/aux/Request.html" title="class in com.client.aux">Request</a>&nbsp;request)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/jerseytesting2/rest/RESTServer.html#calculator-com.client.typeofobject.Request-">calculator</a></span>(<a href="../../../com/jerseytesting2/aux/Request.html" title="class in com.client.others">Request</a>&nbsp;request)</code>
 <div class="block">Function that calculates the result of the operation specified in the request from the client</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>private java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/jerseytesting2/rest/RESTServer.html#convertToJson-com.client.aux.Answer-java.lang.String-">convertToJson</a></span>(<a href="../../../com/jerseytesting2/aux/Answer.html" title="class in com.client.aux">Answer</a>&nbsp;answerObject,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/jerseytesting2/rest/RESTServer.html#convertToJson-com.client.typeofobject.Answer-java.lang.String-">convertToJson</a></span>(<a href="../../../com/jerseytesting2/aux/Answer.html" title="class in com.client.others">Answer</a>&nbsp;answerObject,
              java.lang.String&nbsp;json)</code>
 <div class="block">Function that converts a Answer object into a JSON String where all the data is written in conformity with JSON conventions</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>private <a href="../../../com/jerseytesting2/aux/Request.html" title="class in com.client.aux">Request</a></code></td>
+<td class="colFirst"><code>private <a href="../../../com/jerseytesting2/aux/Request.html" title="class in com.client.others">Request</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/jerseytesting2/rest/RESTServer.html#convertToObj-java.lang.String-">convertToObj</a></span>(java.lang.String&nbsp;json)</code>
 <div class="block">Function that converts a String parameter into a Request object</div>
 </td>
@@ -290,7 +290,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>convertToObj</h4>
-<pre>private&nbsp;<a href="../../../com/jerseytesting2/aux/Request.html" title="class in com.client.aux">Request</a>&nbsp;convertToObj(java.lang.String&nbsp;json)
+<pre>private&nbsp;<a href="../../../com/jerseytesting2/aux/Request.html" title="class in com.client.others">Request</a>&nbsp;convertToObj(java.lang.String&nbsp;json)
                       throws java.io.IOException</pre>
 <div class="block">Function that converts a String parameter into a Request object</div>
 <dl>
@@ -303,13 +303,13 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a name="convertToJson-com.client.aux.Answer-java.lang.String-">
+<a name="convertToJson-com.client.others.Answer-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>convertToJson</h4>
-<pre>private&nbsp;java.lang.String&nbsp;convertToJson(<a href="../../../com/jerseytesting2/aux/Answer.html" title="class in com.client.aux">Answer</a>&nbsp;answerObject,
+<pre>private&nbsp;java.lang.String&nbsp;convertToJson(<a href="../../../com/jerseytesting2/aux/Answer.html" title="class in com.client.others">Answer</a>&nbsp;answerObject,
                                        java.lang.String&nbsp;json)
                                 throws com.fasterxml.jackson.core.JsonProcessingException</pre>
 <div class="block">Function that converts a Answer object into a JSON String where all the data is written in conformity with JSON conventions</div>
@@ -324,13 +324,13 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a name="calculator-com.client.aux.Request-">
+<a name="calculator-com.client.others.Request-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>calculator</h4>
-<pre>private&nbsp;double&nbsp;calculator(<a href="../../../com/jerseytesting2/aux/Request.html" title="class in com.client.aux">Request</a>&nbsp;request)</pre>
+<pre>private&nbsp;double&nbsp;calculator(<a href="../../../com/jerseytesting2/aux/Request.html" title="class in com.client.others">Request</a>&nbsp;request)</pre>
 <div class="block">Function that calculates the result of the operation specified in the request from the client</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -346,7 +346,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>buildAnswer</h4>
-<pre>private&nbsp;<a href="../../../com/jerseytesting2/aux/Answer.html" title="class in com.client.aux">Answer</a>&nbsp;buildAnswer(java.lang.String&nbsp;operation,
+<pre>private&nbsp;<a href="../../../com/jerseytesting2/aux/Answer.html" title="class in com.client.others">Answer</a>&nbsp;buildAnswer(java.lang.String&nbsp;operation,
                            double&nbsp;result)</pre>
 <div class="block">Function that builds the answer to send to the client, merge the result of the calculation of the operation, the date and hour of the operation and the operation made</div>
 <dl>

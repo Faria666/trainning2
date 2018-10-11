@@ -1,5 +1,7 @@
-package com.client.aux;
+package com.client.others;
 
+import com.client.typeofobject.Answer;
+import com.client.typeofobject.Request;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.client.service.Client;
@@ -30,7 +32,7 @@ public class Connection {
         String request = null;
         final String answer;
 
-        Answer answerObject = new Answer();
+        Answer answerObject;
 
         try {
             request = mapper.writeValueAsString(requestObject);
@@ -52,24 +54,16 @@ public class Connection {
 
         Response response = invocationBuilder.post(Entity.entity(request,MediaType.APPLICATION_JSON));
 
-        System.out.print("\nStatus: ");
-
-        System.out.println(response.getStatus());
-
         answer = response.readEntity(String.class);
 
         System.out.println(answer + "\n");
 
         if(response.getStatus() != 400) {
 
-            try {
-                answerObject = mapper.readValue(answer, Answer.class);
-                return answerObject;
-
-            } catch (IOException e) {
-
-            }
+            answerObject = mapper.readValue(answer, Answer.class);
             log.debug("Request processed, answer: {} {} {}", answerObject.getOperation(), answerObject.getResult(), answerObject.getDate());
+            return answerObject;
+
         }
         else{
             FileFunctions.invalidLines(requestObject);

@@ -1,8 +1,8 @@
-package com.calculator.dataTreatment;
+package com.calculator.others;
 
 import com.calculator.service.Calculator;
-import com.client.aux.Answer;
-import com.client.aux.Request;
+import com.client.typeofobject.Answer;
+import com.client.typeofobject.Request;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
@@ -20,7 +20,7 @@ public class Convertions {
      * Function that converts a String parameter into a Request object
      * @param json is the String of the request received from the client
      * @return return an Request object with all the fields containning data from the json String
-     * @throws IOException
+     * @throws IOException from the convertion
      */
 
     public static Request convertToObj(final String json) throws IOException {
@@ -38,7 +38,7 @@ public class Convertions {
      * @param answerObject is the object with all the data about the answer to retrieve to the client
      * @param json is the String that contains the request, only for logging purposes
      * @return return a JSON String with all the data contained in the object
-     * @throws JsonProcessingException
+     * @throws JsonProcessingException from the convertion
      */
 
     public static String convertToJson(final Answer answerObject, final String json) throws JsonProcessingException {
