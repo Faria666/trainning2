@@ -32,7 +32,7 @@ public class Connection {
         String request = null;
         final String answer;
 
-        Answer answerObject;
+        Answer answerObject = null;
 
         try {
             request = mapper.writeValueAsString(requestObject);
@@ -60,7 +60,11 @@ public class Connection {
 
         if(response.getStatus() != 400) {
 
-            answerObject = mapper.readValue(answer, Answer.class);
+            try {
+                answerObject = mapper.readValue(answer, Answer.class);
+            } catch (IOException e) {
+                FileFunctions.invalidLines(requestObject);
+            }
             log.debug("Request processed, answer: {} {} {}", answerObject.getOperation(), answerObject.getResult(), answerObject.getDate());
             return answerObject;
 
