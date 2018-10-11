@@ -1,39 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="refactor in restserver package">
+    <list default="true" id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="mods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/allclasses-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/allclasses-noframe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-15.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-16.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-17.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/overview-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/overview-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/package-list" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/package-list" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/calculator/others/BuildAnswer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calculator/others/BuildAnswer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/others/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/others/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/others/Directory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/others/Directory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -284,22 +254,28 @@
         <counts>
           <entry key="java" value="6" />
           <entry key="md" value="2" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="6" />
           <entry key="Markdown" value="2" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="16" />
+          <entry key="txt" value="4" />
+          <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="16" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="XML" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -332,6 +308,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="496">
+              <caret line="337" column="16" selection-start-line="337" selection-start-column="16" selection-end-line="337" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -372,7 +357,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/others/Calculate.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
@@ -446,7 +431,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/jerseytesting2/aux/auxTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jerseytesting2/auxTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/RESTClientPost.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting2/rest/Client.java" />
@@ -482,6 +466,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/client/others/Database.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/calculator/others/BuildAnswer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -624,7 +609,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539276571404" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539276691617" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/jerseytesting2" />
@@ -1104,7 +1089,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539274358296</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="mods">
+      <created>1539276586889</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1539276586889</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1238,7 +1230,8 @@
     <MESSAGE value="connections modifications" />
     <MESSAGE value="Connection: try catch exception" />
     <MESSAGE value="refactor in restserver package" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor in restserver package" />
+    <MESSAGE value="mods" />
+    <option name="LAST_COMMIT_MESSAGE" value="mods" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1378,13 +1371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/client/unitTesting.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1453,6 +1439,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="30" column="102" selection-start-line="30" selection-start-column="102" selection-end-line="30" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="337" column="16" selection-start-line="337" selection-start-column="16" selection-end-line="337" selection-end-column="16" />
         </state>
       </provider>
     </entry>
