@@ -3,7 +3,6 @@ package com.client.others;
 import com.client.service.Client;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.*;
