@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.client.service.Client;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.Invocation;
@@ -13,8 +12,7 @@ import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+
 
 public class Connection {
 
@@ -26,7 +24,7 @@ public class Connection {
      * @return returns the answer in the form of a Answer object
      */
 
-    public static Answer client(final Request requestObject, String uri, String location){
+    public static Answer client(final Request requestObject, String uri, String location) throws IOException {
 
         final ObjectMapper mapper = new ObjectMapper();
         String request = null;
@@ -65,10 +63,7 @@ public class Connection {
         try {
             answerObject = mapper.readValue(answer, Answer.class);
         } catch (IOException e) {
-            String date = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date());
-            answerObject.setOperation("none");
-            answerObject.setResult(0);
-            answerObject.setDate(date);
+            FileFunctions.invalidLines(requestObject);
         }
         log.debug("Request processed, answer: {} {} {}", answerObject.getOperation(), answerObject.getResult(), answerObject.getDate());
         return answerObject;

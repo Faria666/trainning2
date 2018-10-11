@@ -2,6 +2,7 @@ package com.client.queue;
 
 import com.client.aux.Request;
 
+import java.io.IOException;
 import java.util.concurrent.ArrayBlockingQueue;
 
 public class Consumer implements Runnable{
@@ -23,7 +24,7 @@ public class Consumer implements Runnable{
 
         try {
             Queue.requestTreatment((Request) queue.take(), uri, location);
-        } catch (InterruptedException e) {
+        } catch (InterruptedException | IOException e) {
             e.printStackTrace();
         }
 

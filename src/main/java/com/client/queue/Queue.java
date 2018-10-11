@@ -5,6 +5,7 @@ import com.client.aux.Connection;
 import com.client.aux.Database;
 import com.client.aux.Request;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.ArrayBlockingQueue;
 
@@ -32,7 +33,7 @@ public class Queue {
      * @param request is the request to be treated by each thread, that sent it to the server
      */
 
-    public static void requestTreatment(final Request request, String uri, String location){
+    public static void requestTreatment(final Request request, String uri, String location) throws IOException {
         Answer answer = new Answer();
 
         if(request != null)

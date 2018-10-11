@@ -16,6 +16,7 @@ public class Client {
 
     private static final String INPUT_DIRECTORY = "src/main/resources/files/input/";
     private static final String OUTPUT_DIRECTORY = "src/main/resources/files/output/";
+    private static final String UNSUPPORTED_DIRECTORY = "src/main/resources/files/unsupported/";
     private static final String LOCATION = "/calc";
     private static final String URI = "http://localhost:8080/calculator";
 
@@ -31,7 +32,7 @@ public class Client {
         do {
             changes = watchDirectory(INPUT_DIRECTORY);
 
-            requestList = FileFunctions.processFiles(INPUT_DIRECTORY, OUTPUT_DIRECTORY);
+            requestList = FileFunctions.processFiles(INPUT_DIRECTORY, OUTPUT_DIRECTORY, UNSUPPORTED_DIRECTORY);
 
             queue = Queue.createQueue(requestList);
 
