@@ -2,7 +2,6 @@ package com.client.others;
 
 import com.types.Answer;
 import com.types.Request;
-
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;

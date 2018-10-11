@@ -1,2 +1,7 @@
+com.calculator.others
+com.calculator.service
+com.client
 com.client.others
-com.calculator.calculator
+com.client.queue
+com.client.service
+com.types
