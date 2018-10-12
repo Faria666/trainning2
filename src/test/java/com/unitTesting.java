@@ -162,14 +162,13 @@ public class unitTesting {
     @Test
     public void testConnection(){
 
-        String s1 = "", s2 = "";
+        String s1 = "", s2 = "", l = "";
         Request r1 = null;
         Answer answer = null;
 
         Connection connection = mock(Connection.class);
 
-
-        when(connection.client( r1, s1, s2,"").thenReturn(null));
+        //when(connection.client(r1,s1,s2,l).thenReturn(answer));
 
     }
 
