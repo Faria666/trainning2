@@ -11,12 +11,12 @@ import com.client.queue.Queue;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.types.Answer;
 import com.types.Request;
-import org.junit.Assert;
-import org.junit.Test;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.ArrayBlockingQueue;
+import org.junit.Assert;
+import org.junit.Test;
 
 import static org.mockito.Mockito.*;
 
@@ -164,11 +164,11 @@ public class unitTesting {
 
         String s1 = "", s2 = "", l = "";
         Request r1 = null;
-        Answer answer = null;
+        Answer answer = new Answer();
 
         Connection connection = mock(Connection.class);
 
-        //when(connection.client(r1,s1,s2,l).thenReturn(answer));
+        when(connection.client(r1,s1,s2,l)).thenReturn(answer);
 
     }
 
