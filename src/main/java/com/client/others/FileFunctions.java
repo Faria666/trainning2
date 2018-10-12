@@ -34,13 +34,13 @@ public class FileFunctions {
 
         Request request;
         final ArrayList<Request> requestList = new ArrayList<>();
-        String extension;
+        String fileExtension;
 
         for (String file : files) {
 
-            extension = file.substring(file.length() - 3);
+            fileExtension = file.substring(file.length() - 3);
 
-            if (extension.compareToIgnoreCase("csv") == 0) {
+            if (fileExtension.compareToIgnoreCase("csv") == 0) {
                 try {
 
                     try (
