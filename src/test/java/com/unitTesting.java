@@ -4,6 +4,7 @@ import com.calculator.others.BuildAnswer;
 import com.calculator.others.Calculate;
 import com.calculator.others.Convertions;
 import com.calculator.service.Calculator;
+import com.client.others.Connection;
 import com.client.others.Directory;
 import com.client.others.FileFunctions;
 import com.client.queue.Queue;
@@ -17,11 +18,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.ArrayBlockingQueue;
 
+import static org.mockito.Mockito.*;
+
 
 public class unitTesting {
 
     @Test
-    public void testBuildAnswerFuction(){
+    public void testBuildAnswerFunction(){
 
         Answer answer;
         String operation;
@@ -153,6 +156,19 @@ public class unitTesting {
         files = Directory.seekFiles(directory);
 
         Assert.assertTrue(!files.isEmpty());
+
+    }
+
+    @Test
+    public void testConnection(){
+
+        String s1 = "", s2 = "", l = "";
+        Request r1 = null;
+        Answer answer = null;
+
+        Connection connection = mock(Connection.class);
+
+        //when(connection.client(r1,s1,s2,l).thenReturn(answer));
 
     }
 

@@ -1,7 +1,6 @@
 package com.client.others;
 
 import com.client.service.Client;
-import com.client.service.Client;
 import com.types.Answer;
 import com.types.Request;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -16,7 +15,6 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
 
-
 public class Connection {
 
     private static final Logger log = LoggerFactory.getLogger(Client.class);
@@ -27,7 +25,7 @@ public class Connection {
      * @return returns the answer in the form of a Answer object
      */
 
-    public static Answer client(final Request requestObject, String uri, String location, String filename) throws IOException {
+    public static Answer client(final Request requestObject, String uri, String location, String filename) {
 
         final ObjectMapper mapper = new ObjectMapper();
         String request = null;
