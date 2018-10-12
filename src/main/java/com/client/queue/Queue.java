@@ -32,12 +32,12 @@ public class Queue {
      * @param request is the request to be treated by each thread, that sent it to the server
      */
 
-    static void requestTreatment(final Request request, String uri, String location) throws IOException {
+    static void requestTreatment(final Request request, String uri, String location, String filename) throws IOException {
         Answer answer;
 
         if(request != null)
             try{
-                answer = Connection.client(request, uri, location);
+                answer = Connection.client(request, uri, location,filename);
                 if (answer != null && answer.getOperation().compareTo("none") != 0) {
                     Database.insertJDBC(answer, request);
                 }

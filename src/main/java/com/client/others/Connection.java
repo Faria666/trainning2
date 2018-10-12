@@ -27,7 +27,7 @@ public class Connection {
      * @return returns the answer in the form of a Answer object
      */
 
-    public static Answer client(final Request requestObject, String uri, String location) throws IOException {
+    public static Answer client(final Request requestObject, String uri, String location, String filename) throws IOException {
 
         final ObjectMapper mapper = new ObjectMapper();
         String request = null;
@@ -64,7 +64,7 @@ public class Connection {
             try {
                 answerObject = mapper.readValue(answer, Answer.class);
             } catch (IOException e) {
-                FileFunctions.invalidLines(requestObject);
+                FileFunctions.invalidLines(requestObject, filename);
             }
             if (answerObject != null) {
                 log.debug("Request processed, answer: {} {} {}", answerObject.getOperation(), answerObject.getResult(), answerObject.getDate());
@@ -73,7 +73,7 @@ public class Connection {
 
         }
         else{
-            FileFunctions.invalidLines(requestObject);
+            FileFunctions.invalidLines(requestObject, filename);
         }
         return null;
 
