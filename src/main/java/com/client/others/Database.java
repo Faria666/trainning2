@@ -16,7 +16,7 @@ public class Database {
 
     public static void insertJDBC(final Answer answer, final Request request){
 
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("jerseytesting-JPA");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("project-JPA");
 
         EntityManager em = emf.createEntityManager();
 

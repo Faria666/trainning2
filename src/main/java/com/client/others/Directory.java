@@ -66,7 +66,7 @@ public class Directory {
         for (File listOfFile : listOfFiles) {
             if (listOfFile.isFile()) {
                 files.add(listOfFile.getName());
-                System.out.println("FileFunctions " + listOfFile.getName());
+                System.out.println("File " + listOfFile.getName());
                 log.debug("Processing file:" + listOfFile.getName());
             }
         }
