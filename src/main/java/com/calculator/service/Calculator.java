@@ -20,7 +20,7 @@ public class Calculator {
     @POST
     @Path("/calc")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response sendResponse(final String json) throws IOException {
+    public static Response sendResponse(final String json) throws IOException {
 
         final double result;
         final String answer;
