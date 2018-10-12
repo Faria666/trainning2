@@ -25,9 +25,7 @@ public class Client {
     public static void main(String[] args){
 
         boolean changes;
-
         ArrayBlockingQueue queue;
-
         ArrayList<Request> requestList;
 
         do {

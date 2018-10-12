@@ -9,7 +9,7 @@ public class unitTesting {
     Calculator server = new Calculator();
 
     @Test
-    public void test(){
+    public void (){
 
     }
 
