@@ -136,9 +136,10 @@ public class FileFunctions {
     }
 
     public static boolean invalidLines(Request request, String filename){
-        String phrase = "-->     " + request.getValue1() + "   |   " + request.getValue2() + "   |   " + request.getOperation() + "\n";
-        FileWriter fw; //the true will append the new data
+
         try {
+            String phrase = "-->     " + request.getValue1() + "   |   " + request.getValue2() + "   |   " + request.getOperation() + "\n";
+            FileWriter fw; //the true will append the new data
             fw = new FileWriter(filename,true);
             fw.write(phrase);//appends the string to the file
             fw.close();
