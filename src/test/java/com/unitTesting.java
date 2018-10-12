@@ -21,7 +21,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 public class unitTesting {
 
     @Test
-    public void testBuildAnswerFuction(){
+    public void testBuildAnswerFunction(){
 
         Answer answer;
         String operation;

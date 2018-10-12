@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java&#10;CHanged FileFunctions.invalidLines function to return a boolean if the file were or not created">
+    <list default="true" id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/others/Directory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/others/Directory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/others/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/others/Connection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/unitTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/unitTesting.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -281,14 +281,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2813" />
+          <entry key="java" value="2815" />
           <entry key="txt" value="428" />
           <entry key="xml" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2813" />
+          <entry key="JAVA" value="2815" />
           <entry key="PLAIN_TEXT" value="428" />
           <entry key="XML" value="22" />
         </counts>
@@ -314,11 +314,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Connection.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-196">
-                  <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="45">
+                  <caret line="3" selection-start-line="3" selection-end-line="3" />
                 </state>
               </provider>
             </entry>
@@ -348,9 +345,10 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/unitTesting.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="74">
-                  <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+                <state relative-caret-position="120">
+                  <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
                   <folding>
+                    <element signature="method#testBuildAnswerFuction#0;class#unitTesting#0" />
                     <element signature="method#testConvertToObj#0;class#unitTesting#0" />
                     <element signature="method#testConvertToJson#0;class#unitTesting#0" />
                     <element signature="method#testCalculate#0;class#unitTesting#0" />
@@ -459,12 +457,12 @@
         <option value="$PROJECT_DIR$/src/test/java/com/client/unitTesting.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/others/Database.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/queue/Producer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/client/others/Connection.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/queue/Consumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/service/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/others/Directory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/client/others/Connection.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/unitTesting.java" />
       </list>
     </option>
@@ -600,13 +598,6 @@
               <item name="Project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -630,17 +621,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -649,7 +629,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539352554449" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539353559719" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/jerseytesting2" />
@@ -909,13 +889,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532506819647</updated>
-    </task>
-    <task id="LOCAL-00001" summary="commit">
-      <created>1537352284996</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1537352284996</updated>
     </task>
     <task id="LOCAL-00002" summary="handling warnings and modifications in watchDirectory function">
       <created>1537460946242</created>
@@ -1253,7 +1226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539348201612</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java">
+      <created>1539353180314</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1539353180315</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1301,7 +1281,7 @@
     <frame x="0" y="25" width="1920" height="1008" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49445325" visible="true" weight="0.14354323" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49445325" visible="true" weight="0.2614728" />
       <window_info id="Structure" order="1" sideWeight="0.50554675" side_tool="true" weight="0.22518677" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1429,9 +1409,9 @@
     <MESSAGE value="architecture modifications in packages" />
     <MESSAGE value="some changes in the client.java file , main function, nothing special, just removing some \n" />
     <MESSAGE value="some changes in the directory.java file , import class client" />
-    <MESSAGE value="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java" />
     <MESSAGE value="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java&#10;CHanged FileFunctions.invalidLines function to return a boolean if the file were or not created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java&#10;CHanged FileFunctions.invalidLines function to return a boolean if the file were or not created" />
+    <MESSAGE value="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1671,22 +1651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/unitTesting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding>
-            <element signature="method#testConvertToObj#0;class#unitTesting#0" />
-            <element signature="method#testConvertToJson#0;class#unitTesting#0" />
-            <element signature="method#testCalculate#0;class#unitTesting#0" />
-            <element signature="method#tesSendResponse#0;class#unitTesting#0" />
-            <element signature="method#testCreateQueue#0;class#unitTesting#0" />
-            <element signature="method#testInvalidLines#0;class#unitTesting#0" />
-            <element signature="method#testSeekFiles#0;class#unitTesting#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1710,10 +1674,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Connection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-196">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/unitTesting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#testBuildAnswerFuction#0;class#unitTesting#0" />
+            <element signature="method#testConvertToObj#0;class#unitTesting#0" />
+            <element signature="method#testConvertToJson#0;class#unitTesting#0" />
+            <element signature="method#testCalculate#0;class#unitTesting#0" />
+            <element signature="method#tesSendResponse#0;class#unitTesting#0" />
+            <element signature="method#testCreateQueue#0;class#unitTesting#0" />
+            <element signature="method#testInvalidLines#0;class#unitTesting#0" />
+            <element signature="method#testSeekFiles#0;class#unitTesting#0" />
           </folding>
         </state>
       </provider>

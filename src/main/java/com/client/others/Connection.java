@@ -1,7 +1,6 @@
 package com.client.others;
 
 import com.client.service.Client;
-import com.client.service.Client;
 import com.types.Answer;
 import com.types.Request;
 import com.fasterxml.jackson.core.JsonProcessingException;
