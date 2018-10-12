@@ -265,7 +265,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="62" />
+          <entry key="java" value="64" />
           <entry key="md" value="2" />
           <entry key="xml" value="2" />
         </counts>
@@ -273,21 +273,21 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="62" />
+          <entry key="JAVA" value="64" />
           <entry key="Markdown" value="2" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3233" />
+          <entry key="java" value="3350" />
           <entry key="txt" value="428" />
           <entry key="xml" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3233" />
+          <entry key="JAVA" value="3350" />
           <entry key="PLAIN_TEXT" value="428" />
           <entry key="XML" value="22" />
         </counts>
@@ -319,10 +319,10 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
+                <state relative-caret-position="-780">
                   <caret line="39" selection-start-line="39" selection-end-line="39" />
                 </state>
               </provider>
@@ -337,6 +337,15 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -344,8 +353,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/unitTesting.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="600">
-                  <caret line="170" column="63" lean-forward="true" selection-start-line="170" selection-start-column="63" selection-end-line="170" selection-end-column="63" />
+                <state relative-caret-position="630">
+                  <caret line="172" column="26" selection-start-line="172" selection-start-column="26" selection-end-line="172" selection-end-column="26" />
                   <folding>
                     <element signature="method#testBuildAnswerFuction#0;class#unitTesting#0" />
                     <element signature="method#testConvertToObj#0;class#unitTesting#0" />
@@ -560,6 +569,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -628,7 +647,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539357994217" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539358256078" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/jerseytesting2" />
@@ -888,13 +907,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532506819647</updated>
-    </task>
-    <task id="LOCAL-00005" summary="test file aux">
-      <created>1538054817675</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1538054817675</updated>
     </task>
     <task id="LOCAL-00006" summary="test file aux">
       <created>1538054851935</created>
@@ -1232,7 +1244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539357630208</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java">
+      <created>1539357999147</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1539357999148</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1280,7 +1299,7 @@
     <frame x="0" y="25" width="1920" height="1008" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49445325" visible="true" weight="0.25773746" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49445325" visible="true" weight="0.25773746" />
       <window_info id="Structure" order="1" sideWeight="0.50554675" side_tool="true" weight="0.22518677" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1602,13 +1621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -1673,15 +1685,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
+        <state relative-caret-position="-780">
           <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/unitTesting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="170" column="63" lean-forward="true" selection-start-line="170" selection-start-column="63" selection-end-line="170" selection-end-column="63" />
+        <state relative-caret-position="630">
+          <caret line="172" column="26" selection-start-line="172" selection-start-column="26" selection-end-line="172" selection-end-column="26" />
           <folding>
             <element signature="method#testBuildAnswerFuction#0;class#unitTesting#0" />
             <element signature="method#testConvertToObj#0;class#unitTesting#0" />

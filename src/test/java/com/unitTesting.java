@@ -160,15 +160,17 @@ public class unitTesting {
     }
 
     @Test
-    public void testConnection(){
+    public void testConnection() throws IOException {
 
-        String s1 = "", s2 = "", l = "";
+        String json = "";
         Request r1 = null;
-        Answer answer = new Answer();
+        Response response;
 
-        Connection connection = mock(Connection.class);
+        Calculator server = mock(Calculator.class);
 
-        when(connection.client(r1,s1,s2,l)).thenReturn(answer);
+        when(server.sendResponse(json)).thenReturn(response);
+
+        Connection.client();
 
     }
 
