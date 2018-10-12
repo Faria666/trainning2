@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java&#10;CHanged FileFunctions.invalidLines function to return a boolean if the file were or not created">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/others/Directory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/others/Directory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/unitTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/unitTesting.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,6 +21,9 @@
     <SUITE FILE_PATH="coverage/jerseytesting$RESTTest__3_.ic" NAME="RESTTest (3) Coverage Results" MODIFIED="1536756308722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.jerseytesting.rest.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Project$unitTesting_testInvalidLines.ic" NAME="unitTesting.testInvalidLines Coverage Results" MODIFIED="1539350080542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/jerseytesting$RESTServerTest.ic" NAME="RESTServerTest Coverage Results" MODIFIED="1534427146318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.jerseytesting.webapp.*</FILTER>
     </SUITE>
@@ -36,7 +39,7 @@
     <SUITE FILE_PATH="coverage/jerseytesting$RESTClientPost.ic" NAME="RESTClientPost Coverage Results" MODIFIED="1534768886544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.jerseytesting.webapp.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Project$unitTesting.ic" NAME="unitTesting Coverage Results" MODIFIED="1539340622702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Project$unitTesting.ic" NAME="unitTesting Coverage Results" MODIFIED="1539352555320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/jerseytesting$RESTServerTest_testRequestFail.ic" NAME="RESTServerTest.testRequestFail Coverage Results" MODIFIED="1533112785066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -78,12 +81,15 @@
     <SUITE FILE_PATH="coverage/jerseytesting$RESTServerTest_testRequestFail2.ic" NAME="RESTServerTest.testRequestFail2 Coverage Results" MODIFIED="1533111763774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.jerseytesting.webapp.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Project$unitTesting_testSeekFiles.ic" NAME="unitTesting.testSeekFiles Coverage Results" MODIFIED="1539351061005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.*</FILTER>
+    </SUITE>
   </component>
   <component name="CoverageOptionsProvider">
     <option name="myAddOrReplace" value="0" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="353" />
+    <option name="myElementSize" value="219" />
   </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="hideWarnings" value="true" />
@@ -259,28 +265,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="57" />
+          <entry key="class" value="1" />
+          <entry key="java" value="61" />
           <entry key="md" value="2" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="57" />
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="61" />
           <entry key="Markdown" value="2" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2657" />
+          <entry key="java" value="2813" />
           <entry key="txt" value="428" />
           <entry key="xml" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2657" />
+          <entry key="JAVA" value="2813" />
           <entry key="PLAIN_TEXT" value="428" />
           <entry key="XML" value="22" />
         </counts>
@@ -297,17 +305,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/Client.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+                <state relative-caret-position="255">
+                  <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Connection.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1">
-                  <caret line="28" selection-start-line="28" selection-end-line="28" />
+                <state relative-caret-position="-196">
+                  <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -315,11 +323,20 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="141" column="62" selection-start-line="141" selection-start-column="62" selection-end-line="141" selection-end-column="62" />
+                <state relative-caret-position="165">
+                  <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Database.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -331,16 +348,16 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/unitTesting.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="148" selection-start-line="148" selection-end-line="148" />
+                <state relative-caret-position="74">
+                  <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
                   <folding>
-                    <element signature="method#testBuildAnswerFuction#0;class#unitTesting#0" />
                     <element signature="method#testConvertToObj#0;class#unitTesting#0" />
                     <element signature="method#testConvertToJson#0;class#unitTesting#0" />
                     <element signature="method#testCalculate#0;class#unitTesting#0" />
                     <element signature="method#tesSendResponse#0;class#unitTesting#0" />
                     <element signature="method#testCreateQueue#0;class#unitTesting#0" />
                     <element signature="method#testInvalidLines#0;class#unitTesting#0" />
+                    <element signature="method#testSeekFiles#0;class#unitTesting#0" />
                   </folding>
                 </state>
               </provider>
@@ -442,13 +459,13 @@
         <option value="$PROJECT_DIR$/src/test/java/com/client/unitTesting.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/others/Database.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/queue/Producer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/client/others/Directory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/others/Connection.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/queue/Consumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/service/Client.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/unitTesting.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/client/others/Directory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/unitTesting.java" />
       </list>
     </option>
   </component>
@@ -613,6 +630,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -621,7 +649,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539348194676" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539352554449" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/jerseytesting2" />
@@ -676,7 +704,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.unitTesting.testInvalidLines">
+  <component name="RunManager" selected="JUnit.unitTesting">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -701,24 +729,6 @@
       <option name="MAIN_CLASS_NAME" value="com.unitTesting" />
       <option name="METHOD_NAME" value="" />
       <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="unitTesting.tesSendResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jerseytesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com" />
-      <option name="MAIN_CLASS_NAME" value="com.unitTesting" />
-      <option name="METHOD_NAME" value="tesSendResponse" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -751,6 +761,23 @@
       <option name="PACKAGE_NAME" value="com" />
       <option name="MAIN_CLASS_NAME" value="com.unitTesting" />
       <option name="METHOD_NAME" value="testInvalidLines" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="unitTesting.testSeekFiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jerseytesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com" />
+      <option name="MAIN_CLASS_NAME" value="com.unitTesting" />
+      <option name="METHOD_NAME" value="testSeekFiles" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -857,18 +884,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.unitTesting" />
-      <item itemvalue="JUnit.unitTesting.tesSendResponse" />
       <item itemvalue="JUnit.unitTesting.testCreateQueue" />
       <item itemvalue="JUnit.unitTesting.testSendResponse" />
       <item itemvalue="JUnit.unitTesting.testInvalidLines" />
+      <item itemvalue="JUnit.unitTesting.testSeekFiles" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.unitTesting" />
+        <item itemvalue="JUnit.unitTesting.testSeekFiles" />
         <item itemvalue="JUnit.unitTesting.testInvalidLines" />
         <item itemvalue="JUnit.unitTesting.testSendResponse" />
         <item itemvalue="JUnit.unitTesting.testCreateQueue" />
-        <item itemvalue="JUnit.unitTesting" />
-        <item itemvalue="JUnit.unitTesting.tesSendResponse" />
       </list>
     </recent_temporary>
   </component>
@@ -1219,39 +1246,46 @@
       <option name="project" value="LOCAL" />
       <updated>1539347720167</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java&#10;CHanged FileFunctions.invalidLines function to return a boolean if the file were or not created">
+      <created>1539348201612</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1539348201612</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="unitTesting - 2018.10.12 at 11h 37m 06s.xml">
+    <history-entry file="unitTesting_testSeekFiles - 2018.10.12 at 14h 35m 04s.xml">
+      <configuration name="unitTesting.testSeekFiles" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting_testSeekFiles - 2018.10.12 at 14h 35m 31s.xml">
+      <configuration name="unitTesting.testSeekFiles" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting_testSeekFiles - 2018.10.12 at 14h 35m 42s.xml">
+      <configuration name="unitTesting.testSeekFiles" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting_testSeekFiles - 2018.10.12 at 14h 36m 12s.xml">
+      <configuration name="unitTesting.testSeekFiles" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting - 2018.10.12 at 14h 36m 28s.xml">
       <configuration name="unitTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="unitTesting_testCreateQueue - 2018.10.12 at 11h 52m 41s.xml">
-      <configuration name="unitTesting.testCreateQueue" configurationId="JUnit" />
+    <history-entry file="unitTesting - 2018.10.12 at 14h 37m 55s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="unitTesting_testCreateQueue - 2018.10.12 at 12h 01m 46s.xml">
-      <configuration name="unitTesting.testCreateQueue" configurationId="JUnit" />
+    <history-entry file="unitTesting - 2018.10.12 at 14h 43m 40s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="unitTesting_testCreateQueue - 2018.10.12 at 12h 02m 15s.xml">
-      <configuration name="unitTesting.testCreateQueue" configurationId="JUnit" />
+    <history-entry file="unitTesting_testSeekFiles - 2018.10.12 at 14h 45m 34s.xml">
+      <configuration name="unitTesting.testSeekFiles" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="unitTesting_testSendResponse - 2018.10.12 at 13h 13m 57s.xml">
-      <configuration name="unitTesting.testSendResponse" configurationId="JUnit" />
+    <history-entry file="unitTesting - 2018.10.12 at 14h 55m 40s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="unitTesting_testSendResponse - 2018.10.12 at 13h 14m 27s.xml">
-      <configuration name="unitTesting.testSendResponse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="unitTesting_testSendResponse - 2018.10.12 at 13h 15m 42s.xml">
-      <configuration name="unitTesting.testSendResponse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="unitTesting_testInvalidLines - 2018.10.12 at 13h 33m 31s.xml">
-      <configuration name="unitTesting.testInvalidLines" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="unitTesting_testInvalidLines - 2018.10.12 at 13h 33m 51s.xml">
-      <configuration name="unitTesting.testInvalidLines" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="unitTesting_testInvalidLines - 2018.10.12 at 13h 42m 37s.xml">
-      <configuration name="unitTesting.testInvalidLines" configurationId="JUnit" />
+    <history-entry file="unitTesting - 2018.10.12 at 14h 55m 59s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView" selected-index="1">
@@ -1279,7 +1313,7 @@
       <window_info id="Job Explorer" order="9" weight="0.32924226" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.48772678" weight="0.32915717" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4765208" visible="true" weight="0.19020501" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4765208" visible="true" weight="0.19020501" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49519745" weight="0.31548974" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1299,8 +1333,43 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.6066434" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32604057" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.2534685" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49445325" visible="true" weight="0.14354323" />
+      <window_info id="Structure" order="1" sideWeight="0.50554675" side_tool="true" weight="0.22518677" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5046584" side_tool="true" weight="0.28068304" />
+      <window_info id="DB Browser" order="7" weight="0.32924226" />
+      <window_info id="Project Explorer" order="8" weight="0.32924226" />
+      <window_info id="Job Explorer" order="9" weight="0.32924226" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.48772678" weight="0.32915717" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4765208" visible="true" weight="0.19020501" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49519745" weight="0.31548974" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49675325" weight="0.32687926" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4994664" weight="0.32915717" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.52347916" side_tool="true" weight="0.19020501" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.48132336" side_tool="true" weight="0.2665148" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.45464247" weight="0.32687926" />
+      <window_info anchor="bottom" id="DB Execution Console" order="11" />
+      <window_info anchor="bottom" id="Console" order="12" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24945295" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.6066434" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.25400212" />
+    </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.jsp" />
@@ -1369,8 +1438,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rest/RESTServer.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trainning/webapp/Answer.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/trainning/webapp/MyThread.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/trainning/webapp/NewQueue.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/trainning/webapp/Request.java" />
@@ -1514,27 +1581,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Producer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Directory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="41" column="75" lean-forward="true" selection-start-line="41" selection-start-column="75" selection-end-line="41" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1580,16 +1630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -1600,13 +1640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Consumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1614,26 +1647,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Directory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="811">
+          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/Assert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#1482#1483#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/unitTesting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="148" selection-start-line="148" selection-end-line="148" />
+        <state relative-caret-position="74">
+          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
           <folding>
-            <element signature="method#testBuildAnswerFuction#0;class#unitTesting#0" />
             <element signature="method#testConvertToObj#0;class#unitTesting#0" />
             <element signature="method#testConvertToJson#0;class#unitTesting#0" />
             <element signature="method#testCalculate#0;class#unitTesting#0" />
             <element signature="method#tesSendResponse#0;class#unitTesting#0" />
             <element signature="method#testCreateQueue#0;class#unitTesting#0" />
             <element signature="method#testInvalidLines#0;class#unitTesting#0" />
+            <element signature="method#testSeekFiles#0;class#unitTesting#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="141" column="62" selection-start-line="141" selection-start-column="62" selection-end-line="141" selection-end-column="62" />
+        <state relative-caret-position="165">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-196">
+          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -4,16 +4,15 @@ import com.calculator.others.BuildAnswer;
 import com.calculator.others.Calculate;
 import com.calculator.others.Convertions;
 import com.calculator.service.Calculator;
+import com.client.others.Directory;
 import com.client.others.FileFunctions;
 import com.client.queue.Queue;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.sun.org.apache.regexp.internal.RE;
 import com.types.Answer;
 import com.types.Request;
 import org.junit.Assert;
 import org.junit.Test;
 import javax.ws.rs.core.Response;
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.ArrayBlockingQueue;
@@ -145,7 +144,15 @@ public class unitTesting {
     }
 
     @Test
-    public void test(){
+    public void testSeekFiles(){
+
+        String directory = "src/test/tests";
+
+        ArrayList<String> files;
+
+        files = Directory.seekFiles(directory);
+
+        Assert.assertTrue(!files.isEmpty());
 
     }
 
