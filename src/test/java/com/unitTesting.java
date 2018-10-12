@@ -163,14 +163,20 @@ public class unitTesting {
     public void testConnection() throws IOException {
 
         String json = "";
-        Request r1 = null;
-        Response response;
+        String file = null;
+        Request r1 = new Request(10,10,"add");
+        Response response = null;
 
         Calculator server = mock(Calculator.class);
 
-        when(server.sendResponse(json)).thenReturn(response);
+        Object answer = null;
+        when(server.sendResponse(json)).thenReturn(Response.status(Response.Status.BAD_REQUEST).build());
 
-        Connection.client();
+        when(FileFunctions.invalidLines(r1, file)).thenReturn(null);
+
+        Answer result = Connection.client(r1, null, null, null);
+
+        Assert.assertNull(result);
 
     }
 
