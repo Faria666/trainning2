@@ -135,12 +135,20 @@ public class FileFunctions {
 
     }
 
-    static void invalidLines(Request request) throws IOException {
-        String filename= "src/main/resources/files/invalid.txt";
+    public static boolean invalidLines(Request request, String filename){
         String phrase = "-->     " + request.getValue1() + "   |   " + request.getValue2() + "   |   " + request.getOperation() + "\n";
-        FileWriter fw = new FileWriter(filename,true); //the true will append the new data
-        fw.write(phrase);//appends the string to the file
-        fw.close();
+        FileWriter fw; //the true will append the new data
+        try {
+            fw = new FileWriter(filename,true);
+            fw.write(phrase);//appends the string to the file
+            fw.close();
+            return true;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+
+
     }
 
 

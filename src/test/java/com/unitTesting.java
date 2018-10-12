@@ -4,13 +4,16 @@ import com.calculator.others.BuildAnswer;
 import com.calculator.others.Calculate;
 import com.calculator.others.Convertions;
 import com.calculator.service.Calculator;
+import com.client.others.FileFunctions;
 import com.client.queue.Queue;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.sun.org.apache.regexp.internal.RE;
 import com.types.Answer;
 import com.types.Request;
 import org.junit.Assert;
 import org.junit.Test;
 import javax.ws.rs.core.Response;
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.ArrayBlockingQueue;
@@ -100,7 +103,7 @@ public class unitTesting {
     }
 
     @Test
-    public void tesSendResponse() throws IOException {
+    public void testSendResponse() throws IOException {
 
         Response response;
         String json = "{" + "\"" + "value1" + "\""+ ":" + 12 + "," + "\""+ "value2"+ "\"" + ":" + 67 + "," + "\""+ "operation"+ "\"" + ":" + "\""+"mult"+ "\"" + "}";
@@ -112,7 +115,7 @@ public class unitTesting {
     }
 
     @Test
-    public void testCreateQueue(){
+    public void testCreateQueue() throws InterruptedException {
 
         Request request1, request2;
         ArrayList requestList = new ArrayList();
@@ -126,9 +129,19 @@ public class unitTesting {
 
         queue = Queue.createQueue(requestList);
 
-        Assert.assertTrue(queue.contains(request1));
-        Assert.assertTrue(queue.contains(request2));
+        Assert.assertEquals(queue.take(), request1);
+        Assert.assertEquals(queue.take(), request2);
 
+    }
+
+    @Test
+    public void testInvalidLines(){
+
+        Request request1 = new Request(10,10,"awsda");
+
+        boolean created = FileFunctions.invalidLines(request1, "/home/joao-faria/Desktop/Project/src/test/tests/invalid.txt");
+
+        Assert.assertTrue(created);
     }
 
 }

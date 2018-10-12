@@ -17,6 +17,7 @@ public class Client {
     private static final String INPUT_DIRECTORY = "src/main/resources/files/input/";
     private static final String OUTPUT_DIRECTORY = "src/main/resources/files/output/";
     private static final String UNSUPPORTED_DIRECTORY = "src/main/resources/files/unsupported/";
+    private static final String INVALID_LINES_FILE = "src/main/resources/files/invalid.txt";
     private static final String URI = "http://localhost:8080/calculator";//172.17.0.2
     private static final String LOCATION = "/calc";
     private static final int N_THREADS = 2;
@@ -36,7 +37,7 @@ public class Client {
             queue = Queue.createQueue(requestList);
 
             for(int i = 0; i< N_THREADS; i++) {
-                Consumer consumer = new Consumer(queue, URI, LOCATION);
+                Consumer consumer = new Consumer(queue, URI, LOCATION, INVALID_LINES_FILE);
                 Thread consumerThread = new Thread(consumer);
                 consumerThread.start();
             }
