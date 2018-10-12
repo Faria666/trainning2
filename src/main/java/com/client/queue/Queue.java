@@ -1,8 +1,8 @@
 package com.client.queue;
 
-import com.types.Answer;
 import com.client.others.Connection;
 import com.client.others.Database;
+import com.types.Answer;
 import com.types.Request;
 import java.io.IOException;
 import java.util.ArrayList;

@@ -1,15 +1,15 @@
 package com.client.service;
 
+import com.client.others.FileFunctions;
 import com.types.Request;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.client.others.*;
-import com.client.queue.Consumer;
-import com.client.queue.Queue;
-
+import com.queue.Consumer;
+import com.queue.Queue;
 import java.util.ArrayList;
 import java.util.concurrent.ArrayBlockingQueue;
-
 import static com.client.others.Directory.watchDirectory;
+import static com.client.others.Directory.*;
 
 public class Client {
 

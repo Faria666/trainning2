@@ -1,6 +1,6 @@
 package com.client.others;
 
-import com.client.service.Client;
+import com.service.Client;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import java.io.File;
