@@ -4,7 +4,7 @@ import com.types.Request;
 
 import java.util.concurrent.ArrayBlockingQueue;
 
-public class Producer implements Runnable{
+public class Producer extends Thread{
 
     protected ArrayBlockingQueue queue;
     private Request elem;
