@@ -1,11 +1,10 @@
 package com.client.queue;
 
 import com.types.Request;
-
 import java.io.IOException;
 import java.util.concurrent.ArrayBlockingQueue;
 
-public class Consumer implements Runnable{
+public class Consumer extends Thread{
 
 
     private ArrayBlockingQueue queue;
@@ -22,10 +21,13 @@ public class Consumer implements Runnable{
 
     public void run() {
 
-        try {
-            Queue.requestTreatment((Request) queue.take(), uri, location);
-        } catch (InterruptedException | IOException e) {
-            e.printStackTrace();
+        while(!queue.isEmpty()) {
+            try {
+                System.out.println("Consumer "+Thread.currentThread().getName()+" --> START");
+                Queue.requestTreatment((Request) queue.take(), uri, location);
+            } catch (InterruptedException | IOException e) {
+                e.printStackTrace();
+            }
         }
 
     }
