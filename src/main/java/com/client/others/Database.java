@@ -1,5 +1,4 @@
 package com.client.others;
-
 import com.types.Answer;
 import com.types.Request;
 import javax.persistence.EntityManager;

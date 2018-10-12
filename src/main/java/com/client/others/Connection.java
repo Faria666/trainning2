@@ -1,10 +1,11 @@
 package com.client.others;
 
+import com.client.service.Client;
+import com.client.service.Client;
 import com.types.Answer;
 import com.types.Request;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.client.service.Client;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import javax.ws.rs.client.ClientBuilder;
