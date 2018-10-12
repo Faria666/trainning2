@@ -1,6 +1,6 @@
 package com.client.others;
 
-import com.service.Client;
+import com.client.service.Client;
 import com.types.Request;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
