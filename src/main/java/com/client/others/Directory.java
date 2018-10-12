@@ -57,17 +57,19 @@ public class Directory {
      * @return return an array with the name of all files found in that directory
      */
 
-    static ArrayList<String> seekFiles(final String directory) {
+    public static ArrayList<String> seekFiles(final String directory) {
         final java.io.File folder = new java.io.File(directory);
         final File[] listOfFiles = folder.listFiles();
         final ArrayList<String> files = new ArrayList<>();
 
-        assert listOfFiles != null;
-        for (File listOfFile : listOfFiles) {
-            if (listOfFile.isFile()) {
-                files.add(listOfFile.getName());
-                System.out.println("File " + listOfFile.getName());
-                log.debug("Processing file:" + listOfFile.getName());
+
+        if (listOfFiles != null) {
+            for (File listOfFile : listOfFiles) {
+                if (listOfFile.isFile()) {
+                    files.add(listOfFile.getName());
+                    System.out.println("File " + listOfFile.getName());
+                    log.debug("Processing file:" + listOfFile.getName());
+                }
             }
         }
         return files;
