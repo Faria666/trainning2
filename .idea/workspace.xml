@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="some changes in the directory.java file , import class client">
+    <list default="true" id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/unitTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/unitTesting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -259,29 +259,29 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="48" />
+          <entry key="java" value="50" />
           <entry key="md" value="2" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="48" />
+          <entry key="JAVA" value="50" />
           <entry key="Markdown" value="2" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1793" />
-          <entry key="txt" value="242" />
+          <entry key="java" value="2078" />
+          <entry key="txt" value="326" />
           <entry key="xml" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1793" />
-          <entry key="PLAIN_TEXT" value="242" />
+          <entry key="JAVA" value="2078" />
+          <entry key="PLAIN_TEXT" value="326" />
           <entry key="XML" value="22" />
         </counts>
       </usages-collector>
@@ -294,11 +294,20 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/Client.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
+                <state relative-caret-position="285">
                   <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -313,13 +322,14 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/unitTesting.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+                <state relative-caret-position="510">
+                  <caret line="128" column="49" selection-start-line="128" selection-start-column="49" selection-end-line="128" selection-end-column="49" />
                   <folding>
                     <element signature="method#testBuildAnswerFuction#0;class#unitTesting#0" />
                     <element signature="method#testConvertToObj#0;class#unitTesting#0" />
                     <element signature="method#testConvertToJson#0;class#unitTesting#0" />
                     <element signature="method#testCalculate#0;class#unitTesting#0" />
+                    <element signature="method#tesSendResponse#0;class#unitTesting#0" />
                   </folding>
                 </state>
               </provider>
@@ -535,6 +545,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="queue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -580,7 +600,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539340995000" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539341955724" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/jerseytesting2" />
@@ -635,7 +655,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.unitTesting">
+  <component name="RunManager" selected="JUnit.unitTesting.testCreateQueue">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -716,7 +736,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="unitTesting.testConvertToObj" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="unitTesting.testCreateQueue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jerseytesting" />
       <extension name="coverage">
         <pattern>
@@ -726,7 +746,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com" />
       <option name="MAIN_CLASS_NAME" value="com.unitTesting" />
-      <option name="METHOD_NAME" value="testConvertToObj" />
+      <option name="METHOD_NAME" value="testCreateQueue" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -815,19 +835,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.unitTesting.testConvertToObj" />
       <item itemvalue="JUnit.unitTesting.testConvertToJson" />
       <item itemvalue="JUnit.unitTesting.testCalculate" />
       <item itemvalue="JUnit.unitTesting" />
       <item itemvalue="JUnit.unitTesting.tesSendResponse" />
+      <item itemvalue="JUnit.unitTesting.testCreateQueue" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.unitTesting.testCreateQueue" />
         <item itemvalue="JUnit.unitTesting" />
         <item itemvalue="JUnit.unitTesting.tesSendResponse" />
         <item itemvalue="JUnit.unitTesting.testCalculate" />
         <item itemvalue="JUnit.unitTesting.testConvertToJson" />
-        <item itemvalue="JUnit.unitTesting.testConvertToObj" />
       </list>
     </recent_temporary>
   </component>
@@ -1157,13 +1177,17 @@
       <option name="project" value="LOCAL" />
       <updated>1539337700661</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java">
+      <created>1539341055554</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1539341055554</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="unitTesting_testCalculate - 2018.10.12 at 11h 27m 44s.xml">
-      <configuration name="unitTesting.testCalculate" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="unitTesting_testCalculate - 2018.10.12 at 11h 27m 54s.xml">
       <configuration name="unitTesting.testCalculate" configurationId="JUnit" />
     </history-entry>
@@ -1191,6 +1215,9 @@
     <history-entry file="unitTesting - 2018.10.12 at 11h 37m 06s.xml">
       <configuration name="unitTesting" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="unitTesting_testCreateQueue - 2018.10.12 at 11h 52m 41s.xml">
+      <configuration name="unitTesting.testCreateQueue" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1205,7 +1232,7 @@
     <frame x="0" y="25" width="1920" height="1008" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49445325" visible="true" weight="0.14354323" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49445325" visible="true" weight="0.14354323" />
       <window_info id="Structure" order="1" sideWeight="0.50554675" side_tool="true" weight="0.22518677" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1217,7 +1244,7 @@
       <window_info id="Job Explorer" order="9" weight="0.32924226" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.48772678" weight="0.32915717" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4765208" visible="true" weight="0.19020501" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4765208" visible="true" weight="0.19020501" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49519745" weight="0.31548974" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1298,7 +1325,8 @@
     <MESSAGE value="architecture modifications in packages" />
     <MESSAGE value="some changes in the client.java file , main function, nothing special, just removing some \n" />
     <MESSAGE value="some changes in the directory.java file , import class client" />
-    <option name="LAST_COMMIT_MESSAGE" value="some changes in the directory.java file , import class client" />
+    <MESSAGE value="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1485,13 +1513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Directory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1546,8 +1567,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="285">
           <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1556,13 +1584,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/unitTesting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="510">
+          <caret line="128" column="49" selection-start-line="128" selection-start-column="49" selection-end-line="128" selection-end-column="49" />
           <folding>
             <element signature="method#testBuildAnswerFuction#0;class#unitTesting#0" />
             <element signature="method#testConvertToObj#0;class#unitTesting#0" />
             <element signature="method#testConvertToJson#0;class#unitTesting#0" />
             <element signature="method#testCalculate#0;class#unitTesting#0" />
+            <element signature="method#tesSendResponse#0;class#unitTesting#0" />
           </folding>
         </state>
       </provider>

@@ -4,6 +4,7 @@ import com.calculator.others.BuildAnswer;
 import com.calculator.others.Calculate;
 import com.calculator.others.Convertions;
 import com.calculator.service.Calculator;
+import com.client.queue.Queue;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.types.Answer;
 import com.types.Request;
@@ -11,6 +12,8 @@ import org.junit.Assert;
 import org.junit.Test;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.concurrent.ArrayBlockingQueue;
 
 
 public class unitTesting {
@@ -59,7 +62,6 @@ public class unitTesting {
 
     }
 
-
     @Test
     public void testCalculate(){
 
@@ -97,7 +99,6 @@ public class unitTesting {
 
     }
 
-
     @Test
     public void tesSendResponse() throws IOException {
 
@@ -107,6 +108,26 @@ public class unitTesting {
         response = Calculator.sendResponse(json);
 
         Assert.assertEquals(200, response.getStatus());
+
+    }
+
+    @Test
+    public void testCreateQueue(){
+
+        Request request1, request2;
+        ArrayList requestList = new ArrayList();
+        ArrayBlockingQueue queue;
+
+        request1 = new Request(4,2,"add");
+        request2 = new Request(6,3,"add");
+
+        requestList.add(request1);
+        requestList.add(request2);
+
+        queue = Queue.createQueue(requestList);
+
+        Assert.assertTrue(queue.contains(request1));
+        Assert.assertTrue(queue.contains(request2));
 
     }
 
