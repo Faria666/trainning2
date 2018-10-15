@@ -71,6 +71,7 @@ public class FileFunctions {
                                 System.out.println("--- Parametro inválido! ---");
                                 break;
                             }
+
                             request = new Request(temp1, temp2, op);
                             requestList.add(request);
                         }
