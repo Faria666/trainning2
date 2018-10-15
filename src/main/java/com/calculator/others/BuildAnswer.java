@@ -25,7 +25,4 @@ public class BuildAnswer {
         return answerObject;
     }
 
-
-    public BuildAnswer() {
-    }
 }

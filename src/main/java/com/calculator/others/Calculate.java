@@ -35,7 +35,4 @@ public class Calculate {
         double obtainResult(double value1, double value2, String operation);
     }
 
-
-    public Calculate() {
-    }
 }

@@ -50,7 +50,4 @@ public class Convertions {
         return answer;
     }
 
-
-    public Convertions() {
-    }
 }

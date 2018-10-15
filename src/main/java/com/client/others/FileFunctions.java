@@ -30,7 +30,7 @@ public class FileFunctions {
      * @return return an array of Request objects
      */
 
-    private static ArrayList<Request> readFileWithFramework(final String inputDirectory, final String outputDirectory, final String failDirectory, final ArrayList<String> files) throws IOException {
+    public static ArrayList<Request> readFileWithFramework(final String inputDirectory, final String outputDirectory, final String failDirectory, final ArrayList<String> files) throws IOException {
 
         Request request;
         final ArrayList<Request> requestList = new ArrayList<>();
@@ -50,7 +50,7 @@ public class FileFunctions {
                         for (CSVRecord csvRecord : csvParser) {
 
                             // Accessing Values by Column Index
-                            String val1 = csvRecord.get(0);
+                    String val1 = csvRecord.get(0);
                             String val2 = csvRecord.get(1);
                             String op = csvRecord.get(2);
 
@@ -153,6 +153,4 @@ public class FileFunctions {
     }
 
 
-    public FileFunctions() {
-    }
 }

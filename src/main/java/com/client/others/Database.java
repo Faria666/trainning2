@@ -13,20 +13,27 @@ public class Database {
      * @param request is the request made to the server
      */
 
-    public static void insertJDBC(final Answer answer, final Request request){
+    public static boolean insertJDBC(final Answer answer, final Request request){
+        boolean inserted = false;
 
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("project-JPA");
+        try {
+            EntityManagerFactory emf = Persistence.createEntityManagerFactory("project-JPA");
 
-        EntityManager em = emf.createEntityManager();
+            EntityManager em = emf.createEntityManager();
 
-        em.getTransaction().begin();
-        em.persist(answer);
-        em.persist(request);
-        em.flush();
-        em.getTransaction().commit();
-        em.close();
+            em.getTransaction().begin();
+            em.persist(answer);
+            em.persist(request);
+            em.flush();
+            em.getTransaction().commit();
+            em.close();
+            inserted = true;
+
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return inserted;
     }
 
-    public Database() {
-    }
 }
