@@ -1,4 +1,5 @@
 package com.client.others;
+
 import com.types.Answer;
 import com.types.Request;
 import javax.persistence.EntityManager;
@@ -13,7 +14,8 @@ public class Database {
      * @param request is the request made to the server
      */
 
-    public static void insertJDBC(final Answer answer, final Request request){
+    public static boolean insertJDBC(final Answer answer, final Request request){
+        boolean inserted = false;
 
         try {
             EntityManagerFactory emf = Persistence.createEntityManagerFactory("project-JPA");
@@ -26,10 +28,13 @@ public class Database {
             em.flush();
             em.getTransaction().commit();
             em.close();
+            inserted = true;
+
 
         }catch (Exception e){
             e.printStackTrace();
         }
+        return inserted;
     }
 
 }

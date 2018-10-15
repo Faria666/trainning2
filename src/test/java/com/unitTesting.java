@@ -4,28 +4,21 @@ import com.calculator.others.BuildAnswer;
 import com.calculator.others.Calculate;
 import com.calculator.others.Convertions;
 import com.calculator.service.Calculator;
-import com.client.others.Connection;
 import com.client.others.Database;
 import com.client.others.Directory;
 import com.client.others.FileFunctions;
 import com.client.queue.Queue;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.sun.org.apache.regexp.internal.RE;
 import com.types.Answer;
 import com.types.Request;
 import javax.ws.rs.core.Response;
 import java.io.*;
-import java.lang.ref.ReferenceQueue;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.concurrent.ArrayBlockingQueue;
-
 import org.apache.commons.csv.CSVFormat;
-import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVPrinter;
-import org.codehaus.groovy.classgen.asm.AssertionWriter;
 import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.Mockito;
@@ -290,4 +283,18 @@ public class unitTesting {
 
     }
 
+    @Test
+    public void testInsertJDBC(){
+
+        boolean inserted;
+        Answer answer= new Answer("add", 10 , "12/12/12");
+        Database db = org.mockito.Mockito.mock(Database.class);
+        Request request= new Request(5,5,"add");
+
+        when(db.insertJDBC(answer,request)).thenReturn(true);
+
+        inserted = db.insertJDBC(answer,request);
+
+        Assert.assertTrue(inserted);
+    }
 }
