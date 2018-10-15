@@ -25,6 +25,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVPrinter;
+import org.codehaus.groovy.classgen.asm.AssertionWriter;
 import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.Mockito;
@@ -173,10 +174,14 @@ public class unitTesting {
     @Test
     public void testCalculatorServer() throws IOException {
 
-        String json = "{" + "\"" + "value1" + "\""+ ":" + 12 + "," + "\""+ "value2"+ "\"" + ":" + 67 + "," + "\""+ "operation"+ "\"" + ":" + "\""+"mult"+ "\"" + "}";
-        Response server = Calculator.sendResponse(json);
+        String json1 = "{" + "\"" + "value1" + "\""+ ":" + 12 + "," + "\""+ "value2"+ "\"" + ":" + 67 + "," + "\""+ "operation"+ "\"" + ":" + "\""+"mult"+ "\"" + "}";
+        String json2 = "{" + "\"" + "value1" + "\""+ ":" + 12 + "," + "\""+ "value2"+ "\"" + ":" + 67 + "," + "\""+ "operation"+ "\"" + ":" + "\""+"gsdgsedg"+ "\"" + "}";
 
-        Assert.assertEquals(200, server.getStatus());
+        Response server1 = Calculator.sendResponse(json1);
+        Response server2 = Calculator.sendResponse(json2);
+
+        Assert.assertEquals(200, server1.getStatus());
+        Assert.assertNotEquals(200, server2.getStatus());
 
     }
 
@@ -188,7 +193,7 @@ public class unitTesting {
         Assert.assertEquals("add", answer.getOperation());
         Assert.assertEquals(4.5, answer.getResult(),0.0);
         Assert.assertEquals("12/12/12", answer.getDate());
-
+        Assert.assertEquals(0, answer.getAnswerId(),0.0);
     }
 
     @Test
@@ -199,11 +204,43 @@ public class unitTesting {
         Assert.assertEquals(5, request.getValue1(),0.0);
         Assert.assertEquals(3, request.getValue2(),0.0);
         Assert.assertEquals("add", request.getOperation());
-
+        Assert.assertEquals(0, request.getRequestId(),0.0);
     }
 
     @Test
-    public void testreadFileWithFramework() throws IOException {
+    public void testAnswerSets(){
+
+        Answer answer = new Answer();
+
+        answer.setAnswerId(1);
+        answer.setDate("12/12/12");
+        answer.setOperation("mult");
+        answer.setResult(0);
+
+        Assert.assertEquals(1, answer.getAnswerId(),0.0);
+        Assert.assertEquals("12/12/12", answer.getDate());
+        Assert.assertEquals("mult", answer.getOperation());
+        Assert.assertEquals(0, answer.getResult(),0.0);
+    }
+
+    @Test
+    public void testRequestSets(){
+
+        Request request = new Request();
+
+        request.setRequestId(1);
+        request.setValue1(2);
+        request.setValue2(10);
+        request.setOperation("mult");
+
+        Assert.assertEquals(1, request.getRequestId(),0.0);
+        Assert.assertEquals(2, request.getValue1(),0.0);
+        Assert.assertEquals(10, request.getValue2(),0.0);
+        Assert.assertEquals("mult", request.getOperation());
+    }
+
+    @Test
+    public void testReadFileWithFramework() throws IOException {
 
     String directory = "src/test/resources/";
     Request request = new Request(5,5, "add");
@@ -219,8 +256,6 @@ public class unitTesting {
     csvPrinter.printRecord(5.0, 5.0, "add");
     csvPrinter.flush();
 
-
-
     files.add(file1.getName());
     files.add(file2.getName());
 
@@ -229,6 +264,30 @@ public class unitTesting {
     Assert.assertEquals(request.getOperation(),requestList.get(0).getOperation());
     Assert.assertEquals(request.getValue1(),requestList.get(0).getValue1(),0.0);
     Assert.assertEquals(request.getValue2(),requestList.get(0).getValue2(),0.0);
+    }
+
+    @Test
+    public void testProcessFiles() throws IOException {
+        String outputDirectory = "src/test/resources/";
+        String inputDirectory = "src/test/resources/processFiles/";
+        Request request = new Request(5,5, "add");
+        ArrayList<Request> requestList;
+
+        File file1 = new File(inputDirectory + "newfile1.csv");
+
+        BufferedWriter writer = Files.newBufferedWriter(Paths.get(inputDirectory + "newfile1.csv"));
+
+        CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT);
+
+        csvPrinter.printRecord(5.0, 5.0, "add");
+        csvPrinter.flush();
+
+        requestList = FileFunctions.processFiles(inputDirectory,outputDirectory,outputDirectory);
+
+        Assert.assertEquals(request.getOperation(),requestList.get(0).getOperation());
+        Assert.assertEquals(request.getValue1(),requestList.get(0).getValue1(),0.0);
+        Assert.assertEquals(request.getValue2(),requestList.get(0).getValue2(),0.0);
+
     }
 
 }
