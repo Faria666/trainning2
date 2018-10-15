@@ -67,7 +67,7 @@ public class Directory {
             for (File listOfFile : listOfFiles) {
                 if (listOfFile.isFile()) {
                     files.add(listOfFile.getName());
-                    System.out.println("File " + listOfFile.getName());
+                    System.out.println("Processing file: " + listOfFile.getName());
                     log.debug("Processing file:" + listOfFile.getName());
                 }
             }
@@ -75,7 +75,4 @@ public class Directory {
         return files;
     }
 
-
-    public Directory() {
-    }
 }

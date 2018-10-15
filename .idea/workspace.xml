@@ -3,6 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/calculator/others/BuildAnswer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calculator/others/BuildAnswer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/calculator/others/Calculate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calculator/others/Calculate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/calculator/others/Convertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calculator/others/Convertions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/others/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/others/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/others/Directory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/others/Directory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/unitTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/unitTesting.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,7 +45,7 @@
     <SUITE FILE_PATH="coverage/jerseytesting$RESTClientPost.ic" NAME="RESTClientPost Coverage Results" MODIFIED="1534768886544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.jerseytesting.webapp.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Project$unitTesting.ic" NAME="unitTesting Coverage Results" MODIFIED="1539355914991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Project$unitTesting.ic" NAME="unitTesting Coverage Results" MODIFIED="1539600430636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/jerseytesting$RESTServerTest_testRequestFail.ic" NAME="RESTServerTest.testRequestFail Coverage Results" MODIFIED="1533112785066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -49,6 +56,9 @@
     </SUITE>
     <SUITE FILE_PATH="coverage/jerseytesting2$RESTClientPost.ic" NAME="RESTClientPost Coverage Results" MODIFIED="1538054432543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.jerseytesting2.rest.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Project$unitTesting_testreadFileWithFramework.ic" NAME="unitTesting.testreadFileWithFramework Coverage Results" MODIFIED="1539598635801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/jerseytesting$RESTTest_testQueue.ic" NAME="RESTTest.testQueue Coverage Results" MODIFIED="1534431342382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.jerseytesting.webapp.*</FILTER>
@@ -88,7 +98,7 @@
     <option name="myAddOrReplace" value="0" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="219" />
+    <option name="myElementSize" value="17" />
   </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="hideWarnings" value="true" />
@@ -265,7 +275,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="67" />
+          <entry key="java" value="79" />
           <entry key="md" value="2" />
           <entry key="xml" value="2" />
         </counts>
@@ -273,21 +283,21 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="67" />
+          <entry key="JAVA" value="79" />
           <entry key="Markdown" value="2" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3509" />
+          <entry key="java" value="5107" />
           <entry key="txt" value="428" />
           <entry key="xml" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3509" />
+          <entry key="JAVA" value="5107" />
           <entry key="PLAIN_TEXT" value="428" />
           <entry key="XML" value="22" />
         </counts>
@@ -298,50 +308,23 @@
     <favorites_list name="jerseytesting" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.5359589">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/Client.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="24" selection-start-line="24" selection-end-line="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Connection.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="58" selection-start-line="58" selection-end-line="58" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-780">
-                  <caret line="39" selection-start-line="39" selection-end-line="39" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Database.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+                <state relative-caret-position="150">
+                  <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="42" column="71" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="71" />
+                <state relative-caret-position="-270">
+                  <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
                 </state>
               </provider>
             </entry>
@@ -353,8 +336,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/unitTesting.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
-                  <caret line="178" column="32" selection-start-line="178" selection-start-column="32" selection-end-line="178" selection-end-column="32" />
+                <state relative-caret-position="436">
+                  <caret line="230" column="78" selection-start-line="230" selection-start-column="78" selection-end-line="230" selection-end-column="78" />
                   <folding>
                     <element signature="method#testBuildAnswerFuction#0;class#unitTesting#0" />
                     <element signature="method#testConvertToObj#0;class#unitTesting#0" />
@@ -364,6 +347,9 @@
                     <element signature="method#testCreateQueue#0;class#unitTesting#0" />
                     <element signature="method#testInvalidLines#0;class#unitTesting#0" />
                     <element signature="method#testSeekFiles#0;class#unitTesting#0" />
+                    <element signature="method#testCalculatorServer#0;class#unitTesting#0" />
+                    <element signature="method#testAnswerGets#0;class#unitTesting#0" />
+                    <element signature="method#testRequestGets#0;class#unitTesting#0" />
                   </folding>
                 </state>
               </provider>
@@ -410,6 +396,7 @@
       <find>seekFiles</find>
       <find>jun</find>
       <find>mock</find>
+      <find>inser</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/test/java/com/jerseytesting/webapp</dir>
@@ -421,8 +408,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/jerseytesting/aux/RESTTestAux.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/aux/Consumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/aux/MyThread.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jerseytesting/rest/RESTTestRest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jerseytesting/aux/Request.java" />
@@ -456,21 +441,23 @@
         <option value="$PROJECT_DIR$/src/main/java/com/client/aux/FileFunctions.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/calculator/calculate/Calculate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/aux/Connection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/calculator/others/Calculate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/calculator/others/BuildAnswer.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/calculator/others/Convertions.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/client/unitTesting.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/client/others/Database.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/queue/Producer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/queue/Consumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/service/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/client/others/Directory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/others/Connection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/calculator/others/Convertions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/calculator/others/Calculate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/calculator/others/BuildAnswer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/types/Answer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/types/Request.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/client/others/Database.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/client/others/Directory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/unitTesting.java" />
       </list>
     </option>
@@ -510,7 +497,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="25" />
-    <option name="width" value="960" />
+    <option name="width" value="1920" />
     <option name="height" value="1008" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -561,6 +548,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="calculator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="others" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Project" type="b2602c69:ProjectViewProjectNode" />
@@ -647,7 +644,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539359672163" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539600440547" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/jerseytesting2" />
@@ -702,7 +699,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.unitTesting.testConnection">
+  <component name="RunManager" selected="JUnit.unitTesting">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.client.service.Client" />
+      <module name="jerseytesting" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.client.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -731,6 +742,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="unitTesting.testAnswerGets" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jerseytesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com" />
+      <option name="MAIN_CLASS_NAME" value="com.unitTesting" />
+      <option name="METHOD_NAME" value="testAnswerGets" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="unitTesting.testConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jerseytesting" />
       <extension name="coverage">
@@ -748,7 +776,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="unitTesting.testInvalidLines" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="unitTesting.testreadFileWithFramework" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jerseytesting" />
       <extension name="coverage">
         <pattern>
@@ -758,41 +786,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com" />
       <option name="MAIN_CLASS_NAME" value="com.unitTesting" />
-      <option name="METHOD_NAME" value="testInvalidLines" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="unitTesting.testSeekFiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jerseytesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com" />
-      <option name="MAIN_CLASS_NAME" value="com.unitTesting" />
-      <option name="METHOD_NAME" value="testSeekFiles" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="unitTesting.testSendResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jerseytesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com" />
-      <option name="MAIN_CLASS_NAME" value="com.unitTesting" />
-      <option name="METHOD_NAME" value="testSendResponse" />
+      <option name="METHOD_NAME" value="testreadFileWithFramework" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -882,18 +876,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.unitTesting" />
-      <item itemvalue="JUnit.unitTesting.testSendResponse" />
-      <item itemvalue="JUnit.unitTesting.testInvalidLines" />
-      <item itemvalue="JUnit.unitTesting.testSeekFiles" />
       <item itemvalue="JUnit.unitTesting.testConnection" />
+      <item itemvalue="JUnit.unitTesting.testAnswerGets" />
+      <item itemvalue="Application.Client" />
+      <item itemvalue="JUnit.unitTesting.testreadFileWithFramework" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.unitTesting.testConnection" />
         <item itemvalue="JUnit.unitTesting" />
-        <item itemvalue="JUnit.unitTesting.testSeekFiles" />
-        <item itemvalue="JUnit.unitTesting.testInvalidLines" />
-        <item itemvalue="JUnit.unitTesting.testSendResponse" />
+        <item itemvalue="JUnit.unitTesting.testreadFileWithFramework" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="JUnit.unitTesting.testAnswerGets" />
+        <item itemvalue="JUnit.unitTesting.testConnection" />
       </list>
     </recent_temporary>
   </component>
@@ -907,13 +901,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532506819647</updated>
-    </task>
-    <task id="LOCAL-00007" summary="mods in testing file">
-      <created>1538057383008</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1538057383008</updated>
     </task>
     <task id="LOCAL-00008" summary="mods in testing file">
       <created>1538127407254</created>
@@ -1251,39 +1238,46 @@
       <option name="project" value="LOCAL" />
       <updated>1539358261781</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java">
+      <created>1539359684746</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1539359684746</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="unitTesting_testSeekFiles - 2018.10.12 at 14h 45m 34s.xml">
-      <configuration name="unitTesting.testSeekFiles" configurationId="JUnit" />
+    <history-entry file="unitTesting_testreadFileWithFramework - 2018.10.15 at 11h 16m 32s.xml">
+      <configuration name="unitTesting.testreadFileWithFramework" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="unitTesting - 2018.10.12 at 14h 55m 40s.xml">
+    <history-entry file="unitTesting_testreadFileWithFramework - 2018.10.15 at 11h 17m 17s.xml">
+      <configuration name="unitTesting.testreadFileWithFramework" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting - 2018.10.15 at 11h 17m 24s.xml">
       <configuration name="unitTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="unitTesting - 2018.10.12 at 14h 55m 59s.xml">
+    <history-entry file="unitTesting - 2018.10.15 at 11h 24m 35s.xml">
       <configuration name="unitTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="unitTesting - 2018.10.12 at 15h 24m 27s.xml">
+    <history-entry file="unitTesting - 2018.10.15 at 11h 25m 43s.xml">
       <configuration name="unitTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="unitTesting - 2018.10.12 at 15h 51m 51s.xml">
+    <history-entry file="unitTesting - 2018.10.15 at 11h 45m 44s.xml">
       <configuration name="unitTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="unitTesting - 2018.10.12 at 15h 51m 59s.xml">
+    <history-entry file="unitTesting - 2018.10.15 at 11h 46m 10s.xml">
       <configuration name="unitTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="unitTesting_testConnection - 2018.10.12 at 16h 46m 52s.xml">
-      <configuration name="unitTesting.testConnection" configurationId="JUnit" />
+    <history-entry file="unitTesting - 2018.10.15 at 11h 46m 20s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="unitTesting_testConnection - 2018.10.12 at 16h 49m 38s.xml">
-      <configuration name="unitTesting.testConnection" configurationId="JUnit" />
+    <history-entry file="unitTesting - 2018.10.15 at 11h 46m 44s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="unitTesting_testConnection - 2018.10.12 at 16h 51m 50s.xml">
-      <configuration name="unitTesting.testConnection" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="unitTesting_testConnection - 2018.10.12 at 16h 52m 14s.xml">
-      <configuration name="unitTesting.testConnection" configurationId="JUnit" />
+    <history-entry file="unitTesting - 2018.10.15 at 11h 47m 15s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView" selected-index="1">
@@ -1297,9 +1291,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1008" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49445325" visible="true" weight="0.25773746" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49445325" visible="true" weight="0.13713981" />
       <window_info id="Structure" order="1" sideWeight="0.50554675" side_tool="true" weight="0.22518677" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1311,13 +1304,13 @@
       <window_info id="Job Explorer" order="9" weight="0.32924226" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.48772678" weight="0.32915717" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4765208" visible="true" weight="0.19020501" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4759872" visible="true" weight="0.2904328" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49519745" weight="0.31548974" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49675325" weight="0.32687926" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4994664" weight="0.32915717" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.52347916" side_tool="true" weight="0.19020501" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.5240128" side_tool="true" weight="0.2904328" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.48132336" side_tool="true" weight="0.2665148" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.45464247" weight="0.32687926" />
       <window_info anchor="bottom" id="DB Execution Console" order="11" />
@@ -1331,10 +1324,10 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.6066434" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.2534685" />
+      <window_info active="true" anchor="right" id="Coverage" order="8" side_tool="true" visible="true" weight="0.23959444" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49445325" visible="true" weight="0.14354323" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49445325" weight="0.36105034" />
       <window_info id="Structure" order="1" sideWeight="0.50554675" side_tool="true" weight="0.22518677" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1346,13 +1339,13 @@
       <window_info id="Job Explorer" order="9" weight="0.32924226" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.48772678" weight="0.32915717" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4765208" visible="true" weight="0.19020501" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4759872" visible="true" weight="0.2904328" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49519745" weight="0.31548974" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49675325" weight="0.32687926" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4994664" weight="0.32915717" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.52347916" side_tool="true" weight="0.19020501" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.5240128" side_tool="true" weight="0.2904328" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.48132336" side_tool="true" weight="0.2665148" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.45464247" weight="0.32687926" />
       <window_info anchor="bottom" id="DB Execution Console" order="11" />
@@ -1366,7 +1359,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.6066434" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.25400212" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.19103523" />
     </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
@@ -1586,55 +1579,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/others/BuildAnswer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/types/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/types/Answer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/others/Calculate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="30" column="102" selection-start-line="30" selection-start-column="102" selection-end-line="30" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Directory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="811">
-          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1648,6 +1596,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/others/BuildAnswer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/types/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="69" column="51" selection-start-line="69" selection-start-column="51" selection-end-line="69" selection-end-column="51" />
+          <folding>
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#813#814#0" expanded="true" />
+            <element signature="e#1253#1254#0" expanded="true" />
+            <element signature="e#1289#1290#0" expanded="true" />
+            <element signature="e#1742#1743#0" expanded="true" />
+            <element signature="e#1778#1779#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/types/Answer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="38" column="33" lean-forward="true" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+          <folding>
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/others/Convertions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/others/Calculate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Consumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1655,52 +1668,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/queue/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-780">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/others/Convertions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="465">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Connection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="602">
           <caret line="58" selection-start-line="58" selection-end-line="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/calculator/service/Calculator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Directory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="42" column="71" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="71" />
+        <state relative-caret-position="572">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270">
+          <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/unitTesting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="178" column="32" selection-start-line="178" selection-start-column="32" selection-end-line="178" selection-end-column="32" />
+        <state relative-caret-position="436">
+          <caret line="230" column="78" selection-start-line="230" selection-start-column="78" selection-end-line="230" selection-end-column="78" />
           <folding>
             <element signature="method#testBuildAnswerFuction#0;class#unitTesting#0" />
             <element signature="method#testConvertToObj#0;class#unitTesting#0" />
@@ -1710,6 +1719,9 @@
             <element signature="method#testCreateQueue#0;class#unitTesting#0" />
             <element signature="method#testInvalidLines#0;class#unitTesting#0" />
             <element signature="method#testSeekFiles#0;class#unitTesting#0" />
+            <element signature="method#testCalculatorServer#0;class#unitTesting#0" />
+            <element signature="method#testAnswerGets#0;class#unitTesting#0" />
+            <element signature="method#testRequestGets#0;class#unitTesting#0" />
           </folding>
         </state>
       </provider>

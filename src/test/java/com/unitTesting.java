@@ -5,18 +5,29 @@ import com.calculator.others.Calculate;
 import com.calculator.others.Convertions;
 import com.calculator.service.Calculator;
 import com.client.others.Connection;
+import com.client.others.Database;
 import com.client.others.Directory;
 import com.client.others.FileFunctions;
 import com.client.queue.Queue;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.sun.org.apache.regexp.internal.RE;
 import com.types.Answer;
 import com.types.Request;
 import javax.ws.rs.core.Response;
-import java.io.IOException;
+import java.io.*;
+import java.lang.ref.ReferenceQueue;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.concurrent.ArrayBlockingQueue;
+
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
+import org.apache.commons.csv.CSVPrinter;
 import org.junit.Assert;
 import org.junit.Test;
+import org.mockito.Mockito;
 
 import static org.mockito.Mockito.*;
 
@@ -141,7 +152,7 @@ public class unitTesting {
 
         Request request1 = new Request(10,10,"awsda");
 
-        boolean created = FileFunctions.invalidLines(request1, "/home/joao-faria/Desktop/Project/src/test/tests/invalid.txt");
+        boolean created = FileFunctions.invalidLines(request1, "src/test/resources/invalid.txt");
 
         Assert.assertTrue(created);
     }
@@ -149,7 +160,7 @@ public class unitTesting {
     @Test
     public void testSeekFiles(){
 
-        String directory = "src/test/tests";
+        String directory = "src/test/resources";
 
         ArrayList<String> files;
 
@@ -160,24 +171,64 @@ public class unitTesting {
     }
 
     @Test
-    public void testConnection() throws IOException {
+    public void testCalculatorServer() throws IOException {
 
-        String json = "";
-        String file = null;
-        Request r1 = new Request(10,10,"add");
-        Response response = null;
+        String json = "{" + "\"" + "value1" + "\""+ ":" + 12 + "," + "\""+ "value2"+ "\"" + ":" + 67 + "," + "\""+ "operation"+ "\"" + ":" + "\""+"mult"+ "\"" + "}";
+        Response server = Calculator.sendResponse(json);
 
-        Calculator server = mock(Calculator.class);
+        Assert.assertEquals(200, server.getStatus());
 
-        Object answer = null;
-        when(server.sendResponse(json)).thenReturn(Response.status(Response.Status.BAD_REQUEST).build());
+    }
 
-        when(FileFunctions.invalidLines(r1, file)).thenReturn(null);
+    @Test
+    public void testAnswerGets(){
 
-        Answer result = Connection.client(r1, null, null, null);
+        Answer answer = new Answer("add", 4.5, "12/12/12");
 
-        Assert.assertNull(result);
+        Assert.assertEquals("add", answer.getOperation());
+        Assert.assertEquals(4.5, answer.getResult(),0.0);
+        Assert.assertEquals("12/12/12", answer.getDate());
 
+    }
+
+    @Test
+    public void testRequestGets(){
+
+        Request request = new Request(5,3,"add");
+
+        Assert.assertEquals(5, request.getValue1(),0.0);
+        Assert.assertEquals(3, request.getValue2(),0.0);
+        Assert.assertEquals("add", request.getOperation());
+
+    }
+
+    @Test
+    public void testreadFileWithFramework() throws IOException {
+
+    String directory = "src/test/resources/";
+    Request request = new Request(5,5, "add");
+    ArrayList<String> files = new ArrayList<>();
+
+    File file1 = new File(directory + "newfile1.csv");
+    File file2 = new File(directory + "newfile2.xml");
+
+    BufferedWriter writer = Files.newBufferedWriter(Paths.get(directory + "newfile1.csv"));
+
+    CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT);
+
+    csvPrinter.printRecord(5.0, 5.0, "add");
+    csvPrinter.flush();
+
+
+
+    files.add(file1.getName());
+    files.add(file2.getName());
+
+    ArrayList<Request> requestList = FileFunctions.readFileWithFramework(directory, directory, directory, files);
+
+    Assert.assertEquals(request.getOperation(),requestList.get(0).getOperation());
+    Assert.assertEquals(request.getValue1(),requestList.get(0).getValue1(),0.0);
+    Assert.assertEquals(request.getValue2(),requestList.get(0).getValue2(),0.0);
     }
 
 }
