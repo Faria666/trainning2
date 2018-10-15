@@ -50,7 +50,7 @@ public class FileFunctions {
                         for (CSVRecord csvRecord : csvParser) {
 
                             // Accessing Values by Column Index
-                    String val1 = csvRecord.get(0);
+                            String val1 = csvRecord.get(0);
                             String val2 = csvRecord.get(1);
                             String op = csvRecord.get(2);
 
@@ -59,13 +59,15 @@ public class FileFunctions {
                             try {
                                 temp1 = decimalformat.parse(String.valueOf(val1)).doubleValue();
                             } catch (ParseException e) {
-                                e.printStackTrace();
+                                //e.printStackTrace();
+                                System.out.println("--- Parametro inválido! ---");
                             }
                             double temp2 = 0;
                             try {
                                 temp2 = decimalformat.parse(String.valueOf(val2)).doubleValue();
                             } catch (ParseException e) {
-                                e.printStackTrace();
+                                //e.printStackTrace();
+                                System.out.println("--- Parametro inválido! ---");
                             }
                             request = new Request(temp1, temp2, op);
                             requestList.add(request);
