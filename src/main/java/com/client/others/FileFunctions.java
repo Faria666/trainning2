@@ -61,6 +61,7 @@ public class FileFunctions {
                             } catch (ParseException e) {
                                 //e.printStackTrace();
                                 System.out.println("--- Parametro inválido! ---");
+                                break;
                             }
                             double temp2 = 0;
                             try {
@@ -68,6 +69,7 @@ public class FileFunctions {
                             } catch (ParseException e) {
                                 //e.printStackTrace();
                                 System.out.println("--- Parametro inválido! ---");
+                                break;
                             }
                             request = new Request(temp1, temp2, op);
                             requestList.add(request);
