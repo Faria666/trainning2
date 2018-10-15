@@ -21,9 +21,10 @@ import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 import org.junit.Assert;
 import org.junit.Test;
-import org.mockito.Mockito;
 
-import static org.mockito.Mockito.*;
+
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 
 public class unitTesting {
@@ -286,15 +287,12 @@ public class unitTesting {
     @Test
     public void testInsertJDBC(){
 
-        boolean inserted;
         Answer answer= new Answer("add", 10 , "12/12/12");
-        Database db = org.mockito.Mockito.mock(Database.class);
         Request request= new Request(5,5,"add");
+        Database db = mock(Database.class);
 
         when(db.insertJDBC(answer,request)).thenReturn(true);
 
-        inserted = db.insertJDBC(answer,request);
-
-        Assert.assertTrue(inserted);
+        Assert.assertEquals(true, db.insertJDBC(answer,request));
     }
 }
