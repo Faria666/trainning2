@@ -26,7 +26,7 @@ public class Consumer extends Thread{
             try {
                 System.out.println("Consumer "+Thread.currentThread().getName()+" --> START");
                 Queue.requestTreatment((Request) queue.take(), uri, location, filename);
-            } catch (InterruptedException | IOException e) {
+            } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
