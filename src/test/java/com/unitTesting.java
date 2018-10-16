@@ -286,16 +286,4 @@ public class unitTesting {
 
     }
 
-    @Test
-    public void testRequestTreatment(){
-
-        Answer answer= new Answer("add", 10 , "12/12/12");
-        Request request= new Request(5,5,"add");
-        Database db = Mockito.mock(Database.class);
-
-        when(db.insertJDBC(answer,request)).thenReturn(true);
-
-        Assert.assertEquals(true, db.insertJDBC(answer,request));
-    }
-
 }
