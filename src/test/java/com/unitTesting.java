@@ -2,7 +2,7 @@ package com;
 
 import com.calculator.others.BuildAnswer;
 import com.calculator.others.Calculate;
-import com.calculator.others.Convertions;
+import com.convertions.Convertions;
 import com.calculator.service.Calculator;
 import com.client.others.Connection;
 import com.client.others.Database;

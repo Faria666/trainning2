@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba65cb2-2b65-4741-aa3b-19e215803d30" name="Default" comment="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/src/test/java/com/unitTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/unitTesting.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/service/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/service/Client.java" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,7 +33,11 @@
     <SUITE FILE_PATH="coverage/jerseytesting$RESTClientPost.ic" NAME="RESTClientPost Coverage Results" MODIFIED="1534768886544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.jerseytesting.webapp.*</FILTER>
     </SUITE>
+<<<<<<< Updated upstream
     <SUITE FILE_PATH="coverage/Project$unitTesting.ic" NAME="unitTesting Coverage Results" MODIFIED="1539682237375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+=======
+    <SUITE FILE_PATH="coverage/Project$unitTesting.ic" NAME="unitTesting Coverage Results" MODIFIED="1539684695318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+>>>>>>> Stashed changes
       <FILTER>com.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/jerseytesting$RESTServerTest_testRequestFail.ic" NAME="RESTServerTest.testRequestFail Coverage Results" MODIFIED="1533112785066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -56,7 +64,11 @@
     <SUITE FILE_PATH="coverage/jerseytesting$RESTTest_testReadFile.ic" NAME="RESTTest.testReadFile Coverage Results" MODIFIED="1534515651783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.jerseytesting.webapp.*</FILTER>
     </SUITE>
+<<<<<<< Updated upstream
     <SUITE FILE_PATH="coverage/Project$Client.ic" NAME="Client Coverage Results" MODIFIED="1539679380357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+=======
+    <SUITE FILE_PATH="coverage/Project$Client.ic" NAME="Client Coverage Results" MODIFIED="1539683932431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+>>>>>>> Stashed changes
       <FILTER>com.client.service.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/jerseytesting$_Category_com_jerseytesting_webapp_RESTTest_.ic" NAME="@Category(com.jerseytesting.webapp.RESTTest) Coverage Results" MODIFIED="1535623434899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -109,7 +121,11 @@
     <option name="myAddOrReplace" value="0" />
   </component>
   <component name="CoverageViewManager">
+<<<<<<< Updated upstream
     <option name="myElementSize" value="198" />
+=======
+    <option name="myElementSize" value="221" />
+>>>>>>> Stashed changes
   </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="hideWarnings" value="true" />
@@ -301,14 +317,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+<<<<<<< Updated upstream
           <entry key="java" value="6621" />
+=======
+          <entry key="java" value="6641" />
+>>>>>>> Stashed changes
           <entry key="txt" value="428" />
           <entry key="xml" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+<<<<<<< Updated upstream
           <entry key="JAVA" value="6621" />
+=======
+          <entry key="JAVA" value="6641" />
+>>>>>>> Stashed changes
           <entry key="PLAIN_TEXT" value="428" />
           <entry key="XML" value="22" />
         </counts>
@@ -320,6 +344,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< Updated upstream
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/unitTesting.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -343,11 +368,46 @@
                 <element signature="method#testreadFileWithFramework#0;class#unitTesting#0" />
                 <element signature="method#testProcessFiles#0;class#unitTesting#0" />
               </folding>
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/unitTesting.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="541">
+              <caret line="295" lean-forward="true" selection-start-line="295" selection-end-line="295" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#testBuildAnswerFuction#0;class#unitTesting#0" />
+                <element signature="method#testConvertToObj#0;class#unitTesting#0" />
+                <element signature="method#testConvertToJson#0;class#unitTesting#0" />
+                <element signature="method#testCalculate#0;class#unitTesting#0" />
+                <element signature="method#tesSendResponse#0;class#unitTesting#0" />
+                <element signature="method#testCreateQueue#0;class#unitTesting#0" />
+                <element signature="method#testInvalidLines#0;class#unitTesting#0" />
+                <element signature="method#testSeekFiles#0;class#unitTesting#0" />
+                <element signature="method#testCalculatorServer#0;class#unitTesting#0" />
+                <element signature="method#testAnswerGets#0;class#unitTesting#0" />
+                <element signature="method#testRequestGets#0;class#unitTesting#0" />
+                <element signature="method#testAnswerSets#0;class#unitTesting#0" />
+                <element signature="method#testAnswerSets#1;class#unitTesting#0" />
+                <element signature="method#testreadFileWithFramework#0;class#unitTesting#0" />
+                <element signature="method#testProcessFiles#0;class#unitTesting#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/Client.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
@@ -359,6 +419,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Directory.java">
           <provider selected="true" editor-type-id="text-editor">
+=======
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Directory.java">
+          <provider selected="true" editor-type-id="text-editor">
+>>>>>>> Stashed changes
             <state relative-caret-position="751">
               <caret line="68" column="52" lean-forward="true" selection-start-line="68" selection-start-column="52" selection-end-line="68" selection-end-column="52" />
             </state>
@@ -454,7 +518,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/client/unitTesting.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/queue/Producer.java" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/src/main/java/com/client/service/Client.java" />
+=======
+>>>>>>> Stashed changes
         <option value="$PROJECT_DIR$/src/main/java/com/calculator/others/Convertions.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/calculator/others/Calculate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/calculator/others/BuildAnswer.java" />
@@ -467,6 +534,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/client/others/FileFunctions.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/others/Directory.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/unitTesting.java" />
+<<<<<<< Updated upstream
+=======
+        <option value="$PROJECT_DIR$/src/main/java/com/client/service/Client.java" />
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
@@ -626,7 +697,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+<<<<<<< Updated upstream
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539682236425" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539684908171" />
+>>>>>>> Stashed changes
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/jerseytesting2" />
@@ -681,7 +756,11 @@
       </list>
     </option>
   </component>
+<<<<<<< Updated upstream
   <component name="RunManager" selected="JUnit.unitTesting">
+=======
+  <component name="RunManager" selected="Application.Client">
+>>>>>>> Stashed changes
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.client.service.Client" />
       <module name="jerseytesting" />
@@ -847,9 +926,15 @@
     </list>
     <recent_temporary>
       <list>
+<<<<<<< Updated upstream
         <item itemvalue="JUnit.unitTesting" />
         <item itemvalue="JUnit.unitTesting.testWatchDirectory" />
         <item itemvalue="Application.Client" />
+=======
+        <item itemvalue="Application.Client" />
+        <item itemvalue="JUnit.unitTesting" />
+        <item itemvalue="JUnit.unitTesting.testWatchDirectory" />
+>>>>>>> Stashed changes
         <item itemvalue="JUnit.unitTesting.testRequestTreatment" />
       </list>
     </recent_temporary>
@@ -865,6 +950,7 @@
       <option name="presentableId" value="Default" />
       <updated>1532506819647</updated>
     </task>
+<<<<<<< Updated upstream
     <task id="LOCAL-00017" summary="mods in testing file">
       <created>1538467924482</created>
       <option name="number" value="00017" />
@@ -872,6 +958,8 @@
       <option name="project" value="LOCAL" />
       <updated>1538467924482</updated>
     </task>
+=======
+>>>>>>> Stashed changes
     <task id="LOCAL-00018" summary="mods in testing file">
       <created>1538468193741</created>
       <option name="number" value="00018" />
@@ -904,6 +992,7 @@
       <created>1538485895621</created>
       <option name="number" value="00022" />
       <option name="presentableId" value="LOCAL-00022" />
+<<<<<<< Updated upstream
       <option name="project" value="LOCAL" />
       <updated>1538485895621</updated>
     </task>
@@ -1089,6 +1178,193 @@
       <option name="project" value="LOCAL" />
       <updated>1539347720167</updated>
     </task>
+=======
+      <option name="project" value="LOCAL" />
+      <updated>1538485895621</updated>
+    </task>
+    <task id="LOCAL-00023" summary="mods in testing file">
+      <created>1538488759276</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1538488759276</updated>
+    </task>
+    <task id="LOCAL-00024" summary="structure modifications">
+      <created>1539262527263</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1539262527263</updated>
+    </task>
+    <task id="LOCAL-00025" summary="structure modifications">
+      <created>1539262695205</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1539262695205</updated>
+    </task>
+    <task id="LOCAL-00026" summary="structure modifications">
+      <created>1539264138348</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1539264138348</updated>
+    </task>
+    <task id="LOCAL-00027" summary="connections modifications">
+      <created>1539266774191</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1539266774191</updated>
+    </task>
+    <task id="LOCAL-00028" summary="connections modifications">
+      <created>1539267758751</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1539267758751</updated>
+    </task>
+    <task id="LOCAL-00029" summary="connections modifications">
+      <created>1539271023566</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1539271023566</updated>
+    </task>
+    <task id="LOCAL-00030" summary="connections modifications">
+      <created>1539272544047</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1539272544047</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Connection: try catch exception">
+      <created>1539273075582</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1539273075582</updated>
+    </task>
+    <task id="LOCAL-00032" summary="refactor in restserver package">
+      <created>1539273258121</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1539273258121</updated>
+    </task>
+    <task id="LOCAL-00033" summary="refactor in restserver package">
+      <created>1539273621532</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1539273621532</updated>
+    </task>
+    <task id="LOCAL-00034" summary="refactor in restserver package">
+      <created>1539274281466</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1539274281466</updated>
+    </task>
+    <task id="LOCAL-00035" summary="refactor in restserver package">
+      <created>1539274358296</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1539274358296</updated>
+    </task>
+    <task id="LOCAL-00036" summary="mods">
+      <created>1539276586889</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1539276586889</updated>
+    </task>
+    <task id="LOCAL-00037" summary="modifications">
+      <created>1539276710868</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1539276710868</updated>
+    </task>
+    <task id="LOCAL-00038" summary="modifications in the client.java">
+      <created>1539335589246</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1539335589246</updated>
+    </task>
+    <task id="LOCAL-00039" summary="modifications in the Directory.java">
+      <created>1539336332140</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1539336332140</updated>
+    </task>
+    <task id="LOCAL-00040" summary="architecture modifications in packages">
+      <created>1539336581813</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1539336581813</updated>
+    </task>
+    <task id="LOCAL-00041" summary="architecture modifications in packages">
+      <created>1539337097943</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1539337097943</updated>
+    </task>
+    <task id="LOCAL-00042" summary="architecture modifications in packages">
+      <created>1539337179391</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1539337179391</updated>
+    </task>
+    <task id="LOCAL-00043" summary="architecture modifications in packages">
+      <created>1539337269075</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1539337269075</updated>
+    </task>
+    <task id="LOCAL-00044" summary="some changes in the client.java file , main function, nothing special, just removing some \n">
+      <created>1539337570872</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1539337570872</updated>
+    </task>
+    <task id="LOCAL-00045" summary="some changes in the directory.java file , import class client">
+      <created>1539337700661</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1539337700661</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java">
+      <created>1539341055554</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1539341055554</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java">
+      <created>1539341962333</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1539341962333</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java&#10;CHanged FileFunctions.invalidLines function to return a boolean if the file were or not created">
+      <created>1539347720167</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1539347720167</updated>
+    </task>
+>>>>>>> Stashed changes
     <task id="LOCAL-00049" summary="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java&#10;CHanged FileFunctions.invalidLines function to return a boolean if the file were or not created">
       <created>1539348201612</created>
       <option name="number" value="00049" />
@@ -1208,6 +1484,7 @@
       <option name="project" value="LOCAL" />
       <updated>1539680998577</updated>
     </task>
+<<<<<<< Updated upstream
     <option name="localTasksCounter" value="66" />
     <servers />
   </component>
@@ -1241,6 +1518,48 @@
     </history-entry>
     <history-entry file="unitTesting_testWatchDirectory - 2018.10.16 at 10h 29m 45s.xml">
       <configuration name="unitTesting.testWatchDirectory" configurationId="JUnit" />
+=======
+    <task id="LOCAL-00066" summary="Unit tests in unitTestind.java file.&#10;src/test/java/com/unitTesting.java">
+      <created>1539682251525</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1539682251526</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="unitTesting_testRequestTreatment - 2018.10.16 at 10h 05m 23s.xml">
+      <configuration name="unitTesting.testRequestTreatment" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting_testRequestTreatment - 2018.10.16 at 10h 05m 43s.xml">
+      <configuration name="unitTesting.testRequestTreatment" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting - 2018.10.16 at 10h 09m 12s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting - 2018.10.16 at 10h 09m 35s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting_testWatchDirectory - 2018.10.16 at 10h 29m 36s.xml">
+      <configuration name="unitTesting.testWatchDirectory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting_testWatchDirectory - 2018.10.16 at 10h 29m 45s.xml">
+      <configuration name="unitTesting.testWatchDirectory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting_testWatchDirectory - 2018.10.16 at 10h 30m 30s.xml">
+      <configuration name="unitTesting.testWatchDirectory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting - 2018.10.16 at 10h 30m 45s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting - 2018.10.16 at 10h 59m 06s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTesting - 2018.10.16 at 11h 11m 43s.xml">
+      <configuration name="unitTesting" configurationId="JUnit" />
+>>>>>>> Stashed changes
     </history-entry>
   </component>
   <component name="TodoView" selected-index="1">
@@ -1288,7 +1607,11 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.6066434" />
+<<<<<<< Updated upstream
       <window_info active="true" anchor="right" id="Coverage" order="8" side_tool="true" visible="true" weight="0.25827107" />
+=======
+      <window_info active="true" anchor="right" id="Coverage" order="8" side_tool="true" visible="true" weight="0.25773746" />
+>>>>>>> Stashed changes
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -1372,6 +1695,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/jerseytesting/rest/RESTTestRest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/jerseytesting/aux/RESTTestAux.java" />
     <entry file="file://$PROJECT_DIR$/javadoc/index.html">
+<<<<<<< Updated upstream
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="614">
           <caret line="71" column="1" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
@@ -1381,6 +1705,17 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/jerseytesting2/inputTest/test.csv" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
+=======
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="71" column="1" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jerseytesting2/inputTest/test.csv" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+>>>>>>> Stashed changes
         <state relative-caret-position="120">
           <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
         </state>
@@ -1634,6 +1969,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Connection.java">
+<<<<<<< Updated upstream
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
@@ -1679,6 +2015,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
           <caret line="301" selection-start-line="301" selection-end-line="301" />
+=======
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/others/Directory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="751">
+          <caret line="68" column="52" lean-forward="true" selection-start-line="68" selection-start-column="52" selection-end-line="68" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/unitTesting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="295" lean-forward="true" selection-start-line="295" selection-end-line="295" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#testBuildAnswerFuction#0;class#unitTesting#0" />
@@ -1697,6 +2073,13 @@
             <element signature="method#testreadFileWithFramework#0;class#unitTesting#0" />
             <element signature="method#testProcessFiles#0;class#unitTesting#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/client/service/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
         </state>
       </provider>
     </entry>
