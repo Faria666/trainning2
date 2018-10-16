@@ -2,31 +2,31 @@ package com;
 
 import com.calculator.others.BuildAnswer;
 import com.calculator.others.Calculate;
-import com.calculator.others.Convertions;
 import com.calculator.service.Calculator;
-import com.client.others.Connection;
 import com.client.others.Database;
 import com.client.others.Directory;
 import com.client.others.FileFunctions;
 import com.client.queue.Queue;
+import com.convertions.Convertions;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.types.Answer;
 import com.types.Request;
-import javax.ws.rs.core.Response;
-import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.concurrent.ArrayBlockingQueue;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
-
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import javax.ws.rs.core.Response;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.concurrent.ArrayBlockingQueue;
+import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
 public class unitTesting {
@@ -284,19 +284,6 @@ public class unitTesting {
         Assert.assertEquals(request.getValue1(),requestList.get(0).getValue1(),0.0);
         Assert.assertEquals(request.getValue2(),requestList.get(0).getValue2(),0.0);
 
-    }
-
-    @Test
-    public void testRequestTreatment(){
-
-        Answer answer= new Answer("add", 10 , "12/12/12");
-        Request request= new Request(5,5,"add");
-        Database db = mock(Database.class);
-        Connection cn = mock(Connection.class);
-
-        when(db.insertJDBC(answer,request)).thenReturn(true);
-
-        Assert.assertEquals(true, db.insertJDBC(answer,request));
     }
 
 }
