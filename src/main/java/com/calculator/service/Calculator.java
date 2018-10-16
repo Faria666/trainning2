@@ -6,7 +6,6 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import com.calculator.others.Calculate;
 import com.calculator.others.BuildAnswer;
-import com.calculator.others.Convertions;
 import com.types.Answer;
 import com.types.Request;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;

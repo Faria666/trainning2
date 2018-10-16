@@ -1,4 +1,4 @@
-package com.calculator.others;
+package com.convertions;
 
 import com.calculator.service.Calculator;
 import com.types.Answer;
