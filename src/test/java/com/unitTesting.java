@@ -4,6 +4,7 @@ import com.calculator.others.BuildAnswer;
 import com.calculator.others.Calculate;
 import com.calculator.others.Convertions;
 import com.calculator.service.Calculator;
+import com.client.others.Connection;
 import com.client.others.Database;
 import com.client.others.Directory;
 import com.client.others.FileFunctions;
@@ -21,12 +22,13 @@ import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 import org.junit.Assert;
 import org.junit.Test;
-
+import org.junit.runner.RunWith;
+import org.mockito.junit.MockitoJUnitRunner;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-
+@RunWith(MockitoJUnitRunner.class)
 public class unitTesting {
 
     @Test
@@ -285,11 +287,12 @@ public class unitTesting {
     }
 
     @Test
-    public void testInsertJDBC(){
+    public void testRequestTreatment(){
 
         Answer answer= new Answer("add", 10 , "12/12/12");
         Request request= new Request(5,5,"add");
         Database db = mock(Database.class);
+        Connection cn = mock(Connection.class);
 
         when(db.insertJDBC(answer,request)).thenReturn(true);
 
