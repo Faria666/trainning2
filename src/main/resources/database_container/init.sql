@@ -1,15 +1,15 @@
 create table request(
 requestId serial not null,
-val1 double precision,
-val2 double precision,
-op varchar,
-primary key(idr)
+value1 double precision,
+value2 double precision,
+operation varchar,
+primary key(requestId)
 );
 
 create table answer(
 answerId serial not null,
-op varchar,
-res double precision,
-dat varchar,
-primary key(ida)
+operation varchar,
+result double precision,
+date varchar,
+primary key(answerId)
 );

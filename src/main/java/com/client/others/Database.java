@@ -14,8 +14,7 @@ public class Database {
      * @param request is the request made to the server
      */
 
-    public static boolean insertJDBC(final Answer answer, final Request request){
-        boolean inserted = false;
+    public static void insertJDBC(final Answer answer, final Request request){
 
         try {
             EntityManagerFactory emf = Persistence.createEntityManagerFactory("project-JPA");
@@ -28,13 +27,11 @@ public class Database {
             em.flush();
             em.getTransaction().commit();
             em.close();
-            inserted = true;
 
 
         }catch (Exception e){
             e.printStackTrace();
         }
-        return inserted;
     }
 
 }

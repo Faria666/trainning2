@@ -24,7 +24,7 @@ public class Answer {
      */
 
     @Id
-    @Column(name="answerId")
+    @Column(name="answerid")
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     public int getAnswerId(){
         return answerId;

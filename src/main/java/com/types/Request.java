@@ -16,12 +16,12 @@ public class Request {
     private String operation;
 
     /**
-     * his is used to get the request Id of the Request object
+     * this is used to get the request Id of the Request object
      * @return return the request Id
      */
 
     @Id
-    @Column(name="requestId")
+    @Column(name="requestid")
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     public int getRequestId(){
         return requestId;
@@ -39,7 +39,7 @@ public class Request {
 
 
     /**
-     * his is used to get the first number in the request object
+     * this is used to get the first number in the request object
      * @return return the value of the number
      */
 
@@ -56,7 +56,7 @@ public class Request {
     }
 
     /**
-     * his is used to get the second number in the request object
+     * this is used to get the second number in the request object
      * @return return the value of the number
      */
 
